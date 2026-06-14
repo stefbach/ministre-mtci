@@ -385,18 +385,99 @@
     })));
   }
 
-  /* ===== modules grid ===== */
+  /* ===== modules grid — iconographic, explanatory, 3D ===== */
   function Modules() {
     const {
       localTime
     } = useScene();
-    const mods = [['Consultation', 'À distance', 'Téléconsultation vidéo', C.blue], ['Consultation', 'En présentiel', 'Cabinet augmenté', C.blue], ['Consultation', 'Normale', 'Du premier contact au suivi', C.blue], ['Consultation', 'Dermato', 'Analyse d’images', C.blue], ['Connexion', 'Labo', 'Résultats auto-synchronisés', C.teal], ['Connexion', 'Radio', 'Imagerie intégrée', C.teal], ['Connexion', 'Pharmacie', 'E-prescription & sécurité', C.teal], ['Suivi', 'Maladies chroniques', 'HTA · diabète · poids — via WhatsApp', C.gold], ['Prévention', 'SilentCheck', 'Dépistage silencieux', C.gold], ['Urgence', 'Triage & alerte', 'Détection précoce', C.coral], ['Pilotage', 'Tableau de bord RH', 'Pour les entreprises', C.green]];
+    const I = {
+      video: /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("rect", {
+        x: "2.5",
+        y: "6",
+        width: "13",
+        height: "12",
+        rx: "2.5"
+      }), /*#__PURE__*/React.createElement("path", {
+        d: "M15.5 10.5l5-2.5v8l-5-2.5z"
+      })),
+      person: /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("circle", {
+        cx: "12",
+        cy: "8",
+        r: "3.4"
+      }), /*#__PURE__*/React.createElement("path", {
+        d: "M5.5 20a6.5 6.5 0 0 1 13 0"
+      })),
+      clip: /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("rect", {
+        x: "5",
+        y: "4.5",
+        width: "14",
+        height: "16.5",
+        rx: "2.2"
+      }), /*#__PURE__*/React.createElement("path", {
+        d: "M9 4.5V3.2h6v1.3M8.6 12l2 2 4-4"
+      })),
+      derma: /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("rect", {
+        x: "3",
+        y: "4.5",
+        width: "18",
+        height: "15",
+        rx: "2.2"
+      }), /*#__PURE__*/React.createElement("circle", {
+        cx: "8.5",
+        cy: "9.5",
+        r: "1.7"
+      }), /*#__PURE__*/React.createElement("path", {
+        d: "M3.5 16.5l5-4 4 3 3-2.2 5 4"
+      })),
+      lab: /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("path", {
+        d: "M9.5 3.5h5M10.5 3.5v5.5l-4.6 8.2a2 2 0 0 0 1.7 3h8.8a2 2 0 0 0 1.7-3l-4.6-8.2V3.5"
+      }), /*#__PURE__*/React.createElement("path", {
+        d: "M8 15h8"
+      })),
+      xray: /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("path", {
+        d: "M4 8V5.5a1.5 1.5 0 0 1 1.5-1.5H8M16 4h2.5A1.5 1.5 0 0 1 20 5.5V8M20 16v2.5a1.5 1.5 0 0 1-1.5 1.5H16M8 20H5.5A1.5 1.5 0 0 1 4 18.5V16"
+      }), /*#__PURE__*/React.createElement("circle", {
+        cx: "12",
+        cy: "12",
+        r: "3.4"
+      })),
+      pill: /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("path", {
+        d: "M10.6 3.7l9.7 9.7a4.8 4.8 0 0 1-6.8 6.8L3.8 10.5a4.8 4.8 0 0 1 6.8-6.8z"
+      }), /*#__PURE__*/React.createElement("path", {
+        d: "M7.2 7.1l9.7 9.7"
+      })),
+      heart: /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("path", {
+        d: "M20.6 8.6a4.8 4.8 0 0 0-8.6-2 4.8 4.8 0 0 0-8.6 2c0 3.9 4.4 7.3 8.6 10.1 4.2-2.8 8.6-6.2 8.6-10.1z"
+      }), /*#__PURE__*/React.createElement("path", {
+        d: "M4.5 11.5h3l1.2-2.2 1.8 4 1.2-1.8h2"
+      })),
+      shield: /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("path", {
+        d: "M12 3.2l7 3v5.3c0 4.8-3 6.8-7 8.8-4-2-7-4-7-8.8V6.2z"
+      }), /*#__PURE__*/React.createElement("path", {
+        d: "M9 12l2 2 4-4"
+      })),
+      alert: /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("path", {
+        d: "M12 4l9 16H3z"
+      }), /*#__PURE__*/React.createElement("path", {
+        d: "M12 10v4.5M12 17.4h.01"
+      })),
+      dash: /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("rect", {
+        x: "3",
+        y: "3",
+        width: "18",
+        height: "18",
+        rx: "2.5"
+      }), /*#__PURE__*/React.createElement("path", {
+        d: "M7.5 15.5v-3M12 15.5v-7M16.5 15.5v-4.5"
+      }))
+    };
+    const mods = [['Consultation', 'À distance', 'Téléconsultation vidéo HD — le patient consulté où qu’il soit', C.blue, 'video'], ['Consultation', 'En présentiel', 'Le cabinet augmenté par l’IA, en face à face', C.blue, 'person'], ['Consultation', 'Normale', 'Du premier contact au suivi, dossier unique', C.blue, 'clip'], ['Consultation', 'Dermato', 'Analyse d’images de la peau assistée par l’IA', C.blue, 'derma'], ['Connexion', 'Labo', 'Résultats d’analyses synchronisés automatiquement', C.teal, 'lab'], ['Connexion', 'Radio', 'Imagerie médicale intégrée au dossier patient', C.teal, 'xray'], ['Connexion', 'Pharmacie', 'E-prescription sécurisée, traçable de bout en bout', C.teal, 'pill'], ['Suivi', 'Maladies chroniques', 'HTA · diabète · poids — suivi continu par WhatsApp', C.gold, 'heart'], ['Prévention', 'SilentCheck', 'Dépistage silencieux & détection précoce des risques', C.gold, 'shield'], ['Urgence', 'Triage & alerte', 'Détection précoce et alerte immédiate', C.coral, 'alert'], ['Pilotage', 'Tableau de bord RH', 'Santé au travail pilotée en temps réel', C.green, 'dash']];
     const gap = 18,
       W = 402;
     return /*#__PURE__*/React.createElement("div", {
       style: {
         position: 'absolute',
-        top: 230,
+        top: 226,
         left: 120,
         right: 120,
         display: 'flex',
@@ -404,42 +485,77 @@
         gap: gap,
         justifyContent: 'center'
       }
-    }, mods.map((m, i) => /*#__PURE__*/React.createElement(Card3D, {
-      key: i,
-      w: W,
-      at: 0.3 + i * 0.07,
-      i: i,
-      accent: m[3],
-      accentSide: "left",
-      radius: 14,
-      pad: "18px 24px"
-    }, /*#__PURE__*/React.createElement("div", {
-      style: {
-        fontFamily: FD,
-        fontWeight: 700,
-        fontSize: 13,
-        letterSpacing: '0.1em',
-        textTransform: 'uppercase',
-        color: m[3]
-      }
-    }, m[0]), /*#__PURE__*/React.createElement("div", {
-      style: {
-        fontFamily: FD,
-        fontWeight: 700,
-        fontSize: 24,
-        color: '#fff',
-        marginTop: 7
-      }
-    }, m[1]), /*#__PURE__*/React.createElement("div", {
-      style: {
-        fontFamily: FD,
-        fontWeight: 400,
-        fontSize: 16,
-        color: C.dim,
-        marginTop: 5,
-        lineHeight: 1.3
-      }
-    }, m[2]))));
+    }, mods.map((m, i) => {
+      const pulse = 0.5 + 0.5 * Math.sin(localTime * 1.5 + i * 0.9);
+      return /*#__PURE__*/React.createElement(Card3D, {
+        key: i,
+        w: W,
+        at: 0.3 + i * 0.07,
+        i: i,
+        accent: m[3],
+        accentSide: "left",
+        radius: 16,
+        pad: "18px 20px",
+        style: {
+          display: 'flex',
+          gap: 16,
+          alignItems: 'flex-start'
+        }
+      }, /*#__PURE__*/React.createElement("div", {
+        style: {
+          width: 52,
+          height: 52,
+          flex: 'none',
+          borderRadius: 14,
+          background: `${m[3]}22`,
+          border: `1px solid ${m[3]}66`,
+          display: 'grid',
+          placeItems: 'center',
+          color: m[3],
+          boxShadow: `0 0 ${9 + 8 * pulse}px ${m[3]}55`
+        }
+      }, /*#__PURE__*/React.createElement("svg", {
+        width: "27",
+        height: "27",
+        viewBox: "0 0 24 24",
+        fill: "none",
+        stroke: "currentColor",
+        strokeWidth: "1.7",
+        strokeLinecap: "round",
+        strokeLinejoin: "round"
+      }, I[m[4]])), /*#__PURE__*/React.createElement("div", {
+        style: {
+          minWidth: 0
+        }
+      }, /*#__PURE__*/React.createElement("div", {
+        style: {
+          fontFamily: FD,
+          fontWeight: 700,
+          fontSize: 12,
+          letterSpacing: '0.12em',
+          textTransform: 'uppercase',
+          color: m[3]
+        }
+      }, m[0]), /*#__PURE__*/React.createElement("div", {
+        style: {
+          fontFamily: FD,
+          fontWeight: 700,
+          fontSize: 23,
+          color: '#fff',
+          marginTop: 5,
+          lineHeight: 1.05
+        }
+      }, m[1]), /*#__PURE__*/React.createElement("div", {
+        style: {
+          fontFamily: FD,
+          fontWeight: 400,
+          fontSize: 15,
+          color: C.dim,
+          marginTop: 6,
+          lineHeight: 1.32
+        }
+      }, m[2])));
+    }));
   }
 
   /* ===== constellation of African countries lighting up ===== */

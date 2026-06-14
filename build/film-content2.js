@@ -1498,7 +1498,7 @@
         gap: 12,
         justifyContent: 'flex-start'
       }
-    }, ['Système prouvé — Swan', 'Équipe 100 % mauricienne', 'Infrastructure souveraine — MRIC', 'ROI +485 % an 1', '30 pays · Rs 1 350M/an'].map((c, i) => /*#__PURE__*/React.createElement("span", {
+    }, ['Système prouvé — Swan', 'Équipe 100 % mauricienne', 'Infrastructure souveraine — MRIC'].map((c, i) => /*#__PURE__*/React.createElement("span", {
       key: i,
       style: {
         padding: '11px 20px',
@@ -1581,7 +1581,7 @@
         textAlign: 'center',
         lineHeight: 1.4
       }
-    }, "\xAB On ne peut pas cr\xE9er 50 000 m\xE9decins en 5 ans. Mais on peut augmenter 600 auxiliaires avec l\u2019IA. Et c\u2019est pour 30 pays. \xBB")));
+    }, "\xAB On ne peut pas cr\xE9er 50 000 m\xE9decins en 5 ans. Mais on peut augmenter nos auxiliaires de sant\xE9 avec l\u2019IA. \xBB")));
   }
   function Benefits() {
     const {

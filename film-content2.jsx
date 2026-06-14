@@ -546,7 +546,7 @@ function FinalScene(){
       </div>
       <div style={{position:'absolute',right:120,top:300,width:680,opacity:ev(localTime,1.0,0.7),transform:`translateY(${(1-ev(localTime,1.0,0.7))*18}px)`}}>
         <div style={{display:'flex',flexWrap:'wrap',gap:12,justifyContent:'flex-start'}}>
-          {['Système prouvé — Swan','Équipe 100 % mauricienne','Infrastructure souveraine — MRIC','ROI +485 % an 1','30 pays · Rs 1 350M/an'].map((c,i)=>(
+          {['Système prouvé — Swan','Équipe 100 % mauricienne','Infrastructure souveraine — MRIC'].map((c,i)=>(
             <span key={i} style={{padding:'11px 20px',border:'1px solid rgba(255,255,255,0.16)',background:'rgba(255,255,255,0.05)',borderRadius:999,fontFamily:FD,fontWeight:500,fontSize:20,color:C.txt,display:'inline-flex',alignItems:'center',gap:10}}>
               <span style={{width:20,height:20,borderRadius:10,background:C.green,color:C.navy,display:'grid',placeItems:'center',fontSize:12,fontWeight:800}}>✓</span>{c}</span>
           ))}
@@ -561,7 +561,7 @@ function FinalScene(){
       </div>
       <div style={{position:'absolute',left:120,right:120,bottom:90,opacity:ev(localTime,1.6,0.8)}}>
         <div style={{fontFamily:FS,fontStyle:'italic',fontWeight:400,fontSize:30,color:'#9DB0CE',textAlign:'center',lineHeight:1.4}}>
-          « On ne peut pas créer 50 000 médecins en 5 ans. Mais on peut augmenter 600 auxiliaires avec l’IA. Et c’est pour 30 pays. »</div>
+          « On ne peut pas créer 50 000 médecins en 5 ans. Mais on peut augmenter nos auxiliaires de santé avec l’IA. »</div>
       </div>
     </div>
   );
