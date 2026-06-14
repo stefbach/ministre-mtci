@@ -554,7 +554,7 @@ function FinalScene(){
         <div style={{marginTop:34,paddingTop:26,borderTop:'1px solid rgba(255,255,255,0.14)'}}>
           <div style={{fontFamily:FD,fontWeight:700,fontSize:26,color:'#fff'}}>Dr Stéphane Bach</div>
           <div style={{fontFamily:FD,fontWeight:400,fontSize:20,color:C.dim,marginTop:4}}>Fondateur & CEO, Digital Data Solutions Ltd</div>
-          <div style={{fontFamily:FD,fontWeight:500,fontSize:20,color:C.blue,marginTop:4}}>stephane.bach@digital-data-solutions.net</div>
+          <div style={{fontFamily:FD,fontWeight:500,fontSize:20,color:C.blue,marginTop:4}}>sbach@tibok.mu</div>
         </div>
         <div style={{marginTop:24,fontFamily:FD,fontWeight:400,fontSize:19,color:'#D6E0F0',lineHeight:1.6}}>
           Mégane · Stephano · Adi · Rain · Baydon · Suzelle · Summer</div>

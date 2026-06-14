@@ -1554,7 +1554,7 @@
         color: C.blue,
         marginTop: 4
       }
-    }, "stephane.bach@digital-data-solutions.net")), /*#__PURE__*/React.createElement("div", {
+    }, "sbach@tibok.mu")), /*#__PURE__*/React.createElement("div", {
       style: {
         marginTop: 24,
         fontFamily: FD,
