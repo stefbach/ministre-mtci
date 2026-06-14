@@ -173,10 +173,12 @@ function Stat({to, dec=0, prefix='', suffix='', at=0.2, dur=1.5, size=104, color
 function Chip({children, at=0, color=C.txt, tick=true, delay=0}){
   const {localTime}=useScene();
   const p=ev(localTime,at+delay,0.5,Easing.easeOutBack);
+  const k=Math.max(0,localTime-(at+delay));
+  const by=Math.sin(k*0.7+at*3)*3;
   return (
     <div style={{display:'inline-flex',alignItems:'center',gap:12,padding:'12px 22px',
       border:'1px solid rgba(255,255,255,0.16)',background:'rgba(255,255,255,0.05)',borderRadius:999,
-      fontFamily:FD,fontWeight:500,fontSize:22,color:C.txt,opacity:p,transform:`translateY(${(1-p)*14}px) scale(${0.96+0.04*p})`}}>
+      fontFamily:FD,fontWeight:500,fontSize:22,color:C.txt,opacity:p,transform:`translateY(${(1-p)*14+by}px) scale(${0.96+0.04*p})`}}>
       {tick && <span style={{width:22,height:22,borderRadius:11,background:color,color:C.navy,display:'grid',placeItems:'center',fontSize:13,fontWeight:800}}>✓</span>}
       {children}
     </div>
@@ -206,6 +208,30 @@ function Panel({children, at=0, style={}}){
   return <div style={{background:'linear-gradient(160deg,rgba(255,255,255,0.075),rgba(255,255,255,0.025))',border:'1px solid rgba(255,255,255,0.13)',boxShadow:'0 14px 36px rgba(0,0,0,0.34),inset 0 1px 0 rgba(255,255,255,0.06)',
     borderRadius:18,padding:'26px 30px',opacity:p,transform:`translateY(${(1-p)*22}px)`,
     backdropFilter:'blur(2px)',...style}}>{children}</div>;
+}
+
+/* ---------- Card3D — glass card with continuous 3D float + entrance swing ---------- */
+function Card3D({w, at=0, i=0, accent, accentSide='top', minHeight, pad='26px 28px', radius=18, style={}, children}){
+  const {localTime}=useScene();
+  const p=ev(localTime,at,0.7,Easing.easeOutCubic);
+  const k=Math.max(0,localTime-at);
+  const ph=i*1.25;
+  const damp=0.5+0.5*Math.exp(-k*0.12); // livelier on entry, settles to a gentle perpetual drift
+  const ry=Math.sin(k*0.45+ph)*1.6*damp + (1-p)*-16;
+  const rx=Math.cos(k*0.4+ph)*1.0*damp;
+  const by=Math.sin(k*0.58+ph)*3.2*damp;
+  const acc = accent ? (accentSide==='left'?{borderLeft:`3px solid ${accent}`}:{borderTop:`3px solid ${accent}`}) : {};
+  return (
+    <div style={{width:w,minHeight,opacity:p,
+      transform:`perspective(1300px) rotateX(${rx}deg) rotateY(${ry}deg) translateY(${(1-p)*24+by}px) scale(${0.965+0.035*p})`,
+      transformStyle:'preserve-3d',willChange:'transform',
+      background:'linear-gradient(160deg,rgba(255,255,255,0.08),rgba(255,255,255,0.03))',
+      border:'1px solid rgba(255,255,255,0.13)',...acc,
+      boxShadow:'0 18px 44px rgba(0,0,0,0.34),inset 0 1px 0 rgba(255,255,255,0.06)',
+      borderRadius:radius,padding:pad,...style}}>
+      {children}
+    </div>
+  );
 }
 
 /* ---------- Logo ---------- */
@@ -356,5 +382,5 @@ function Hud({actLabel}){
   );
 }
 
-Object.assign(window, { Scene, FX, ActTag, Narration, Statement, Photo, Stat, Chip, Bar, Panel, Hud, Logo, Swan, PhotoTile, FlowSvg, FlowLink, NodeChip, Phone });
+Object.assign(window, { Scene, FX, ActTag, Narration, Statement, Photo, Stat, Chip, Bar, Panel, Card3D, Hud, Logo, Swan, PhotoTile, FlowSvg, FlowLink, NodeChip, Phone });
 })();

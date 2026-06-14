@@ -2,7 +2,7 @@
    Exposes window.SCENES_B. */
 
 (function(){
-const { Scene, FX, ActTag, Narration, Statement, Photo, Stat, Chip, Bar, Panel, Logo, Swan,
+const { Scene, FX, ActTag, Narration, Statement, Photo, Stat, Chip, Bar, Panel, Card3D, Logo, Swan,
         C, FD, FS, Easing, ev, fr, clamp, useScene,
         Flux, Modules, AfricaArc, EcosystemLive, Phone, FlowSvg, FlowLink, NodeChip, PhotoTile } = window;
 
@@ -406,27 +406,27 @@ function DDSOrg(){
       <div style={{position:'absolute',left:100,top:348,width:1090,opacity:ev(localTime,0.55,0.6)}}>
         <div style={{fontFamily:FD,fontWeight:700,fontSize:18,letterSpacing:'0.16em',textTransform:'uppercase',color:C.blue,marginBottom:18}}>Produits IA</div>
         <div style={{display:'flex',gap:22}}>
-          {products.map((p,i)=>{const o=ev(localTime,0.7+i*0.16,0.6,Easing.easeOutCubic);return(
-            <div key={i} style={{flex:1,opacity:o,transform:`translateY(${(1-o)*18}px)`,
-              background:'linear-gradient(160deg,rgba(255,255,255,0.075),rgba(255,255,255,0.025))',border:'1px solid rgba(255,255,255,0.13)',boxShadow:'0 14px 36px rgba(0,0,0,0.34),inset 0 1px 0 rgba(255,255,255,0.06)',borderRadius:16,
-              padding:'28px 22px',minHeight:206,display:'flex',flexDirection:'column',alignItems:'center',justifyContent:'center',gap:20}}>
+          {products.map((p,i)=>(
+            <Card3D key={i} at={0.7+i*0.16} i={i} minHeight={206} pad="28px 22px" radius={16}
+              style={{flex:1,display:'flex',flexDirection:'column',alignItems:'center',justifyContent:'center',gap:20}}>
               <div style={{height:52,display:'flex',alignItems:'center'}}><Logo name={p[0]} w={p[0]==='axon'?170:p[0]==='tibok'?150:210} intro={false} style={{position:'static'}}/></div>
               <div style={{fontFamily:FD,fontWeight:400,fontSize:18,color:C.dim,textAlign:'center',lineHeight:1.35}}>{p[1]}</div>
-            </div>
-          );})}
+            </Card3D>
+          ))}
         </div>
       </div>
       <div style={{position:'absolute',left:1240,top:348,width:580,opacity:ev(localTime,1.05,0.6)}}>
         <div style={{fontFamily:FD,fontWeight:700,fontSize:18,letterSpacing:'0.16em',textTransform:'uppercase',color:C.gold,marginBottom:18}}>Activités connexes</div>
         <div style={{display:'flex',flexDirection:'column',gap:18}}>
-          <div style={{background:'linear-gradient(160deg,rgba(255,255,255,0.075),rgba(255,255,255,0.025))',border:'1px solid rgba(255,255,255,0.13)',boxShadow:'0 14px 36px rgba(0,0,0,0.34),inset 0 1px 0 rgba(255,255,255,0.06)',borderRadius:16,padding:'16px 24px',display:'flex',alignItems:'center',gap:18,minHeight:96}}>
+          <Card3D at={1.1} i={1} minHeight={96} pad="16px 24px" radius={16} style={{display:'flex',alignItems:'center',gap:18}}>
             <Logo name="obesity" w={200} intro={false} style={{position:'static'}}/>
             <div style={{fontFamily:FD,fontWeight:400,fontSize:16,color:C.dim,lineHeight:1.3}}>Chirurgie bariatrique · NHS S2</div>
-          </div>
-          <div style={{background:'rgba(224,169,59,0.08)',border:'1px solid rgba(224,169,59,0.3)',borderRadius:16,padding:'18px 24px',minHeight:96}}>
+          </Card3D>
+          <Card3D at={1.25} i={3} accent={C.gold} minHeight={96} pad="18px 24px" radius={16}
+            style={{background:'rgba(224,169,59,0.08)',border:'1px solid rgba(224,169,59,0.3)'}}>
             <div style={{fontFamily:FD,fontWeight:800,fontSize:24,color:C.gold}}>CVMI · Cap-Vert</div>
             <div style={{fontFamily:FD,fontWeight:400,fontSize:16,color:C.dim,marginTop:6,lineHeight:1.3}}>Tourisme médical — prévention des maladies chroniques + tourisme</div>
-          </div>
+          </Card3D>
         </div>
       </div>
     </div>
@@ -482,27 +482,21 @@ function Ratios(){
 }
 
 function MiniPanel({p,i,color}){
-  const {localTime}=useScene();
-  const o=ev(localTime,0.4+i*0.18,0.6,Easing.easeOutCubic);
   return (
-    <div style={{width:400,opacity:o,transform:`translateY(${(1-o)*20}px)`,
-      background:'linear-gradient(160deg,rgba(255,255,255,0.075),rgba(255,255,255,0.025))',border:'1px solid rgba(255,255,255,0.13)',boxShadow:'0 14px 36px rgba(0,0,0,0.34),inset 0 1px 0 rgba(255,255,255,0.06)',borderRadius:16,padding:'26px 28px',minHeight:180}}>
+    <Card3D w={400} at={0.4+i*0.18} i={i} minHeight={180} pad="26px 28px" radius={16}>
       <div style={{fontFamily:FD,fontWeight:700,fontSize:28,color:color||'#fff'}}>{p[0]}</div>
       <div style={{fontFamily:FD,fontWeight:400,fontSize:21,color:C.dim,marginTop:14,lineHeight:1.4}}>{p[1]}</div>
-    </div>
+    </Card3D>
   );
 }
 
 function NumPanel({p,i}){
-  const {localTime}=useScene();
-  const o=ev(localTime,0.4+i*0.2,0.6,Easing.easeOutCubic);
   return (
-    <div style={{width:430,opacity:o,transform:`translateY(${(1-o)*22}px)`,
-      background:'linear-gradient(160deg,rgba(255,255,255,0.075),rgba(255,255,255,0.025))',border:'1px solid rgba(255,255,255,0.13)',boxShadow:'0 14px 36px rgba(0,0,0,0.34),inset 0 1px 0 rgba(255,255,255,0.06)',borderRadius:16,padding:'28px 30px',minHeight:210}}>
+    <Card3D w={430} at={0.4+i*0.2} i={i} accent={C.blue} minHeight={210} pad="28px 30px" radius={16}>
       <div style={{fontFamily:FD,fontWeight:700,fontSize:40,color:C.blue}}>{p[0]}</div>
       <div style={{fontFamily:FD,fontWeight:700,fontSize:26,color:'#fff',marginTop:12}}>{p[1]}</div>
       <div style={{fontFamily:FD,fontWeight:400,fontSize:19,color:C.dim,marginTop:10,lineHeight:1.4}}>{p[2]}</div>
-    </div>
+    </Card3D>
   );
 }
 
@@ -513,9 +507,8 @@ function AskCards(){
   const W=520,gap=30,total=a.length*W+(a.length-1)*gap,sx=(1920-total)/2;
   return (
     <div style={{position:'absolute',inset:0}}>
-      {a.map((c,i)=>{const p=ev(localTime,0.5+i*0.3,0.6,Easing.easeOutCubic);const x=sx+i*(W+gap);return(
-        <div key={i} style={{position:'absolute',left:x,top:330,width:W,opacity:p,transform:`translateY(${(1-p)*26}px)`,
-          background:'linear-gradient(160deg,rgba(255,255,255,0.075),rgba(255,255,255,0.025))',border:'1px solid rgba(255,255,255,0.13)',boxShadow:'0 14px 36px rgba(0,0,0,0.34),inset 0 1px 0 rgba(255,255,255,0.06)',borderTop:`4px solid ${c[4]}`,borderRadius:18,padding:'28px 32px'}}>
+      {a.map((c,i)=>{const x=sx+i*(W+gap);return(
+        <Card3D key={i} w={W} at={0.5+i*0.3} i={i} accent={c[4]} pad="28px 32px" style={{position:'absolute',left:x,top:330}}>
           <div style={{fontFamily:FD,fontWeight:800,fontSize:38,color:'#fff'}}>{c[0]}</div>
           <div style={{fontFamily:FD,fontWeight:600,fontSize:16,letterSpacing:'0.08em',textTransform:'uppercase',color:C.dim,marginTop:4}}>{c[1]}</div>
           <div style={{fontFamily:FD,fontWeight:500,fontSize:22,color:C.txt,marginTop:18,lineHeight:1.35}}>{c[2]}</div>
@@ -525,7 +518,7 @@ function AskCards(){
                 <span style={{width:7,height:7,borderRadius:4,background:c[4],marginTop:9,flex:'none'}}/>{li}</div>
             ))}
           </div>
-        </div>
+        </Card3D>
       );})}
     </div>
   );
@@ -580,16 +573,16 @@ function Benefits(){
   const gap=20,W=460;
   return (
     <div style={{position:'absolute',top:336,left:0,right:0,display:'flex',flexWrap:'wrap',gap:gap,justifyContent:'center',maxWidth:1480,marginLeft:'auto',marginRight:'auto'}}>
-      {b.map((m,i)=>{const p=ev(localTime,0.3+i*0.12,0.6,Easing.easeOutCubic);return(
-        <div key={i} style={{width:W,opacity:p,transform:`translateY(${(1-p)*18}px)`,
-          background:'linear-gradient(160deg,rgba(255,255,255,0.075),rgba(255,255,255,0.025))',border:'1px solid rgba(255,255,255,0.13)',boxShadow:'0 14px 36px rgba(0,0,0,0.34),inset 0 1px 0 rgba(255,255,255,0.06)',borderRadius:16,padding:'24px 28px',minHeight:148,display:'flex',gap:18,alignItems:'flex-start'}}>
+      {b.map((m,i)=>(
+        <Card3D key={i} w={W} at={0.3+i*0.12} i={i} accent={m[2]} accentSide="left" minHeight={148} pad="24px 28px" radius={16}
+          style={{display:'flex',gap:18,alignItems:'flex-start'}}>
           <span style={{width:30,height:30,borderRadius:15,background:m[2],color:C.navy,display:'grid',placeItems:'center',fontSize:15,fontWeight:800,flex:'none',marginTop:2}}>✓</span>
           <div>
             <div style={{fontFamily:FD,fontWeight:700,fontSize:25,color:'#fff'}}>{m[0]}</div>
             <div style={{fontFamily:FD,fontWeight:400,fontSize:18,color:C.dim,marginTop:7,lineHeight:1.35}}>{m[1]}</div>
           </div>
-        </div>
-      );})}
+        </Card3D>
+      ))}
     </div>
   );
 }
@@ -619,14 +612,11 @@ function TibokHub(){
 }
 
 function DimCard({p,i}){
-  const {localTime}=useScene();
-  const o=ev(localTime,0.4+i*0.2,0.6,Easing.easeOutCubic);
   return (
-    <div style={{width:470,opacity:o,transform:`translateY(${(1-o)*22}px)`,
-      background:'linear-gradient(160deg,rgba(255,255,255,0.075),rgba(255,255,255,0.025))',border:'1px solid rgba(255,255,255,0.13)',boxShadow:'0 14px 36px rgba(0,0,0,0.34),inset 0 1px 0 rgba(255,255,255,0.06)',borderTop:`4px solid ${p[2]}`,borderRadius:18,padding:'30px 32px',minHeight:236}}>
+    <Card3D w={470} at={0.4+i*0.2} i={i} accent={p[2]} minHeight={236} pad="30px 32px">
       <div style={{fontFamily:FD,fontWeight:800,fontSize:29,color:p[2]}}>{p[0]}</div>
       <div style={{fontFamily:FD,fontWeight:400,fontSize:22,color:C.dim,marginTop:16,lineHeight:1.42}}>{p[1]}</div>
-    </div>
+    </Card3D>
   );
 }
 
