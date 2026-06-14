@@ -569,7 +569,7 @@ function FinalScene(){
       </div>
       <div style={{position:'absolute',left:120,right:120,bottom:90,opacity:ev(localTime,1.6,0.8)}}>
         <div style={{fontFamily:FS,fontStyle:'italic',fontWeight:400,fontSize:30,color:'#9DB0CE',textAlign:'center',lineHeight:1.4}}>
-          « On ne peut pas créer 50 000 médecins en 5 ans. Mais on peut augmenter nos auxiliaires de santé avec l’IA. »</div>
+          « On ne peut pas créer 50 000 médecins en 5 ans. Mais on peut augmenter nos auxiliaires de santé — et nos médecins — avec l’IA. On gagne du temps médecin : des médecins augmentés, plus intelligents, plus justes, toujours à jour — en permanence, selon les dernières avancées. »</div>
       </div>
     </div>
   );

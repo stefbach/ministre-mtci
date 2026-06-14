@@ -1617,7 +1617,7 @@
         textAlign: 'center',
         lineHeight: 1.4
       }
-    }, "\xAB On ne peut pas cr\xE9er 50 000 m\xE9decins en 5 ans. Mais on peut augmenter nos auxiliaires de sant\xE9 avec l\u2019IA. \xBB")));
+    }, "\xAB On ne peut pas cr\xE9er 50 000 m\xE9decins en 5 ans. Mais on peut augmenter nos auxiliaires de sant\xE9 \u2014 et nos m\xE9decins \u2014 avec l\u2019IA. On gagne du temps m\xE9decin : des m\xE9decins augment\xE9s, plus intelligents, plus justes, toujours \xE0 jour \u2014 en permanence, selon les derni\xE8res avanc\xE9es. \xBB")));
   }
   function Benefits() {
     const {

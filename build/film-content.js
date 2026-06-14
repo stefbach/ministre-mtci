@@ -811,7 +811,7 @@
       h: 690,
       objPos: "50% 20%"
     }), /*#__PURE__*/React.createElement(Narration, {
-      lines: ['« Monsieur le Ministre,', 'je m’appelle Stéphane Bach. Je suis médecin.', 'Depuis 2019, je ne suis pas à Maurice', 'pour faire une startup.', 'Je suis venu construire une infrastructure', 'de santé souveraine — pour 30 pays africains.', 'Avant de vous montrer les produits,', 'il faut que vous sachiez qui je suis. »'],
+      lines: ['« Monsieur le Ministre,', 'je m’appelle Stéphane Bach. Je suis médecin.', 'Depuis 2019, je ne suis pas à Maurice', 'pour faire une startup.', 'Je suis venu construire une infrastructure', 'de santé souveraine — pour 30 pays africains.', 'Je me suis plongé dans l’IA dès le départ —', 'il y a quatre, cinq ans. J’ai grandi seul en compétence,', 'j’ai évolué avec l’IA : ses différents modèles,', 'ses différentes fonctionnalités.', 'Avant de vous montrer les produits,', 'il faut que vous sachiez qui je suis. »'],
       x: 770,
       width: 1030,
       align: "left",
