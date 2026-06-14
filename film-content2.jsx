@@ -240,6 +240,8 @@ const SCENES_B = [
 { dur:28, hue:'blue', node:(<React.Fragment>
   <ActTag act="Acte 6" title="La preuve de concept — Flacq"/>
   <Statement x={120} y={200} size={62} weight={700} lines={['Si ça marche à Flacq,','ça marche au national.']} accentIdx={[1]} accentColor={C.blue}/>
+  <PhotoTile src="assets/people/flacq-centre.jpg" x={1150} y={150} w={620} h={250} at={0.4}
+    color={C.blue} objPos="50% 58%" label="Flacq · centre de santé public" sub="4 AHC + 24 CHC + 1 hôpital régional — zéro capex"/>
   <div style={{position:'absolute',top:430,left:0,right:0,display:'flex',justifyContent:'center',gap:24}}>
     {[['01','Représentativité','170 000 habitants · 13,5 % de Maurice · mix rural/urbain'],
       ['02','Infrastructure existante','4 AHC + 24 CHC + 1 hôpital régional · zéro capex'],
@@ -269,11 +271,16 @@ const SCENES_B = [
     <Chip at={0.62} color={C.blue}>Zone de Flacq — 170 000 habitants</Chip>
     <Chip at={0.74} color={C.teal}>Mix rural & ville — représentatif</Chip>
   </div>
-  <div style={{position:'absolute',top:540,left:0,right:0,display:'flex',justifyContent:'center',gap:22}}>
+  <PhotoTile src="assets/people/patient-app.jpg" x={1228} y={538} w={562} h={296} at={0.7}
+    color={C.blue} objPos="50% 42%" label="Dossier patient · application" sub="Sur le mobile du patient, aux couleurs de l’État"/>
+  <div style={{position:'absolute',top:546,left:120,width:1040,display:'flex',flexDirection:'column',gap:16}}>
     {[['Besoins minimes','Une connexion internet · un ordinateur connecté',C.teal],
       ['Dossier patient','Accessible via l’application, sur le mobile du patient',C.blue],
       ['Aux couleurs de l’État','TIBOK brandé aux couleurs du gouvernement',C.gold]].map((p,i)=>(
-      <DimCard key={i} p={p} i={i}/>
+      <Card3D key={i} at={0.5+i*0.15} i={i} accent={p[2]} accentSide="left" pad="16px 26px" radius={14}>
+        <div style={{fontFamily:FD,fontWeight:700,fontSize:24,color:p[2]}}>{p[0]}</div>
+        <div style={{fontFamily:FD,fontWeight:400,fontSize:18,color:C.dim,marginTop:6,lineHeight:1.35}}>{p[1]}</div>
+      </Card3D>
     ))}
   </div>
   <Narration lines={[

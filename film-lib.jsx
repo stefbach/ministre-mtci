@@ -52,6 +52,15 @@ function FX({hue='blue', intensity=0.5}){
         background:`radial-gradient(48% 48% at ${gx}% ${gy}%, rgba(${col},${0.24*intensity}) 0%, rgba(${col},0) 60%)`}}/>
       <div style={{position:'absolute',inset:'-25%',
         background:`radial-gradient(40% 40% at ${hx}% ${hy}%, rgba(${col},${0.1*intensity}) 0%, rgba(${col},0) 60%)`}}/>
+      {Array.from({length:22}).map((_,i)=>{
+        const sx=(i*67)%100, sy=(i*139)%100;
+        const px=sx+Math.sin(t*0.06+i)*1.4;
+        const py=((sy - t*0.55 + i*7)%100+100)%100;
+        const tw=0.28+0.42*Math.abs(Math.sin(t*0.5+i*1.3));
+        const sz=1+(i%3);
+        return <div key={i} style={{position:'absolute',left:px+'%',top:py+'%',width:sz,height:sz,borderRadius:sz,
+          background:`rgba(${col},${tw*intensity})`,boxShadow:`0 0 ${4*sz}px rgba(${col},${0.5*tw*intensity})`}}/>;
+      })}
       <div style={{position:'absolute',inset:0,
         background:'radial-gradient(120% 120% at 50% 120%, rgba(0,0,0,0.34) 0%, rgba(0,0,0,0) 55%)'}}/>
       <div style={{position:'absolute',inset:0,boxShadow:'inset 0 0 240px rgba(0,0,0,0.55)'}}/>
