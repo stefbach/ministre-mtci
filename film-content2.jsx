@@ -266,7 +266,11 @@ const SCENES_B = [
     <div style={{fontSize:52,color:C.dim}}>→</div>
     <Stat to={500000} prefix="" suffix="+" size={120} color={C.blue} label="Consultations couvertes" align="center" at={0.5}/>
   </div>
-  <div style={{position:'absolute',top:410,left:0,right:0,display:'flex',justifyContent:'center',gap:16}}>
+  <div style={{position:'absolute',top:360,left:0,right:0,textAlign:'center'}}>
+    <div style={{fontFamily:FD,fontWeight:400,fontSize:19,lineHeight:1.4,color:C.dim,maxWidth:1480,margin:'0 auto'}}>
+      Toutes les consultations — présentiel et distanciel, urgences, centres de santé et dispensaires — partout où opère la medical intelligence, et l’usage de tous les modules : labo · radio · pharmacie.</div>
+  </div>
+  <div style={{position:'absolute',top:438,left:0,right:0,display:'flex',justifyContent:'center',gap:16}}>
     <Chip at={0.5} color={C.gold}>Pilote 6 mois</Chip>
     <Chip at={0.62} color={C.blue}>Zone de Flacq — 170 000 habitants</Chip>
     <Chip at={0.74} color={C.teal}>Mix rural & ville — représentatif</Chip>

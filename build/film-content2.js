@@ -640,7 +640,25 @@
     })), /*#__PURE__*/React.createElement("div", {
       style: {
         position: 'absolute',
-        top: 410,
+        top: 360,
+        left: 0,
+        right: 0,
+        textAlign: 'center'
+      }
+    }, /*#__PURE__*/React.createElement("div", {
+      style: {
+        fontFamily: FD,
+        fontWeight: 400,
+        fontSize: 19,
+        lineHeight: 1.4,
+        color: C.dim,
+        maxWidth: 1480,
+        margin: '0 auto'
+      }
+    }, "Toutes les consultations \u2014 pr\xE9sentiel et distanciel, urgences, centres de sant\xE9 et dispensaires \u2014 partout o\xF9 op\xE8re la medical intelligence, et l\u2019usage de tous les modules : labo \xB7 radio \xB7 pharmacie.")), /*#__PURE__*/React.createElement("div", {
+      style: {
+        position: 'absolute',
+        top: 438,
         left: 0,
         right: 0,
         display: 'flex',
