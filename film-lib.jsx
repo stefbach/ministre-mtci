@@ -10,7 +10,7 @@ const C = {
   paper:'#F4F1EA', card:'#10254A',
   blue:'#3B83E8', blueDeep:'#1A5FC8', teal:'#27B0BE', gold:'#E0A93B',
   green:'#39C08A', coral:'#E0735F',
-  txt:'#EAF1FB', dim:'rgba(200,214,236,0.42)', faint:'rgba(200,214,236,0.16)',
+  txt:'#EAF1FB', dim:'rgba(206,219,240,0.52)', faint:'rgba(200,214,236,0.16)',
 };
 const FD = "'Schibsted Grotesk', sans-serif";
 const FS = "'Newsreader', serif";
@@ -42,14 +42,18 @@ function Scene({children, bg}){
 function FX({hue='blue', intensity=0.5}){
   const t=useTime();
   const gx=50+Math.sin(t*0.18)*14, gy=38+Math.cos(t*0.13)*10;
-  const col = hue==='gold' ? '224,169,59' : hue==='teal' ? '39,176,190' : '59,131,232';
+  const hx=50+Math.cos(t*0.11)*20, hy=64+Math.sin(t*0.09)*12;
+  const map={gold:'224,169,59',teal:'39,176,190',coral:'224,115,95',green:'57,192,138',blue:'59,131,232'};
+  const col=map[hue]||map.blue;
   return (
     <div style={{position:'absolute',inset:0,overflow:'hidden'}}>
-      <div style={{position:'absolute',inset:0,background:C.navy}}/>
+      <div style={{position:'absolute',inset:0,background:`linear-gradient(180deg,#0B1E3C 0%,${C.navy} 58%,#07152A 100%)`}}/>
       <div style={{position:'absolute',inset:'-20%',
-        background:`radial-gradient(48% 48% at ${gx}% ${gy}%, rgba(${col},${0.22*intensity}) 0%, rgba(${col},0) 60%)`}}/>
+        background:`radial-gradient(48% 48% at ${gx}% ${gy}%, rgba(${col},${0.24*intensity}) 0%, rgba(${col},0) 60%)`}}/>
+      <div style={{position:'absolute',inset:'-25%',
+        background:`radial-gradient(40% 40% at ${hx}% ${hy}%, rgba(${col},${0.1*intensity}) 0%, rgba(${col},0) 60%)`}}/>
       <div style={{position:'absolute',inset:0,
-        background:'radial-gradient(120% 120% at 50% 120%, rgba(0,0,0,0.45) 0%, rgba(0,0,0,0) 55%)'}}/>
+        background:'radial-gradient(120% 120% at 50% 120%, rgba(0,0,0,0.34) 0%, rgba(0,0,0,0) 55%)'}}/>
       <div style={{position:'absolute',inset:0,boxShadow:'inset 0 0 240px rgba(0,0,0,0.55)'}}/>
     </div>
   );
@@ -199,7 +203,7 @@ function Bar({label, value, max, color=C.blue, at=0, w=150, h=320, prefix='', su
 function Panel({children, at=0, style={}}){
   const {localTime}=useScene();
   const p=ev(localTime,at,0.6,Easing.easeOutCubic);
-  return <div style={{background:'rgba(255,255,255,0.05)',border:'1px solid rgba(255,255,255,0.12)',
+  return <div style={{background:'linear-gradient(160deg,rgba(255,255,255,0.075),rgba(255,255,255,0.025))',border:'1px solid rgba(255,255,255,0.13)',boxShadow:'0 14px 36px rgba(0,0,0,0.34),inset 0 1px 0 rgba(255,255,255,0.06)',
     borderRadius:18,padding:'26px 30px',opacity:p,transform:`translateY(${(1-p)*22}px)`,
     backdropFilter:'blur(2px)',...style}}>{children}</div>;
 }

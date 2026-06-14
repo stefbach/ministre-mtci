@@ -138,7 +138,7 @@ function Modules(){
     <div style={{position:'absolute',top:230,left:120,right:120,display:'flex',flexWrap:'wrap',gap:gap,justifyContent:'center'}}>
       {mods.map((m,i)=>{const p=ev(localTime,0.3+i*0.07,0.5,Easing.easeOutCubic);return(
         <div key={i} style={{width:W,opacity:p,transform:`translateY(${(1-p)*16}px)`,
-          background:'rgba(255,255,255,0.05)',border:'1px solid rgba(255,255,255,0.12)',borderRadius:14,padding:'18px 24px'}}>
+          background:'linear-gradient(160deg,rgba(255,255,255,0.075),rgba(255,255,255,0.025))',border:'1px solid rgba(255,255,255,0.13)',borderLeft:`3px solid ${m[3]}`,boxShadow:'0 14px 36px rgba(0,0,0,0.34),inset 0 1px 0 rgba(255,255,255,0.06)',borderRadius:14,padding:'18px 24px'}}>
           <div style={{fontFamily:FD,fontWeight:700,fontSize:13,letterSpacing:'0.1em',textTransform:'uppercase',color:m[3]}}>{m[0]}</div>
           <div style={{fontFamily:FD,fontWeight:700,fontSize:24,color:'#fff',marginTop:7}}>{m[1]}</div>
           <div style={{fontFamily:FD,fontWeight:400,fontSize:16,color:C.dim,marginTop:5,lineHeight:1.3}}>{m[2]}</div>
