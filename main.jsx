@@ -56,7 +56,8 @@ function VoiceOver({placed}){
     if(!playing || !vo){ if(!a.paused) a.pause(); return; }
     if(s.idx!==idx){ s.idx=idx; a.src=vo.file; try{a.currentTime=0;}catch(e){} }
     const off = time - placed[idx].start;
-    if(Math.abs((a.currentTime||0)-off) > 0.4){ try{ a.currentTime=Math.max(0,off); }catch(e){} }
+    // audio is the master: only resync on a real jump (scrubber seek), not on small frame-drop drift, to avoid clipping words
+    if(Math.abs((a.currentTime||0)-off) > 1.5){ try{ a.currentTime=Math.max(0,off); }catch(e){} }
     if(a.paused){ a.play().catch(()=>{}); }
   });
   const FD=window.FD;

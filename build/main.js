@@ -111,7 +111,8 @@
         } catch (e) {}
       }
       const off = time - placed[idx].start;
-      if (Math.abs((a.currentTime || 0) - off) > 0.4) {
+      // audio is the master: only resync on a real jump (scrubber seek), not on small frame-drop drift, to avoid clipping words
+      if (Math.abs((a.currentTime || 0) - off) > 1.5) {
         try {
           a.currentTime = Math.max(0, off);
         } catch (e) {}

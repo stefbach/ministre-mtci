@@ -87,7 +87,7 @@ function VoiceOver({placed}){
     if(!playing || !vo){ if(!a.paused) a.pause(); return; }
     if(s.idx!==idx){ s.idx=idx; a.src=vo.file; try{a.currentTime=0;}catch(e){} }
     const off = time - placed[idx].start;
-    if(Math.abs((a.currentTime||0)-off) > 0.4){ try{ a.currentTime=Math.max(0,off); }catch(e){} }
+    if(Math.abs((a.currentTime||0)-off) > 1.5){ try{ a.currentTime=Math.max(0,off); }catch(e){} }
     if(a.paused){ a.play().catch(()=>{}); }
   });
   const FD=window.FD;
