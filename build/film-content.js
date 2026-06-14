@@ -987,7 +987,7 @@
       before: "Architecte du b\xE2timent",
       after: "Orchestration d\u2019agents",
       proof: "Infra TIBOK, Lexora & Axon \xB7 99,9 % uptime",
-      lines: ['« Adi construisait des bâtiments, des immeubles.', 'Puis elle a découvert l’IA — et tout a changé.', 'Architecture du bâtiment, architecture IA :', 'c’est un autre monde.', 'Je lui ai dit : apprends, je paie.', 'Maintenant elle orchestre des agents IA', 'qui prennent des décisions complexes.', 'Et demain : des outils IA pour le bâtiment', 'et la construction — ses deux mondes réunis. »']
+      lines: ['« Adi construisait des bâtiments, des immeubles.', 'Puis il a découvert l’IA — et tout a changé.', 'Architecture du bâtiment, architecture IA :', 'c’est un autre monde.', 'Je lui ai dit : apprends, je paie.', 'Maintenant il orchestre des agents IA', 'qui prennent des décisions complexes.', 'Et demain : des outils IA pour le bâtiment', 'et la construction — ses deux mondes réunis. »']
     })
   }, {
     dur: 28,

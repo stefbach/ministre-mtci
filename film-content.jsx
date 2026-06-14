@@ -324,7 +324,7 @@ const SCENES = [
 
 { dur:30, hue:'blue', node:(<PersonScene src={IMG('adi')} objPos="50% 18%" name="Adi" role="Architecte IA Systèmes"
   before="Architecte du bâtiment" after="Orchestration d’agents" proof="Infra TIBOK, Lexora & Axon · 99,9 % uptime"
-  lines={['« Adi construisait des bâtiments, des immeubles.','Puis elle a découvert l’IA — et tout a changé.','Architecture du bâtiment, architecture IA :','c’est un autre monde.','Je lui ai dit : apprends, je paie.','Maintenant elle orchestre des agents IA','qui prennent des décisions complexes.','Et demain : des outils IA pour le bâtiment','et la construction — ses deux mondes réunis. »']}/>)},
+  lines={['« Adi construisait des bâtiments, des immeubles.','Puis il a découvert l’IA — et tout a changé.','Architecture du bâtiment, architecture IA :','c’est un autre monde.','Je lui ai dit : apprends, je paie.','Maintenant il orchestre des agents IA','qui prennent des décisions complexes.','Et demain : des outils IA pour le bâtiment','et la construction — ses deux mondes réunis. »']}/>)},
 
 { dur:28, hue:'blue', node:(<PersonScene src={IMG('baydon')} objPos="50% 16%" name="Baydon" role="Dév. Agents Vocaux IA"
   before="Support backend" after="Voice agents FR & EN" proof="10 000+ appels/mois · 97 % accuracy"
