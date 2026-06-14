@@ -2,7 +2,7 @@
    Exposes window.SCENES_B. */
 
 (function(){
-const { Scene, FX, ActTag, Narration, Statement, Photo, Stat, Chip, Bar, Panel, Logo,
+const { Scene, FX, ActTag, Narration, Statement, Photo, Stat, Chip, Bar, Panel, Logo, Swan,
         C, FD, FS, Easing, ev, fr, clamp, useScene,
         Flux, Modules, AfricaArc } = window;
 
@@ -163,6 +163,7 @@ const SCENES_B = [
 { dur:34, hue:'green', node:(<React.Fragment>
   <ActTag act="Acte 4" title="Swan Assurance — accord signé" color={C.green}/>
   <Statement x={120} y={150} size={52} weight={700} lines={['Nous venons de signer','avec Swan.']} accentIdx={[1]} accentColor={C.green}/>
+  <Swan h={70} x={1360} y={150} at={0.5}/>
   <div style={{position:'absolute',top:320,left:0,right:0,display:'flex',justifyContent:'center'}}>
     <Panel at={0.4} style={{maxWidth:1360}}>
       <div style={{fontFamily:FD,fontWeight:600,fontSize:30,color:'#fff',lineHeight:1.4,textAlign:'center'}}>

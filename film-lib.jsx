@@ -212,6 +212,23 @@ function Logo({name, w, x=0, y=0, at=0, intro=true, style={}}){
     opacity:p,transform:`translateY(${(1-p)*14}px)`,...style}}/>;
 }
 
+/* ---------- Swan brand badge (white wordmark on indigo card) ---------- */
+function Swan({h=66, x=0, y=0, at=0, style={}}){
+  const {localTime}=useScene();
+  const p=ev(localTime,at,0.6,Easing.easeOutCubic);
+  return (
+    <div style={{position:'absolute',left:x,top:y,opacity:p,
+      transform:`translateY(${(1-p)*16}px)`,...style}}>
+      <div style={{background:'#3A3A63',borderRadius:Math.round(h*0.3),
+        padding:`${Math.round(h*0.62)}px ${Math.round(h*1.0)}px`,
+        boxShadow:'0 12px 34px rgba(0,0,0,0.38)',display:'inline-block'}}>
+        <span style={{fontFamily:FD,fontWeight:900,fontSize:h,color:'#fff',
+          letterSpacing:'-0.005em',lineHeight:1,display:'block'}}>SWAN</span>
+      </div>
+    </div>
+  );
+}
+
 /* ---------- HUD (persistent wordmark + clock + flag) ---------- */
 function Hud({actLabel}){
   const t=useTime();
@@ -227,5 +244,5 @@ function Hud({actLabel}){
   );
 }
 
-Object.assign(window, { Scene, FX, ActTag, Narration, Statement, Photo, Stat, Chip, Bar, Panel, Hud, Logo });
+Object.assign(window, { Scene, FX, ActTag, Narration, Statement, Photo, Stat, Chip, Bar, Panel, Hud, Logo, Swan });
 })();
