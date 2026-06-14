@@ -67,6 +67,14 @@ function FX({hue='blue', intensity=0.5}){
         return <div key={i} style={{position:'absolute',left:px+'%',top:py+'%',width:sz,height:sz,borderRadius:sz,
           background:`rgba(${col},${tw*intensity})`,boxShadow:`0 0 ${4*sz}px rgba(${col},${0.5*tw*intensity})`}}/>;
       })}
+      {Array.from({length:7}).map((_,i)=>{
+        const fx=(i*43)%100, fy=(i*97)%100;
+        const px=fx+Math.sin(t*0.1+i*2)*3;
+        const py=((fy - t*1.4 + i*13)%100+100)%100;
+        const sz=3+(i%3)*2;
+        return <div key={'f'+i} style={{position:'absolute',left:px+'%',top:py+'%',width:sz,height:sz,borderRadius:sz,
+          background:`rgba(${col},${0.16*intensity})`,filter:'blur(2px)'}}/>;
+      })}
       <div style={{position:'absolute',inset:0,
         background:'radial-gradient(120% 120% at 50% 120%, rgba(0,0,0,0.34) 0%, rgba(0,0,0,0) 55%)'}}/>
       <div style={{position:'absolute',inset:0,boxShadow:'inset 0 0 240px rgba(0,0,0,0.55)'}}/>
