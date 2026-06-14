@@ -38,18 +38,19 @@ function Seeker(){
 // timeline; follows play/pause and the scrubber. Press M to mute/unmute.
 function VoiceOver({placed}){
   const { time, playing } = window.useTimeline();
-  const st = React.useRef({audio:null, idx:-1, muted:false});
+  const [muted, setMuted] = React.useState(false);
+  const st = React.useRef({audio:null, idx:-1});
   React.useEffect(()=>{
     const a = typeof Audio!=='undefined' ? new Audio() : null;
     if(a){ a.preload='auto'; }
     st.current.audio = a;
-    const onKey=(e)=>{ if((e.key==='m'||e.key==='M') && a){ st.current.muted=!st.current.muted; if(st.current.muted) a.pause(); } };
+    const onKey=(e)=>{ if(e.key==='m'||e.key==='M') setMuted(m=>!m); };
     window.addEventListener('keydown', onKey);
     return ()=>{ window.removeEventListener('keydown', onKey); if(a) a.pause(); };
   },[]);
   React.useEffect(()=>{
     const s=st.current, a=s.audio; if(!a) return;
-    if(s.muted){ if(!a.paused) a.pause(); return; }
+    if(muted){ if(!a.paused) a.pause(); return; }
     let idx=-1; for(let i=0;i<placed.length;i++){ if(time>=placed[i].start) idx=i; else break; }
     const vo = (idx>=0 && window.VO) ? window.VO[idx] : null;
     if(!playing || !vo){ if(!a.paused) a.pause(); return; }
@@ -58,7 +59,21 @@ function VoiceOver({placed}){
     if(Math.abs((a.currentTime||0)-off) > 0.4){ try{ a.currentTime=Math.max(0,off); }catch(e){} }
     if(a.paused){ a.play().catch(()=>{}); }
   });
-  return null;
+  const FD=window.FD;
+  return (
+    <div onClick={()=>setMuted(m=>!m)} title="Activer / couper la voix off (M)"
+      style={{position:'absolute',right:48,bottom:128,zIndex:60,pointerEvents:'auto',cursor:'pointer',
+        display:'flex',alignItems:'center',gap:10,padding:'11px 18px',borderRadius:999,
+        background:'rgba(16,30,56,0.85)',border:'1px solid '+(muted?'rgba(255,255,255,0.18)':C.blue),
+        boxShadow:muted?'none':'0 0 18px '+C.blue+'66',backdropFilter:'blur(4px)',
+        fontFamily:FD,fontWeight:600,fontSize:18,color:muted?'rgba(220,230,245,0.7)':'#fff',userSelect:'none'}}>
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M4 9v6h4l5 4V5L8 9H4z" fill="currentColor" stroke="none"/>
+        {muted ? <path d="M16 9l5 6M21 9l-5 6"/> : <path d="M16.5 8.5a5 5 0 0 1 0 7M19 6a8 8 0 0 1 0 12"/>}
+      </svg>
+      {muted ? 'Voix coupée' : 'Voix activée'}
+    </div>
+  );
 }
 
 ReactDOM.createRoot(document.getElementById('root')).render(<Movie/>);
