@@ -3,7 +3,10 @@
 
 (function(){
 const { Scene, FX, ActTag, Narration, Statement, Photo, Stat, Chip, Bar, Panel, Logo,
+        PhotoTile, FlowSvg, FlowLink, NodeChip, Phone,
         C, FD, FS, Easing, ev, fr, clamp, useScene } = window;
+
+const PIMG = (n)=>`assets/people/${n}.jpg`;
 
 const IMG = (n)=>`assets/team/${n}.jpg`;
 
@@ -85,6 +88,31 @@ function Flux(){
           </React.Fragment>
         );
       })}
+    </div>
+  );
+}
+
+/* ===== TIBOK ecosystem, alive: people in action + connected services ===== */
+function EcosystemLive(){
+  const {localTime}=useScene();
+  const cx=960;
+  const glow=0.4+0.6*Math.abs(Math.sin(localTime*1.3));
+  const nodes=[['Labo','◆',660,C.teal],['Radio','◆',860,C.blue],['Pharmacie','◆',1060,C.gold],['Urgence','◆',1260,C.coral]];
+  return (
+    <div style={{position:'absolute',inset:0}}>
+      <FlowSvg>
+        <FlowLink x1={630} y1={350} x2={874} y2={384} color={C.blue} at={0.9}/>
+        <FlowLink x1={1290} y1={350} x2={1046} y2={384} color={C.teal} at={1.0}/>
+        {nodes.map((n,i)=>(<FlowLink key={i} x1={cx} y1={588} x2={n[2]} y2={660} color={n[3]} at={1.4+i*0.12}/>))}
+      </FlowSvg>
+      <PhotoTile src={PIMG('doctor-er')} x={130} y={188} w={500} h={322} at={0.3}
+        color={C.blue} objPos="48% 50%" label="Médecin · Urgences" sub="Consultation augmentée par TIBOK"/>
+      <PhotoTile src={PIMG('nurse-center')} x={1290} y={188} w={500} h={322} at={0.5}
+        color={C.teal} objPos="50% 38%" label="Auxiliaire de santé" sub="Recueil structuré au centre de santé"/>
+      <div style={{position:'absolute',left:cx,top:384,transform:'translate(-50%,-50%)',width:360,height:360,borderRadius:'50%',
+        background:`radial-gradient(circle, ${C.blue}33, transparent 70%)`,opacity:glow,filter:'blur(6px)'}}/>
+      <Phone x={cx-98} y={184} h={400} at={0.7}/>
+      {nodes.map((n,i)=>(<NodeChip key={i} label={n[0]} icon={n[1]} x={n[2]} y={662} color={n[3]} at={1.7+i*0.12}/>))}
     </div>
   );
 }
@@ -363,6 +391,6 @@ function TimelineViz(){
 }
 
 window.SCENES_A = SCENES;
-window.FacesFan = FacesFan; window.Flux=Flux; window.Modules=Modules; window.AfricaArc=AfricaArc;
+window.FacesFan = FacesFan; window.Flux=Flux; window.Modules=Modules; window.AfricaArc=AfricaArc; window.EcosystemLive=EcosystemLive;
 window.PersonScene=PersonScene; window.PCard=PCard; window.TimelineViz=TimelineViz;
 })();

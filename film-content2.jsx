@@ -4,7 +4,7 @@
 (function(){
 const { Scene, FX, ActTag, Narration, Statement, Photo, Stat, Chip, Bar, Panel, Logo, Swan,
         C, FD, FS, Easing, ev, fr, clamp, useScene,
-        Flux, Modules, AfricaArc } = window;
+        Flux, Modules, AfricaArc, EcosystemLive, Phone, FlowSvg, FlowLink, NodeChip, PhotoTile } = window;
 
 const SCENES_B = [
 
@@ -133,7 +133,7 @@ const SCENES_B = [
 
 { dur:32, hue:'blue', node:(<React.Fragment>
   <ActTag act="Acte 4" title="Comment ça marche"/>
-  <Flux/>
+  <EcosystemLive/>
   <Narration lines={[
     '« L’auxiliaire rentre les données.',
     'TIBOK traite avec 60 000 références médicales,',
@@ -142,7 +142,7 @@ const SCENES_B = [
     'Et chaque cas qu’on traite, le système apprend.',
     'Année 1, c’est bon. Année 3, c’est meilleur',
     'que beaucoup de médecins. »']}
-    x={960} width={1500} align="center" y={690} size={34} italic={true}
+    x={960} width={1500} align="center" y={860} size={34} italic={true}
     accent="#EDEFF4" dim="rgba(206,219,240,0.2)" lead={1.6} tail={1.4}/>
 </React.Fragment>)},
 
@@ -596,29 +596,24 @@ function Benefits(){
 
 function TibokHub(){
   const {localTime}=useScene();
-  const nodes=['Distanciel','Présentiel','Pharmacie','Labo','Radio','Urgence','Soins primaires'];
-  const cx=960, cy=560, rx=560, ry=205;
-  const pts=nodes.map((n,i)=>{const ang=(-90 + i*(360/nodes.length))*Math.PI/180;return {n,x:cx+Math.cos(ang)*rx,y:cy+Math.sin(ang)*ry};});
+  const nodes=[['Distanciel',C.blue],['Présentiel',C.blue],['Pharmacie',C.gold],['Labo',C.teal],['Radio',C.blue],['Urgence',C.coral],['Soins primaires',C.teal]];
+  const cx=960, cy=560, rx=600, ry=178;
+  const pts=nodes.map((n,i)=>{const ang=(-90 + i*(360/nodes.length))*Math.PI/180;return {n:n[0],c:n[1],x:cx+Math.cos(ang)*rx,y:cy+Math.sin(ang)*ry};});
+  const pulse=0.5+0.5*Math.sin(localTime*1.6);
   return (
     <div style={{position:'absolute',inset:0}}>
-      <svg width="1920" height="1080" style={{position:'absolute',inset:0}}>
-        {pts.map((pt,i)=>{const p=ev(localTime,0.5+i*0.1,0.5);return(
-          <line key={i} x1={cx} y1={cy} x2={cx+(pt.x-cx)*p} y2={cy+(pt.y-cy)*p} stroke="rgba(59,131,232,0.35)" strokeWidth="2"/>
-        );})}
-      </svg>
-      <div style={{position:'absolute',left:cx,top:cy,transform:'translate(-50%,-50%)',width:236,height:236,borderRadius:'50%',
-        background:'radial-gradient(circle, rgba(59,131,232,0.28), rgba(59,131,232,0.04))',border:'2px solid rgba(59,131,232,0.5)',
-        display:'flex',flexDirection:'column',alignItems:'center',justifyContent:'center',gap:8,
-        opacity:ev(localTime,0.2,0.6),boxShadow:'0 0 70px rgba(59,131,232,0.4)'}}>
+      <FlowSvg>
+        {pts.map((pt,i)=>(<FlowLink key={i} x1={cx} y1={cy} x2={pt.x} y2={pt.y} color={pt.c} at={0.6+i*0.1}/>))}
+      </FlowSvg>
+      <div style={{position:'absolute',left:cx,top:cy,transform:'translate(-50%,-50%)',width:250,height:250,borderRadius:'50%',
+        background:`radial-gradient(circle, ${C.blue}3a, ${C.blue}08)`,border:`2px solid ${C.blue}88`,
+        display:'flex',flexDirection:'column',alignItems:'center',justifyContent:'center',gap:9,
+        opacity:ev(localTime,0.2,0.6),boxShadow:`0 0 ${70+34*pulse}px ${C.blue}55, inset 0 0 40px ${C.blue}22`}}>
         <Logo name="tibok" w={150} intro={false} style={{position:'static'}}/>
         <div style={{fontFamily:FD,fontWeight:700,fontSize:15,color:'#fff'}}>Intelligence médicale</div>
         <div style={{fontFamily:FD,fontWeight:700,fontSize:15,color:C.teal}}>60 000 références</div>
       </div>
-      {pts.map((pt,i)=>{const p=ev(localTime,0.8+i*0.11,0.5,Easing.easeOutBack);return(
-        <div key={i} style={{position:'absolute',left:pt.x,top:pt.y,transform:`translate(-50%,-50%) scale(${0.8+0.2*p})`,opacity:p,
-          padding:'12px 22px',borderRadius:999,background:'rgba(255,255,255,0.06)',border:'1px solid rgba(255,255,255,0.18)',
-          fontFamily:FD,fontWeight:600,fontSize:21,color:'#fff',whiteSpace:'nowrap'}}>{pt.n}</div>
-      );})}
+      {pts.map((pt,i)=>(<NodeChip key={i} label={pt.n} icon="◆" x={pt.x} y={pt.y} color={pt.c} at={0.9+i*0.11}/>))}
     </div>
   );
 }
