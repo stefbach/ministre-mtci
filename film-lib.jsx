@@ -34,8 +34,14 @@ window.envelope=envelope; window.useScene=useScene; window.fr=fr; window.ev=ev;
 
 /* ---------- Scene wrapper: fades whole scene in/out ---------- */
 function Scene({children, bg}){
-  const {o}=useScene();
-  return <div style={{position:'absolute',inset:0,opacity:o, background:bg||'transparent'}}>{children}</div>;
+  const {o, localTime, duration}=useScene();
+  const enter=Easing.easeOutCubic(clamp(localTime/0.7,0,1));
+  const exit=Easing.easeInCubic(clamp((duration-localTime)/0.7,0,1));
+  const scale=1 + (1-enter)*0.035 - (1-exit)*0.02;   // cinematic zoom-in on entry, gentle pull on exit
+  const ty=(1-enter)*16 - (1-exit)*10;
+  return <div style={{position:'absolute',inset:0,opacity:o,
+    transform:`scale(${scale}) translateY(${ty}px)`, transformOrigin:'50% 48%',
+    background:bg||'transparent', willChange:'transform,opacity'}}>{children}</div>;
 }
 
 /* ---------- FX backdrop: subtle drifting glow + vignette ---------- */
