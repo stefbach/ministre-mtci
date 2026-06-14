@@ -279,7 +279,25 @@
     node: /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement(ActTag, {
       act: "Acte 4",
       title: "Comment \xE7a marche"
-    }), /*#__PURE__*/React.createElement(EcosystemLive, null), /*#__PURE__*/React.createElement(Narration, {
+    }), /*#__PURE__*/React.createElement("div", {
+      style: {
+        position: 'absolute',
+        top: 150,
+        left: 0,
+        right: 0,
+        textAlign: 'center'
+      }
+    }, /*#__PURE__*/React.createElement("div", {
+      style: {
+        fontFamily: FD,
+        fontWeight: 500,
+        fontSize: 18,
+        letterSpacing: '0.01em',
+        color: C.dim,
+        maxWidth: 1500,
+        margin: '0 auto'
+      }
+    }, "Toutes les consultations \u2014 pr\xE9sentiel et distanciel, urgences, centres de sant\xE9 et dispensaires \u2014 labo \xB7 radio \xB7 pharmacie")), /*#__PURE__*/React.createElement(EcosystemLive, null), /*#__PURE__*/React.createElement(Narration, {
       lines: ['« L’auxiliaire rentre les données.', 'TIBOK traite avec 60 000 références médicales,', 'ses guidelines, ses algorithmes propriétaires.', 'Une recommandation fondée sur la science.', 'Et chaque cas qu’on traite, le système apprend.', 'Année 1, c’est bon. Année 3, c’est meilleur', 'que beaucoup de médecins. »'],
       x: 960,
       width: 1500,

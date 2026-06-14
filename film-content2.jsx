@@ -133,6 +133,10 @@ const SCENES_B = [
 
 { dur:32, hue:'blue', node:(<React.Fragment>
   <ActTag act="Acte 4" title="Comment ça marche"/>
+  <div style={{position:'absolute',top:150,left:0,right:0,textAlign:'center'}}>
+    <div style={{fontFamily:FD,fontWeight:500,fontSize:18,letterSpacing:'0.01em',color:C.dim,maxWidth:1500,margin:'0 auto'}}>
+      Toutes les consultations — présentiel et distanciel, urgences, centres de santé et dispensaires — labo · radio · pharmacie</div>
+  </div>
   <EcosystemLive/>
   <Narration lines={[
     '« L’auxiliaire rentre les données.',
