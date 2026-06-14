@@ -945,7 +945,7 @@
       accentIdx: [1],
       accentColor: C.blue
     }), /*#__PURE__*/React.createElement(AskCards, null), /*#__PURE__*/React.createElement(Narration, {
-      lines: ['« Deux demandes claires, mesurables, avec timeline.', 'MITCI approuve le grant. Santé héberge et mesure.', 'Zéro dépendance externe —', 'tout repose sur une équipe mauricienne. »'],
+      lines: ['« Deux demandes claires, mesurables, avec timeline.', 'MITCI approuve le grant. Le Ministère de la Santé héberge et mesure.', 'Zéro dépendance externe —', 'tout repose sur une équipe mauricienne. »'],
       x: 960,
       width: 1500,
       align: "center",
@@ -1376,7 +1376,7 @@
     const {
       localTime
     } = useScene();
-    const a = [['MITCI', 'Sponsor & financement', 'Approuver le grant de Rs 5M pour le pilote Flacq', ['Risque nul, réversible', 'Un grant — 4 semaines, pas 12 mois', 'Leader health-tech africain'], C.blue], ['Santé', 'Hébergeur & terrain', 'Accepter TIBOK dans le pilote Flacq', ['4 AHC + 24 CHC · ~500 soignants', 'KPI baseline puis post-pilote', 'Données 100 % propriété de l’État'], C.teal]];
+    const a = [['MITCI', 'Sponsor & financement', 'Approuver le grant de Rs 5M pour le pilote Flacq', ['Risque nul, réversible', 'Un grant — 4 semaines, pas 12 mois', 'Leader health-tech africain'], C.blue], ['Ministère de la Santé', 'Hébergeur & terrain', 'Accepter TIBOK dans le pilote Flacq', ['4 AHC + 24 CHC · ~500 soignants', 'KPI baseline puis post-pilote', 'Données 100 % propriété de l’État'], C.teal]];
     const W = 520,
       gap = 30,
       total = a.length * W + (a.length - 1) * gap,
