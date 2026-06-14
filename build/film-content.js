@@ -1106,7 +1106,7 @@
       align: "center",
       at: 0.6
     })), /*#__PURE__*/React.createElement(Narration, {
-      lines: ['« Aucune n’était ingénieur IA. Mais j’ai investi en elles —', 'du temps, de l’attention, de la patience, la formation.', 'Parce que je crois en elles. Et je crois en Maurice.', 'L’IA n’est pas une menace pour Maurice.', 'C’est une chance — si on investit en nos gens. »'],
+      lines: ['« Aucun n’était ingénieur IA. Mais j’ai investi en eux —', 'du temps, de l’attention, de la patience, la formation.', 'Parce que je crois en eux. Et je crois en Maurice.', 'L’IA n’est pas une menace pour Maurice.', 'C’est une chance — si on investit en nos gens. »'],
       x: 960,
       width: 1500,
       align: "center",

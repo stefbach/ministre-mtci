@@ -359,9 +359,9 @@ const SCENES = [
     <Stat to={0} prefix="" suffix="" size={96} color={C.blue} label="Talent importé" align="center" at={0.6}/>
   </div>
   <Narration lines={[
-    '« Aucune n’était ingénieur IA. Mais j’ai investi en elles —',
+    '« Aucun n’était ingénieur IA. Mais j’ai investi en eux —',
     'du temps, de l’attention, de la patience, la formation.',
-    'Parce que je crois en elles. Et je crois en Maurice.',
+    'Parce que je crois en eux. Et je crois en Maurice.',
     'L’IA n’est pas une menace pour Maurice.',
     'C’est une chance — si on investit en nos gens. »']}
     x={960} width={1500} align="center" y={812} size={36} italic={true}
