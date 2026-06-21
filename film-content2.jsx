@@ -403,6 +403,66 @@ const SCENES_B = [
     accent="#CFE0FA" dim="rgba(206,219,240,0.22)" lead={1.6} tail={1.4}/>
 </React.Fragment>)},
 
+/* ---------- ACT 8 — clôture alignée Budget 2026-2027 ---------- */
+{ dur:30, hue:'blue', node:(<React.Fragment>
+  <ActTag act="Acte 8" title="Aligné sur le Budget 2026-2027"/>
+  <Statement align="center" y={150} size={46} weight={700}
+    lines={['Le Budget 2026-2027 vient d’être voté.','TIBOK l’exécute déjà.']} accentIdx={[1]} accentColor={C.blue}/>
+  <BudgetAlign/>
+  <Narration lines={[
+    '« Le Budget 2026-2027 vient d’être voté.',
+    'Prévention, diabète, détection précoce, télémédecine,',
+    'intelligence artificielle clinique, soins primaires.',
+    'Votre vision n’attend qu’une chose pour devenir concrète.',
+    'Et cette chose existe déjà — elle s’appelle TIBOK.',
+    'Chaque priorité du Budget, TIBOK la coche.',
+    'Notre score de risque — le score BSD, Bach · Sampol · Dignat-Georges —',
+    'est développé avec les professeurs émérites de l’AP des Hôpitaux de Marseille.',
+    'Pas une promesse : un dispositif déjà prêt. »']}
+    x={960} width={1640} align="center" y={930} size={26} italic={true}
+    accent="#EDEFF4" dim="rgba(206,219,240,0.2)" lead={1.6} tail={1.1}/>
+</React.Fragment>)},
+
+{ dur:26, hue:'blue', node:(<React.Fragment>
+  <ActTag act="Acte 8" title="Pourquoi signer"/>
+  <Statement x={120} y={150} size={56} weight={700} lines={['Pourquoi signer.','Maintenant.']} accentIdx={[1]} accentColor={C.blue}/>
+  <div style={{position:'absolute',top:430,left:0,right:0,display:'flex',justifyContent:'center',gap:22}}>
+    {[['Risque plafonné','Rs 5 M — pas un de plus',C.blue],
+      ['Borné','6 mois · une seule région',C.teal],
+      ['Réversible','Vous décidez sur des chiffres réels',C.gold],
+      ['Une preuve','Pas une promesse — des données mauriciennes',C.green]].map((p,i)=>(
+      <MiniPanel key={i} p={p} i={i} color={p[2]}/>
+    ))}
+  </div>
+  <Narration lines={[
+    '« Le risque est minimal, et c’est volontaire.',
+    'Plafonné : cinq millions, pas un de plus.',
+    'Borné : six mois, une seule région.',
+    'Réversible : à la fin, vous décidez — sur des chiffres réels.',
+    'Vous ne pariez pas sur une promesse : vous achetez une preuve.',
+    'C’est la décision la moins risquée pour la santé cette année. »']}
+    x={960} width={1540} align="center" y={870} size={30} italic={true}
+    accent="#EDEFF4" dim="rgba(206,219,240,0.2)" lead={1.6} tail={1.2}/>
+</React.Fragment>)},
+
+{ dur:24, hue:'blue', node:(<React.Fragment>
+  <ActTag act="Acte 8" title="La demande"/>
+  <Statement align="center" y={260} size={72} weight={700} lines={['Donnez-nous six mois','sur Flacq.']} accentIdx={[1]} accentColor={C.blue}/>
+  <div style={{position:'absolute',top:540,left:0,right:0,display:'flex',justifyContent:'center',gap:16}}>
+    <Chip at={0.5} color={C.blue}>Rs 5 M</Chip>
+    <Chip at={0.62} color={C.gold}>6 mois</Chip>
+    <Chip at={0.74} color={C.teal}>Flacq</Chip>
+  </div>
+  <Narration lines={[
+    '« Monsieur le Ministre, le Budget du gouvernement dit :',
+    'prévention, intelligence artificielle, soins primaires.',
+    'TIBOK, c’est exactement cela — fait à Maurice, prêt aujourd’hui.',
+    'Donnez-nous six mois sur Flacq.',
+    'Et laissez les résultats parler. »']}
+    x={960} width={1500} align="center" y={770} size={34} italic={true}
+    accent="#EDEFF4" dim="rgba(206,219,240,0.2)" lead={1.6} tail={1.3}/>
+</React.Fragment>)},
+
 { dur:30, hue:'blue', node:(<FinalScene/>)},
 
 ];
@@ -571,6 +631,32 @@ function FinalScene(){
         <div style={{fontFamily:FS,fontStyle:'italic',fontWeight:400,fontSize:30,color:'#9DB0CE',textAlign:'center',lineHeight:1.4}}>
           « On ne peut pas créer 50 000 médecins en 5 ans. Mais on peut augmenter nos auxiliaires de santé — et nos médecins — avec l’IA. On gagne du temps médecin : des médecins augmentés, plus intelligents, plus justes, toujours à jour — en permanence, selon les dernières avancées. »</div>
       </div>
+    </div>
+  );
+}
+
+function BudgetAlign(){
+  const {localTime}=useScene();
+  const rows=[
+    ['Prévention & diabète — Rs 40 M','SilentCheck : dépistage + suivi dès le 1ᵉʳ mois',C.gold],
+    ['Détection précoce — cardiométabolique','Score BSD validé · stratification du risque',C.teal],
+    ['Télémédecine & parcours de soins','Distance + présentiel, déjà opérationnel',C.blue],
+    ['Healthcare Innovation & AI Unit','IA clinique souveraine, faite à Maurice',C.blue],
+    ['Efficience hospitalière','Désengorgement des urgences',C.teal],
+    ['Vieillissement & 85+ · à domicile','Suivi à distance des patients chroniques',C.gold],
+    ['Réforme du Clinical Trial Act','Score BSD : recherche clinique exportable',C.green],
+  ];
+  return (
+    <div style={{position:'absolute',top:300,left:0,right:0,display:'flex',flexDirection:'column',alignItems:'center',gap:11}}>
+      {rows.map((r,i)=>{const p=ev(localTime,0.5+i*0.22,0.5,Easing.easeOutCubic);const ck=ev(localTime,0.72+i*0.22,0.4,Easing.easeOutBack);return(
+        <div key={i} style={{display:'flex',alignItems:'center',gap:22,width:1480,opacity:p,transform:`translateY(${(1-p)*12}px)`}}>
+          <div style={{flex:'0 0 560px',textAlign:'right',fontFamily:FD,fontWeight:600,fontSize:21,color:C.dim}}>{r[0]}</div>
+          <div style={{flex:'0 0 34px',width:34,height:34,borderRadius:17,background:`${r[2]}26`,border:`1px solid ${r[2]}`,display:'grid',placeItems:'center',color:r[2],fontWeight:800,fontSize:18,transform:`scale(${0.4+0.6*ck})`,boxShadow:`0 0 14px ${r[2]}44`}}>✓</div>
+          <div style={{flex:1,fontFamily:FD,fontWeight:700,fontSize:23,color:'#fff'}}>{r[1]}</div>
+        </div>
+      );})}
+      <div style={{marginTop:14,fontFamily:FD,fontWeight:400,fontSize:15,lineHeight:1.4,color:C.dim,maxWidth:1340,textAlign:'center',opacity:ev(localTime,2.4,0.8)}}>
+        Score BSD — Bach · Sampol · Dignat-Georges. Pr Sampol & Pr Dignat-Georges, professeurs émérites (AP-HM · INSERM UMR 608 — Physiopathologie de l’Endothélium). Publication en cours.</div>
     </div>
   );
 }
