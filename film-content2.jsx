@@ -410,15 +410,17 @@ const SCENES_B = [
     lines={['Le Budget 2026-2027 vient d’être voté.','TIBOK l’exécute déjà.']} accentIdx={[1]} accentColor={C.blue}/>
   <BudgetAlign/>
   <Narration lines={[
-    '« Le Budget 2026-2027 vient d’être voté.',
+    '« Le Budget 2026-2027 du gouvernement vient d’être voté.',
     'Prévention, diabète, détection précoce, télémédecine,',
-    'intelligence artificielle clinique, soins primaires.',
-    'Votre vision n’attend qu’une chose pour devenir concrète.',
-    'Et cette chose existe déjà — elle s’appelle TIBOK.',
-    'Chaque priorité du Budget, TIBOK la coche.',
-    'Notre score de risque — le score BSD, Bach · Sampol · Dignat-Georges —',
-    'est développé avec les professeurs émérites de l’AP des Hôpitaux de Marseille.',
-    'Pas une promesse : un dispositif déjà prêt. »']}
+    'intelligence artificielle clinique, soins primaires, efficience hospitalière.',
+    'Chacune de ces priorités, TIBOK ne se contente pas d’en parler :',
+    'il l’exécute déjà, sur le terrain.',
+    'La prévention du diabète ? SilentCheck dépiste et suit dès le premier mois.',
+    'La détection précoce ? Notre score de risque — le score BSD,',
+    'Bach, Sampol, Dignat-Georges — développé avec les professeurs émérites',
+    'de l’Assistance Publique des Hôpitaux de Marseille et de l’INSERM.',
+    'La télémédecine, le suivi à domicile des plus de 85 ans : tout est en place.',
+    'Il n’y a rien à construire — seulement un dispositif mûr à activer. »']}
     x={960} width={1640} align="center" y={930} size={26} italic={true}
     accent="#EDEFF4" dim="rgba(206,219,240,0.2)" lead={1.6} tail={1.1}/>
 </React.Fragment>)},
@@ -426,23 +428,31 @@ const SCENES_B = [
 { dur:26, hue:'blue', node:(<React.Fragment>
   <ActTag act="Acte 8" title="Pourquoi signer"/>
   <Statement x={120} y={150} size={56} weight={700} lines={['Pourquoi signer.','Maintenant.']} accentIdx={[1]} accentColor={C.blue}/>
-  <div style={{position:'absolute',top:430,left:0,right:0,display:'flex',justifyContent:'center',gap:22}}>
-    {[['Risque plafonné','Rs 5 M — pas un de plus',C.blue],
-      ['Borné','6 mois · une seule région',C.teal],
-      ['Réversible','Vous décidez sur des chiffres réels',C.gold],
-      ['Une preuve','Pas une promesse — des données mauriciennes',C.green]].map((p,i)=>(
+  <div style={{position:'absolute',top:368,left:0,right:0,display:'flex',flexWrap:'wrap',justifyContent:'center',gap:22,maxWidth:1320,marginLeft:'auto',marginRight:'auto'}}>
+    {[['Risque plafonné','Rs 5 M — pas un de plus, jamais',C.blue],
+      ['Périmètre borné','6 mois, une seule région : Flacq',C.teal],
+      ['Aucun délai','Produit prêt, équipe mobilisable sous 30 jours',C.blue],
+      ['Alignement budgétaire','Exécute des priorités déjà votées',C.gold],
+      ['Souveraineté','IA médicale mauricienne — vitrine régionale',C.teal],
+      ['Réversible — par la preuve','Continuer, étendre ou arrêter sur des chiffres réels',C.green]].map((p,i)=>(
       <MiniPanel key={i} p={p} i={i} color={p[2]}/>
     ))}
   </div>
   <Narration lines={[
-    '« Le risque est minimal, et c’est volontaire.',
-    'Plafonné : cinq millions, pas un de plus.',
-    'Borné : six mois, une seule région.',
-    'Réversible : à la fin, vous décidez — sur des chiffres réels.',
-    'Vous ne pariez pas sur une promesse : vous achetez une preuve.',
-    'C’est la décision la moins risquée pour la santé cette année. »']}
-    x={960} width={1540} align="center" y={870} size={30} italic={true}
-    accent="#EDEFF4" dim="rgba(206,219,240,0.2)" lead={1.6} tail={1.2}/>
+    '« Je sais ce qu’un ministre se demande : quel est le risque ?',
+    'Le risque est minimal, et c’est volontaire.',
+    'C’est plafonné : cinq millions, pas un de plus.',
+    'C’est borné : six mois, une seule région.',
+    'Aucun délai technologique : le produit est prêt,',
+    'l’équipe mobilisable sous trente jours.',
+    'C’est aligné : le pilote exécute des priorités déjà votées.',
+    'C’est souverain : une IA médicale mauricienne,',
+    'adossée à l’excellence académique marseillaise.',
+    'Et c’est réversible : à la fin, vous décidez —',
+    'continuer, étendre ou arrêter — sur des chiffres réels.',
+    'Vous ne pariez pas sur une promesse : vous achetez une preuve. »']}
+    x={960} width={1560} align="center" y={930} size={26} italic={true}
+    accent="#EDEFF4" dim="rgba(206,219,240,0.2)" lead={1.6} tail={1.1}/>
 </React.Fragment>)},
 
 { dur:24, hue:'blue', node:(<React.Fragment>
@@ -463,7 +473,7 @@ const SCENES_B = [
     accent="#EDEFF4" dim="rgba(206,219,240,0.2)" lead={1.6} tail={1.3}/>
 </React.Fragment>)},
 
-{ dur:30, hue:'blue', node:(<FinalScene/>)},
+{ dur:16, hue:'blue', node:(<FinalScene/>)},
 
 ];
 
@@ -626,10 +636,6 @@ function FinalScene(){
         </div>
         <div style={{marginTop:24,fontFamily:FD,fontWeight:400,fontSize:19,color:'#D6E0F0',lineHeight:1.6}}>
           Mégane · Stephano · Adi · Rain · Baydon · Suzelle · Summer</div>
-      </div>
-      <div style={{position:'absolute',left:120,right:120,bottom:90,opacity:ev(localTime,1.6,0.8)}}>
-        <div style={{fontFamily:FS,fontStyle:'italic',fontWeight:400,fontSize:30,color:'#9DB0CE',textAlign:'center',lineHeight:1.4}}>
-          « On ne peut pas créer 50 000 médecins en 5 ans. Mais on peut augmenter nos auxiliaires de santé — et nos médecins — avec l’IA. On gagne du temps médecin : des médecins augmentés, plus intelligents, plus justes, toujours à jour — en permanence, selon les dernières avancées. »</div>
       </div>
     </div>
   );

@@ -998,7 +998,7 @@
       accentIdx: [1],
       accentColor: C.blue
     }), /*#__PURE__*/React.createElement(BudgetAlign, null), /*#__PURE__*/React.createElement(Narration, {
-      lines: ['« Le Budget 2026-2027 vient d’être voté.', 'Prévention, diabète, détection précoce, télémédecine,', 'intelligence artificielle clinique, soins primaires.', 'Votre vision n’attend qu’une chose pour devenir concrète.', 'Et cette chose existe déjà — elle s’appelle TIBOK.', 'Chaque priorité du Budget, TIBOK la coche.', 'Notre score de risque — le score BSD, Bach · Sampol · Dignat-Georges —', 'est développé avec les professeurs émérites de l’AP des Hôpitaux de Marseille.', 'Pas une promesse : un dispositif déjà prêt. »'],
+      lines: ['« Le Budget 2026-2027 du gouvernement vient d’être voté.', 'Prévention, diabète, détection précoce, télémédecine,', 'intelligence artificielle clinique, soins primaires, efficience hospitalière.', 'Chacune de ces priorités, TIBOK ne se contente pas d’en parler :', 'il l’exécute déjà, sur le terrain.', 'La prévention du diabète ? SilentCheck dépiste et suit dès le premier mois.', 'La détection précoce ? Notre score de risque — le score BSD,', 'Bach, Sampol, Dignat-Georges — développé avec les professeurs émérites', 'de l’Assistance Publique des Hôpitaux de Marseille et de l’INSERM.', 'La télémédecine, le suivi à domicile des plus de 85 ans : tout est en place.', 'Il n’y a rien à construire — seulement un dispositif mûr à activer. »'],
       x: 960,
       width: 1640,
       align: "center",
@@ -1027,30 +1027,34 @@
     }), /*#__PURE__*/React.createElement("div", {
       style: {
         position: 'absolute',
-        top: 430,
+        top: 368,
         left: 0,
         right: 0,
         display: 'flex',
+        flexWrap: 'wrap',
         justifyContent: 'center',
-        gap: 22
+        gap: 22,
+        maxWidth: 1320,
+        marginLeft: 'auto',
+        marginRight: 'auto'
       }
-    }, [['Risque plafonné', 'Rs 5 M — pas un de plus', C.blue], ['Borné', '6 mois · une seule région', C.teal], ['Réversible', 'Vous décidez sur des chiffres réels', C.gold], ['Une preuve', 'Pas une promesse — des données mauriciennes', C.green]].map((p, i) => /*#__PURE__*/React.createElement(MiniPanel, {
+    }, [['Risque plafonné', 'Rs 5 M — pas un de plus, jamais', C.blue], ['Périmètre borné', '6 mois, une seule région : Flacq', C.teal], ['Aucun délai', 'Produit prêt, équipe mobilisable sous 30 jours', C.blue], ['Alignement budgétaire', 'Exécute des priorités déjà votées', C.gold], ['Souveraineté', 'IA médicale mauricienne — vitrine régionale', C.teal], ['Réversible — par la preuve', 'Continuer, étendre ou arrêter sur des chiffres réels', C.green]].map((p, i) => /*#__PURE__*/React.createElement(MiniPanel, {
       key: i,
       p: p,
       i: i,
       color: p[2]
     }))), /*#__PURE__*/React.createElement(Narration, {
-      lines: ['« Le risque est minimal, et c’est volontaire.', 'Plafonné : cinq millions, pas un de plus.', 'Borné : six mois, une seule région.', 'Réversible : à la fin, vous décidez — sur des chiffres réels.', 'Vous ne pariez pas sur une promesse : vous achetez une preuve.', 'C’est la décision la moins risquée pour la santé cette année. »'],
+      lines: ['« Je sais ce qu’un ministre se demande : quel est le risque ?', 'Le risque est minimal, et c’est volontaire.', 'C’est plafonné : cinq millions, pas un de plus.', 'C’est borné : six mois, une seule région.', 'Aucun délai technologique : le produit est prêt,', 'l’équipe mobilisable sous trente jours.', 'C’est aligné : le pilote exécute des priorités déjà votées.', 'C’est souverain : une IA médicale mauricienne,', 'adossée à l’excellence académique marseillaise.', 'Et c’est réversible : à la fin, vous décidez —', 'continuer, étendre ou arrêter — sur des chiffres réels.', 'Vous ne pariez pas sur une promesse : vous achetez une preuve. »'],
       x: 960,
-      width: 1540,
+      width: 1560,
       align: "center",
-      y: 870,
-      size: 30,
+      y: 930,
+      size: 26,
       italic: true,
       accent: "#EDEFF4",
       dim: "rgba(206,219,240,0.2)",
       lead: 1.6,
-      tail: 1.2
+      tail: 1.1
     }))
   }, {
     dur: 24,
@@ -1099,7 +1103,7 @@
       tail: 1.3
     }))
   }, {
-    dur: 30,
+    dur: 16,
     hue: 'blue',
     node: /*#__PURE__*/React.createElement(FinalScene, null)
   }];
@@ -1715,25 +1719,7 @@
         color: '#D6E0F0',
         lineHeight: 1.6
       }
-    }, "M\xE9gane \xB7 Stephano \xB7 Adi \xB7 Rain \xB7 Baydon \xB7 Suzelle \xB7 Summer")), /*#__PURE__*/React.createElement("div", {
-      style: {
-        position: 'absolute',
-        left: 120,
-        right: 120,
-        bottom: 90,
-        opacity: ev(localTime, 1.6, 0.8)
-      }
-    }, /*#__PURE__*/React.createElement("div", {
-      style: {
-        fontFamily: FS,
-        fontStyle: 'italic',
-        fontWeight: 400,
-        fontSize: 30,
-        color: '#9DB0CE',
-        textAlign: 'center',
-        lineHeight: 1.4
-      }
-    }, "\xAB On ne peut pas cr\xE9er 50 000 m\xE9decins en 5 ans. Mais on peut augmenter nos auxiliaires de sant\xE9 \u2014 et nos m\xE9decins \u2014 avec l\u2019IA. On gagne du temps m\xE9decin : des m\xE9decins augment\xE9s, plus intelligents, plus justes, toujours \xE0 jour \u2014 en permanence, selon les derni\xE8res avanc\xE9es. \xBB")));
+    }, "M\xE9gane \xB7 Stephano \xB7 Adi \xB7 Rain \xB7 Baydon \xB7 Suzelle \xB7 Summer")));
   }
   function BudgetAlign() {
     const {
