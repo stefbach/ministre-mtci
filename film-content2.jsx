@@ -10,108 +10,108 @@ const SCENES_B = [
 
 /* ---------- ACT 3 ---------- */
 { dur:24, hue:'blue', node:(<React.Fragment>
-  <ActTag act="Acte 3" title="DDS, le producteur IA"/>
-  <Statement x={120} y={250} size={70} weight={700} lines={['DDS n’est pas une agence.','C’est un fabricant','de logiciels IA.']} accentIdx={[1,2]} accentColor={C.blue}/>
+  <ActTag act="Act 3" title="DDS, the AI producer"/>
+  <Statement x={120} y={250} size={70} weight={700} lines={['DDS is not an agency.','It is a builder','of AI software.']} accentIdx={[1,2]} accentColor={C.blue}/>
   <Narration lines={[
-    '« Beaucoup disent : AI agency. Ils prennent ChatGPT,',
-    'ils mettent vos données dedans. C’est inutile,',
-    'et ça crée de la dépendance.',
-    'Nous, on fabrique des logiciels — qui tournent',
-    'en production, avec des clients réels qui payent. »']}
+    '"Many call themselves an AI agency. They take ChatGPT,',
+    'they put your data into it. It is useless,',
+    'and it creates dependency.',
+    'We build software — software that runs',
+    'in production, with real, paying clients."']}
     x={960} width={1500} align="center" y={780} size={38} italic={true}
     accent="#EDEFF4" dim="rgba(206,219,240,0.22)" lead={1.4} tail={1.2}/>
 </React.Fragment>)},
 
 { dur:28, hue:'blue', node:(<React.Fragment>
-  <ActTag act="Acte 3" title="Structure & portefeuille"/>
+  <ActTag act="Act 3" title="Structure & portfolio"/>
   <DDSOrg/>
   <Narration lines={[
-    '« DDS est une holding. Trois produits IA en production —',
-    'TIBOK, Lexora, Axon. Chacun a des clients réels.',
-    'Et à côté : des activités connexes —',
-    'Obesity Care Clinic, et CVMI, le tourisme médical au Cap-Vert.',
-    'Un écosystème — pas une agence. »']}
+    '"DDS is a holding company. Three AI products in production —',
+    'TIBOK, Lexora, Axon. Each one has real clients.',
+    'And alongside them: related ventures —',
+    'Obesity Care Clinic, and CVMI, medical tourism in Cabo Verde.',
+    'An ecosystem — not an agency."']}
     x={960} width={1500} align="center" y={888} size={32} italic={true}
     accent="#EDEFF4" dim="rgba(206,219,240,0.22)" lead={1.4} tail={1.2}/>
 </React.Fragment>)},
 
 /* ---------- ACT 4 ---------- */
 { dur:30, hue:'teal', node:(<React.Fragment>
-  <ActTag act="Acte 4" title="Produit 1 — Lexora" color={C.teal}/>
+  <ActTag act="Act 4" title="Product 1 — Lexora" color={C.teal}/>
   <Logo name="lexora" w={300} x={120} y={150} at={0.2}/>
-  <Statement x={120} y={300} size={54} weight={700} lines={['On scanne. On photographie.','La comptabilité se fait seule.']} accentIdx={[1]} accentColor={C.teal}/>
+  <Statement x={120} y={300} size={54} weight={700} lines={['You scan. You photograph.','The accounting does itself.']} accentIdx={[1]} accentColor={C.teal}/>
   <div style={{position:'absolute',top:560,left:0,right:0,display:'flex',justifyContent:'center',gap:22}}>
-    {[['Piloté par des agents IA','Un justificatif scanné ou photographié — et c’est saisi',C.teal],
-      ['Paie & social simplifiés','La paie, le social — sans effort',C.blue],
-      ['Le temps, pas la paperasse','Des heures gagnées chaque semaine',C.gold]].map((p,i)=>(
+    {[['Driven by AI agents','A receipt scanned or photographed — and it is recorded',C.teal],
+      ['Payroll & HR made simple','Payroll, HR — effortless',C.blue],
+      ['Time, not paperwork','Hours saved every week',C.gold]].map((p,i)=>(
       <DimCard key={i} p={p} i={i}/>
     ))}
   </div>
   <Narration lines={[
-    '« Je l’ai créé pour moi d’abord.',
-    'RH en interne, comptabilité en retard,',
-    'pas toujours rigoureuse — je connais le problème.',
-    'Alors j’ai développé des outils pour mes propres entreprises.',
-    'Puis je les ai rendus simples — pour en faire profiter',
-    'le plus grand nombre. C’est ça, Lexora. »']}
+    '"I built it for myself first.',
+    'HR in-house, accounting falling behind,',
+    'not always rigorous — I know the problem.',
+    'So I developed tools for my own companies.',
+    'Then I made them simple — so the greatest number',
+    'could benefit from them. That is Lexora."']}
     x={960} width={1560} align="center" y={905} size={29} italic={true}
     accent="#D8F2F4" dim="rgba(200,230,236,0.2)" lead={1.6} tail={1.1}/>
 </React.Fragment>)},
 
 { dur:32, hue:'teal', node:(<React.Fragment>
-  <ActTag act="Acte 4" title="Produit 2 — Axon AI" color={C.teal}/>
+  <ActTag act="Act 4" title="Product 2 — Axon AI" color={C.teal}/>
   <Logo name="axon" w={210} x={120} y={150} at={0.2}/>
-  <Statement x={120} y={250} size={52} weight={700} lines={['Une équipe d’agents IA.','Vocal, secrétariat, back-office.']} accentIdx={[1]} accentColor={C.teal}/>
+  <Statement x={120} y={250} size={52} weight={700} lines={['A team of AI agents.','Voice, secretarial, back-office.']} accentIdx={[1]} accentColor={C.teal}/>
   <Waveform/>
   <div style={{position:'absolute',top:500,left:0,right:0,display:'flex',justifyContent:'center',gap:24}}>
-    {[['Agent vocal','Appelle & répond — FR · EN · toutes les langues, testé en médical',C.teal],
-      ['Agent administratif','Secrétariat : courriers, emails, agenda',C.blue],
-      ['Tout le back-office','Une équipe d’agents IA multi-service',C.gold]].map((p,i)=>(
+    {[['Voice agent','Calls & answers — FR · EN · every language, tested in medical settings',C.teal],
+      ['Administrative agent','Secretarial: letters, emails, scheduling',C.blue],
+      ['The entire back-office','A multi-service team of AI agents',C.gold]].map((p,i)=>(
       <DimCard key={i} p={p} i={i}/>
     ))}
   </div>
   <Narration lines={[
-    '« Axon, ce n’est pas qu’un agent vocal.',
-    'Il appelle et répond, dans toutes les langues.',
-    'Mais aussi un agent administratif : secrétariat,',
-    'courriers, emails, agenda — toute la gestion du back-office.',
-    'Une véritable équipe d’agents IA multi-service —',
-    'médical, hôtellerie, tourisme, administratif. »']}
+    '"Axon is not just a voice agent.',
+    'It calls and answers, in every language.',
+    'But also an administrative agent: secretarial work,',
+    'letters, emails, scheduling — the entire back-office.',
+    'A true multi-service team of AI agents —',
+    'medical, hospitality, tourism, administrative."']}
     x={960} width={1540} align="center" y={880} size={31} italic={true}
     accent="#D8F2F4" dim="rgba(200,230,236,0.2)" lead={1.6} tail={1.2}/>
 </React.Fragment>)},
 
 { dur:30, hue:'blue', node:(<React.Fragment>
-  <ActTag act="Acte 4" title="Produit phare — TIBOK"/>
+  <ActTag act="Act 4" title="Flagship product — TIBOK"/>
   <Statement x={120} y={190} size={50} weight={700}
-    lines={['L’intelligence médicale','qui relie tout.']} accentIdx={[1]} accentColor={C.blue}/>
+    lines={['The medical intelligence','that connects everything.']} accentIdx={[1]} accentColor={C.blue}/>
   <TibokHub/>
   <Narration lines={[
-    '« TIBOK n’est pas une app de téléconsultation.',
-    'C’est une intelligence médicale qui tourne',
-    'autour de chaque dispositif — distanciel, présentiel,',
-    'pharmacie, labo, radio, urgence, soins primaires.',
-    '60 000 références. En production chez Swan. »']}
+    '"TIBOK is not a teleconsultation app.',
+    'It is a medical intelligence that operates',
+    'around every point of care — remote, in-person,',
+    'pharmacy, lab, radiology, emergency, primary care.',
+    '60 000 references. In production at Swan."']}
     x={960} width={1560} align="center" y={918} size={31} italic={true}
     accent="#EDEFF4" dim="rgba(206,219,240,0.2)" lead={1.6} tail={1.2}/>
 </React.Fragment>)},
 
 { dur:26, hue:'blue', node:(<React.Fragment>
-  <ActTag act="Acte 4" title="TIBOK — trois dimensions"/>
-  <Statement x={120} y={150} size={48} weight={700} lines={['Plus qu’une intelligence médicale.']} accentColor={C.blue}/>
+  <ActTag act="Act 4" title="TIBOK — three dimensions"/>
+  <Statement x={120} y={150} size={48} weight={700} lines={['More than a medical intelligence.']} accentColor={C.blue}/>
   <div style={{position:'absolute',top:340,left:0,right:0,display:'flex',justifyContent:'center',gap:26}}>
-    {[['Intelligence médicale','Décision augmentée · 60 000 références · distance + présentiel',C.blue],
-      ['Prévention — SilentCheck','Dépistage silencieux & détection précoce des risques',C.teal],
-      ['Pilotage — tableau de bord','Temps réel pour le pilote · pilotage RH pour les entreprises',C.gold]].map((p,i)=>(
+    {[['Medical intelligence','Augmented decisions · 60 000 references · remote + in-person',C.blue],
+      ['Prevention — SilentCheck','Silent screening & early detection of risks',C.teal],
+      ['Oversight — dashboard','Real time for the pilot · HR oversight for companies',C.gold]].map((p,i)=>(
       <DimCard key={i} p={p} i={i}/>
     ))}
   </div>
   <Narration lines={[
-    '« TIBOK, ce n’est pas que de l’intelligence médicale.',
-    'C’est aussi de la prévention, avec SilentCheck.',
-    'Et un tableau de bord de pilotage —',
-    'en temps réel pour le projet pilote,',
-    'et en pilotage RH pour les entreprises. »']}
+    '"TIBOK is not only a medical intelligence.',
+    'It is also prevention, with SilentCheck.',
+    'And an oversight dashboard —',
+    'in real time for the pilot project,',
+    'and for HR oversight in companies."']}
     x={960} width={1540} align="center" y={845} size={32} italic={true}
     accent="#EDEFF4" dim="rgba(206,219,240,0.2)" lead={1.6} tail={1.2}/>
 </React.Fragment>)},

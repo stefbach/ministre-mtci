@@ -66,10 +66,10 @@ function FacesFan(){
 /* ===== flux 4 nodes ===== */
 function Flux(){
   const {localTime}=useScene();
-  const steps=[['1','Entrée','Symptômes & constantes saisis par l’auxiliaire',C.blue],
-    ['2','Traitement','RAG · 60 000 références · scores BSD & BMN · le LLM raisonne',C.blue],
-    ['3','Sortie','Recommandation fondée : urgence, bénin, ou prescription + suivi',C.blue],
-    ['4','Le moat','Chaque cas affine l’algorithme — bientôt meilleur que beaucoup de médecins',C.gold]];
+  const steps=[['1','Input','Symptoms & vitals entered by the auxiliary',C.blue],
+    ['2','Processing','RAG · 60 000 references · BSD & BMN scores · the LLM reasons',C.blue],
+    ['3','Output','Evidence-based recommendation: emergency, minor, or prescription + follow-up',C.blue],
+    ['4','The moat','Every case sharpens the algorithm — soon better than many doctors',C.gold]];
   const W=400,gap=40,total=steps.length*W+(steps.length-1)*gap,sx=(1920-total)/2;
   return (
     <div style={{position:'absolute',inset:0}}>
@@ -97,7 +97,7 @@ function EcosystemLive(){
   const {localTime}=useScene();
   const cx=960;
   const glow=0.4+0.6*Math.abs(Math.sin(localTime*1.3));
-  const nodes=[['Labo','◆',660,C.teal],['Radio','◆',860,C.blue],['Pharmacie','◆',1060,C.gold],['Urgence','◆',1260,C.coral]];
+  const nodes=[['Lab','◆',660,C.teal],['Radiology','◆',860,C.blue],['Pharmacy','◆',1060,C.gold],['Emergency','◆',1260,C.coral]];
   return (
     <div style={{position:'absolute',inset:0}}>
       <FlowSvg>
@@ -106,9 +106,9 @@ function EcosystemLive(){
         {nodes.map((n,i)=>(<FlowLink key={i} x1={cx} y1={588} x2={n[2]} y2={660} color={n[3]} at={1.4+i*0.12}/>))}
       </FlowSvg>
       <PhotoTile src={PIMG('doctor-er')} x={130} y={188} w={500} h={322} at={0.3}
-        color={C.blue} objPos="48% 50%" label="Médecin · Urgences" sub="Consultation augmentée par TIBOK"/>
+        color={C.blue} objPos="48% 50%" label="Doctor · Emergency" sub="Consultation augmented by TIBOK"/>
       <PhotoTile src={PIMG('nurse-center')} x={1290} y={188} w={500} h={322} at={0.5}
-        color={C.teal} objPos="50% 38%" label="Auxiliaire de santé" sub="Recueil structuré au centre de santé"/>
+        color={C.teal} objPos="50% 38%" label="Health auxiliary" sub="Structured intake at the health centre"/>
       <div style={{position:'absolute',left:cx,top:384,transform:'translate(-50%,-50%)',width:360,height:360,borderRadius:'50%',
         background:`radial-gradient(circle, ${C.blue}33, transparent 70%)`,opacity:glow,filter:'blur(6px)'}}/>
       <Phone x={cx-98} y={184} h={400} at={0.7}/>
@@ -134,17 +134,17 @@ function Modules(){
     dash:<React.Fragment><rect x="3" y="3" width="18" height="18" rx="2.5"/><path d="M7.5 15.5v-3M12 15.5v-7M16.5 15.5v-4.5"/></React.Fragment>,
   };
   const mods=[
-    ['Consultation','À distance','Téléconsultation vidéo HD — le patient consulté où qu’il soit',C.blue,'video'],
-    ['Consultation','En présentiel','Le cabinet augmenté par l’IA, en face à face',C.blue,'person'],
-    ['Consultation','Normale','Du premier contact au suivi, dossier unique',C.blue,'clip'],
-    ['Consultation','Dermato','Analyse d’images de la peau assistée par l’IA',C.blue,'derma'],
-    ['Connexion','Labo','Résultats d’analyses synchronisés automatiquement',C.teal,'lab'],
-    ['Connexion','Radio','Imagerie médicale intégrée au dossier patient',C.teal,'xray'],
-    ['Connexion','Pharmacie','E-prescription sécurisée, traçable de bout en bout',C.teal,'pill'],
-    ['Suivi','Maladies chroniques','HTA · diabète · poids — suivi continu par WhatsApp',C.gold,'heart'],
-    ['Prévention','SilentCheck','Dépistage silencieux & détection précoce des risques',C.gold,'shield'],
-    ['Urgence','Triage & alerte','Détection précoce et alerte immédiate',C.coral,'alert'],
-    ['Pilotage','Tableau de bord RH','Santé au travail pilotée en temps réel',C.green,'dash'],
+    ['Consultation','Remote','HD video teleconsultation — the patient seen wherever they are',C.blue,'video'],
+    ['Consultation','In-person','The practice augmented by AI, face to face',C.blue,'person'],
+    ['Consultation','Standard','From first contact to follow-up, a single record',C.blue,'clip'],
+    ['Consultation','Dermatology','AI-assisted analysis of skin images',C.blue,'derma'],
+    ['Connection','Lab','Test results synchronised automatically',C.teal,'lab'],
+    ['Connection','Radiology','Medical imaging integrated into the patient record',C.teal,'xray'],
+    ['Connection','Pharmacy','Secure e-prescription, traceable end to end',C.teal,'pill'],
+    ['Follow-up','Chronic diseases','Hypertension · diabetes · weight — continuous follow-up via WhatsApp',C.gold,'heart'],
+    ['Prevention','SilentCheck','Silent screening & early detection of risks',C.gold,'shield'],
+    ['Emergency','Triage & alert','Early detection and immediate alert',C.coral,'alert'],
+    ['Oversight','HR dashboard','Workplace health managed in real time',C.green,'dash'],
   ];
   const gap=18, W=402;
   return (
@@ -172,7 +172,7 @@ function Modules(){
 /* ===== constellation of African countries lighting up ===== */
 function AfricaArc(){
   const {localTime}=useScene();
-  const nodes=[['Maurice',0],['Cabo Verde',1.4],['Sénégal',1.9],['Bénin',2.3],['Ghana',2.7],['Mali',3.4],['Kenya',3.8],['Tanzanie',4.1],['Mozambique',4.4]];
+  const nodes=[['Mauritius',0],['Cabo Verde',1.4],['Senegal',1.9],['Benin',2.3],['Ghana',2.7],['Mali',3.4],['Kenya',3.8],['Tanzania',4.1],['Mozambique',4.4]];
   const cx=960, cy=400, rx=760, ry=200;
   return (
     <div style={{position:'absolute',inset:0}}>
@@ -209,11 +209,11 @@ const SCENES = [
       <img src="assets/logos/mauritius.png" alt="" style={{height:62,display:'block'}}/>
     </div>
     <div style={{lineHeight:1.32,maxWidth:470}}>
-      <div style={{fontFamily:FD,fontWeight:600,fontSize:12.5,letterSpacing:'0.16em',textTransform:'uppercase',color:'rgba(206,219,240,0.5)'}}>Présenté à Messieurs les Ministres</div>
+      <div style={{fontFamily:FD,fontWeight:600,fontSize:12.5,letterSpacing:'0.16em',textTransform:'uppercase',color:'rgba(206,219,240,0.5)'}}>Presented to the Honourable Ministers</div>
       <div style={{fontFamily:FD,fontWeight:700,fontSize:16,color:'#D6E0F0',marginTop:5}}>L’honorable Anil Kumar</div>
-      <div style={{fontFamily:FD,fontWeight:500,fontSize:13.5,color:'#9DB8E6'}}>Ministère de la Santé et du Bien-être</div>
+      <div style={{fontFamily:FD,fontWeight:500,fontSize:13.5,color:'#9DB8E6'}}>Ministry of Health & Wellness</div>
       <div style={{fontFamily:FD,fontWeight:700,fontSize:16,color:'#D6E0F0',marginTop:7}}>Dr Avinash Ramtohul</div>
-      <div style={{fontFamily:FD,fontWeight:500,fontSize:13.5,color:'#9DB8E6'}}>Technologies de l’information, Communication & Innovation</div>
+      <div style={{fontFamily:FD,fontWeight:500,fontSize:13.5,color:'#9DB8E6'}}>Ministry of Technology, Communication & Innovation</div>
     </div>
   </div>
   <img src="assets/logos/tibok.png" alt="TIBOK" style={{position:'absolute',left:120,top:330,height:144}}/>
@@ -222,10 +222,10 @@ const SCENES = [
       <i style={{flex:1,background:'#EA2839'}}/><i style={{flex:1,background:'#1A206D'}}/><i style={{flex:1,background:'#F4C300'}}/><i style={{flex:1,background:'#00A551'}}/>
     </div>
   </div>
-  <Narration lines={['Intelligence médicale souveraine,','construite à Maurice — pour l’Afrique.','','Dr Stéphane Bach · Fondateur & CEO, DDS']} x={130} width={760} align="left" y={640} size={34} weight={500}
+  <Narration lines={['Sovereign medical intelligence,','built in Mauritius — for Africa.','','Dr Stéphane Bach · Founder & CEO, DDS']} x={130} width={760} align="left" y={640} size={34} weight={500}
     accent="#D6E0F0" dim="rgba(206,219,240,0.28)" lead={1.2} tail={1.4}/>
   <div style={{position:'absolute',left:130,bottom:58,display:'flex',alignItems:'center',gap:24}}>
-    <span style={{fontFamily:FD,fontSize:14,fontWeight:600,letterSpacing:'0.14em',textTransform:'uppercase',color:'rgba(206,219,240,0.55)',maxWidth:150,lineHeight:1.3}}>Soutenu depuis février 2026 par</span>
+    <span style={{fontFamily:FD,fontSize:14,fontWeight:600,letterSpacing:'0.14em',textTransform:'uppercase',color:'rgba(206,219,240,0.55)',maxWidth:150,lineHeight:1.3}}>Supported since February 2026 by</span>
     <img src="assets/logos/laturbine.svg" alt="La Turbine" style={{height:54}}/>
     <div style={{width:1,height:44,background:'rgba(255,255,255,0.18)'}}/>
     <img src="assets/logos/mric.avif" alt="MRIC" style={{height:58}}/>
@@ -233,139 +233,139 @@ const SCENES = [
 </React.Fragment>)},
 
 { dur:30, hue:'blue', node:(<React.Fragment>
-  <ActTag act="Acte 1" title="Le fondateur"/>
+  <ActTag act="Act 1" title="The founder"/>
   <Photo src={IMG('bach')} x={120} y={210} w={560} h={690} objPos="50% 20%"/>
   <Narration lines={[
-    '« Messieurs les Ministres,',
-    'je m’appelle Stéphane Bach. Je suis médecin.',
-    'Depuis 2019, je ne suis pas à Maurice',
-    'pour faire une startup.',
-    'Je suis venu construire une infrastructure',
-    'de santé souveraine — pour 30 pays africains.',
-    'Je me suis plongé dans l’IA dès le départ —',
-    'il y a quatre, cinq ans. J’ai grandi seul en compétence,',
-    'j’ai évolué avec l’IA : ses différents modèles,',
-    'ses différentes fonctionnalités.',
-    'Avant de vous montrer les produits,',
-    'il faut que vous sachiez qui je suis. »']}
+    '"Honourable Ministers,',
+    'my name is Stéphane Bach. I am a doctor.',
+    'Since 2019, I have not been in Mauritius',
+    'to build a startup.',
+    'I came to build a sovereign',
+    'health infrastructure — for 30 African countries.',
+    'I dived into AI from the very start —',
+    'four, five years ago. I built my skills on my own,',
+    'I grew alongside AI: its different models,',
+    'its different capabilities.',
+    'Before I show you the products,',
+    'you need to know who I am."']}
     x={770} width={1030} align="left" y={520} size={46} italic={true}
     accent="#FFFFFF" dim="rgba(206,219,240,0.24)" lead={1.2} tail={1.4}/>
 </React.Fragment>)},
 
 { dur:32, hue:'blue', node:(<React.Fragment>
-  <ActTag act="Acte 1" title="Trente ans"/>
+  <ActTag act="Act 1" title="Thirty years"/>
   <TimelineViz/>
   <Narration lines={[
-    '« Trente ans.',
-    'J’ai vu comment les systèmes de santé',
-    'fonctionnent vraiment — pas comme dans les livres.',
-    'J’ai dirigé des cliniques. J’ai géré des budgets.',
-    'J’ai publié des algorithmes avec Aix-Marseille.',
-    'Et j’ai fait deux exits avant ça.',
-    'Ce que vous allez voir n’est pas une promesse —',
-    'c’est 30 ans d’expérience, 5 ans de construction. »']}
+    '"Thirty years.',
+    'I have seen how health systems',
+    'really work — not the way the textbooks describe.',
+    'I have run clinics. I have managed budgets.',
+    'I have published algorithms with Aix-Marseille.',
+    'And I had two exits before that.',
+    'What you are about to see is not a promise —',
+    'it is 30 years of experience, 5 years of building."']}
     x={960} width={1500} align="center" y={812} size={40} italic={true}
     accent="#EDEFF4" dim="rgba(206,219,240,0.22)" lead={1.6} tail={1.4}/>
 </React.Fragment>)},
 
 { dur:30, hue:'gold', node:(<React.Fragment>
-  <ActTag act="Acte 1" title="Engagement Maurice" color={C.gold}/>
+  <ActTag act="Act 1" title="Commitment to Mauritius" color={C.gold}/>
   <div style={{position:'absolute',left:120,top:250,right:120,display:'flex',gap:34}}>
     <Photo src={IMG('bach')} x={120} y={250} w={470} h={560} objPos="50% 22%"/>
   </div>
   <div style={{position:'absolute',left:660,top:300,right:120}}>
-    <Statement x={660} y={300} size={62} lines={['En 2019,','j’ai choisi Maurice.','Pour rester.']} accentIdx={[2]} accentColor={C.gold} weight={700}/>
+    <Statement x={660} y={300} size={62} lines={['In 2019,','I chose Mauritius.','To stay.']} accentIdx={[2]} accentColor={C.gold} weight={700}/>
   </div>
   <Narration lines={[
-    '« Mon fils est mauricien. Ma femme est mauricienne.',
-    'Mes enfants grandiront ici. Ça change tout.',
-    'Ce projet n’est pas un exit strategy —',
-    'c’est une vision long-terme pour Maurice,',
-    'et pour l’Afrique. »']}
+    '"My son is Mauritian. My wife is Mauritian.',
+    'My children will grow up here. That changes everything.',
+    'This project is not an exit strategy —',
+    'it is a long-term vision for Mauritius,',
+    'and for Africa."']}
     x={660} width={1140} align="left" y={730} size={36} italic={true}
     accent="#F2E6CF" dim="rgba(224,210,180,0.26)" lead={1.4} tail={1.3}/>
 </React.Fragment>)},
 
 { dur:24, hue:'blue', node:(<React.Fragment>
   <Statement align="center" y={300} size={104} weight={700}
-    lines={['L’IA redéfinit','les cartes du jeu.']} accentIdx={[1]} accentColor={C.blue}
+    lines={['AI is reshaping','the rules of the game.']} accentIdx={[1]} accentColor={C.blue}
     sub={null}/>
   <Narration lines={[
-    'Les géants du software classique sont lents, lourds —',
-    'ils ne savent pas penser IA.',
-    'La chance de Maurice : repartir de zéro,',
-    'avec des gens ouverts, flexibles, mauriciens.']}
+    'The giants of legacy software are slow, heavy —',
+    'they cannot think in AI.',
+    'Mauritius’s opportunity: to start from scratch,',
+    'with people who are open, flexible, Mauritian.']}
     x={960} width={1500} align="center" y={730} size={40}
     accent="#CFE0FA" dim="rgba(206,219,240,0.22)" lead={1.4} tail={1.2}/>
 </React.Fragment>)},
 
 /* ---------- ACT 2 ---------- */
 { dur:24, hue:'blue', node:(<React.Fragment>
-  <ActTag act="Acte 2" title="L’équipe transformée — le cœur"/>
+  <ActTag act="Act 2" title="The transformed team — the heart"/>
   <Statement align="center" y={300} size={96} weight={700}
-    lines={['Sept Mauriciens.','Aucun n’était ingénieur IA.']} accentIdx={[1]} accentColor={C.blue}/>
+    lines={['Seven Mauritians.','None of them was an AI engineer.']} accentIdx={[1]} accentColor={C.blue}/>
   <Narration lines={[
-    'Ils avaient trois choses : la curiosité,',
-    'la volonté d’apprendre, la confiance dans le futur.',
-    'Moi, j’ai fait une chose simple :',
-    'j’ai investi en eux. J’ai payé leur formation. »']}
+    'They had three things: curiosity,',
+    'the will to learn, faith in the future.',
+    'I did one simple thing:',
+    'I invested in them. I paid for their training."']}
     x={960} width={1500} align="center" y={720} size={40} italic={true}
     accent="#EDEFF4" dim="rgba(206,219,240,0.22)" lead={1.4} tail={1.2}/>
 </React.Fragment>)},
 
 { dur:26, hue:'blue', node:(<React.Fragment>
-  <ActTag act="Acte 2" title="L’équipe"/>
+  <ActTag act="Act 2" title="The team"/>
   <FacesFan/>
   <Narration lines={[
     'Mégane · Stephano · Adi · Rain · Baydon · Suzelle · Summer.',
-    'Aucune expérience IA au départ.',
-    'Formés en 12 mois. Regardez ce qu’ils sont devenus.']}
+    'No AI experience at the start.',
+    'Trained in 12 months. Look at what they have become.']}
     x={960} width={1500} align="center" y={812} size={38}
     accent="#FFFFFF" dim="rgba(206,219,240,0.24)" lead={1.6} tail={1.2}/>
 </React.Fragment>)},
 
-{ dur:28, hue:'blue', node:(<PersonScene src={IMG('megane')} objPos="50% 22%" name="Mégane" role="Développeuse IA Applications"
-  before="Webdev WordPress" after="UI/UX + Claude API" proof="Interfaces TIBOK, Lexora & Axon"
-  lines={['« Mégane était webdéveloppeuse classique.','WordPress, du template. Puis elle a eu','le courage de dire : je veux changer.','J’ai dit : d’accord, mais je paie la formation.','On construit ensemble.','Maintenant elle code l’IA — beau ET intelligent.','C’est rare. Et ça vaut beaucoup. »']}/>)},
+{ dur:28, hue:'blue', node:(<PersonScene src={IMG('megane')} objPos="50% 22%" name="Mégane" role="AI Applications Developer"
+  before="WordPress web dev" after="UI/UX + Claude API" proof="Interfaces for TIBOK, Lexora & Axon"
+  lines={['"Mégane was a traditional web developer.','WordPress, templates. Then she had','the courage to say: I want to change.','I said: all right, but I pay for the training.','We build together.','Now she codes AI — beautiful AND intelligent.','That is rare. And it is worth a great deal."']}/>)},
 
-{ dur:30, hue:'blue', node:(<PersonScene src={IMG('adi')} objPos="50% 18%" name="Adi" role="Architecte IA Systèmes"
-  before="Architecte du bâtiment" after="Orchestration d’agents" proof="Infra TIBOK, Lexora & Axon · 99,9 % uptime"
-  lines={['« Adi construisait des bâtiments, des immeubles.','Puis il a découvert l’IA — et tout a changé.','Architecture du bâtiment, architecture IA :','c’est un autre monde.','Je lui ai dit : apprends, je paie.','Maintenant il orchestre des agents IA','qui prennent des décisions complexes.','Et demain : des outils IA pour le bâtiment','et la construction — ses deux mondes réunis. »']}/>)},
+{ dur:30, hue:'blue', node:(<PersonScene src={IMG('adi')} objPos="50% 18%" name="Adi" role="AI Systems Architect"
+  before="Building architect" after="Agent orchestration" proof="TIBOK, Lexora & Axon infra · 99.9% uptime"
+  lines={['"Adi used to build buildings, towers.','Then he discovered AI — and everything changed.','Building architecture, AI architecture:','it is another world.','I told him: learn, I pay.','Now he orchestrates AI agents','that make complex decisions.','And tomorrow: AI tools for buildings','and construction — his two worlds united."']}/>)},
 
-{ dur:28, hue:'blue', node:(<PersonScene src={IMG('baydon')} objPos="50% 16%" name="Baydon" role="Dév. Agents Vocaux IA"
-  before="Support backend" after="Voice agents FR & EN" proof="10 000+ appels/mois · 97 % accuracy"
-  lines={['« Baydon regardait les limites du classique.','Il a eu l’idée : pourquoi pas automatiser','les appels avec l’IA ?','Je paie ta formation. On apprend ensemble.','Six mois plus tard, il code des agents','qui appellent les patients en français et en anglais.','Ça parle. Ça écoute. Ça comprend. »']}/>)},
+{ dur:28, hue:'blue', node:(<PersonScene src={IMG('baydon')} objPos="50% 16%" name="Baydon" role="AI Voice Agents Developer"
+  before="Backend support" after="Voice agents FR & EN" proof="10 000+ calls/month · 97% accuracy"
+  lines={['"Baydon kept seeing the limits of the old way.','He had the idea: why not automate','calls with AI?','I pay for your training. We learn together.','Six months later, he is coding agents','that call patients in French and in English.','They speak. They listen. They understand."']}/>)},
 
-{ dur:28, hue:'blue', node:(<PersonScene src={IMG('suzelle')} objPos="50% 22%" name="Suzelle" role="Chef de Projet · Automation"
-  before="Gestion admin" after="Orchestration d’agents" proof="Admin DDS 80 % automatisée · 30h/sem gagnées"
-  lines={['« Suzelle voyait : l’admin, c’est répétitif,','ça ne devrait pas être humain. Elle avait raison.','Apprends l’automation avec l’IA. Je paie.','Maintenant elle conçoit comment les agents','font l’admin. Elle les orchestre, les supervise.','DDS tourne presque toute seule. »']}/>)},
+{ dur:28, hue:'blue', node:(<PersonScene src={IMG('suzelle')} objPos="50% 22%" name="Suzelle" role="Project Lead · Automation"
+  before="Admin management" after="Agent orchestration" proof="DDS admin 80% automated · 30h/week saved"
+  lines={['"Suzelle saw it: admin is repetitive,','it should not be done by a human. She was right.','Learn automation with AI. I pay.','Now she designs how the agents','handle the admin. She orchestrates them, supervises them.','DDS runs almost entirely on its own."']}/>)},
 
-{ dur:26, hue:'blue', node:(<PersonScene src={IMG('stephano')} objPos="50% 18%" name="Stephano" role="Concepteur Design IA"
-  before="Graphic designer" after="Design IA-first" proof="Parcours produits — TIBOK, Lexora & Axon"
-  lines={['« Stephano faisait du graphic design.','Logo, branding, le classique.','Puis il a voulu plus.','On a investi en lui. Formation, apprentissage.','Maintenant il pense en IA-first design —','rendre l’IA accessible, visuellement. »']}/>)},
+{ dur:26, hue:'blue', node:(<PersonScene src={IMG('stephano')} objPos="50% 18%" name="Stephano" role="AI Design Lead"
+  before="Graphic designer" after="AI-first design" proof="Product journeys — TIBOK, Lexora & Axon"
+  lines={['"Stephano did graphic design.','Logos, branding, the usual.','Then he wanted more.','We invested in him. Training, learning.','Now he thinks in AI-first design —','making AI accessible, visually."']}/>)},
 
-{ dur:26, hue:'blue', node:(<PersonScene src={IMG('rain')} objPos="50% 18%" name="Rain" role="Conceptrice Prompt IA"
-  before="Service client" after="Prompt engineering" proof="95 % first-contact resolution"
-  lines={['« Rain savait parler aux gens.','Je lui ai dit : le prompt engineering,','c’est parler à l’IA comme on parle aux gens.','Maintenant elle élabore les prompts','de nos agents vocaux —','elle fait que l’IA parle bien. »']}/>)},
+{ dur:26, hue:'blue', node:(<PersonScene src={IMG('rain')} objPos="50% 18%" name="Rain" role="AI Prompt Designer"
+  before="Customer service" after="Prompt engineering" proof="95% first-contact resolution"
+  lines={['"Rain knew how to talk to people.','I told her: prompt engineering','is talking to AI the way you talk to people.','Now she crafts the prompts','for our voice agents —','she makes the AI speak well."']}/>)},
 
-{ dur:26, hue:'blue', node:(<PersonScene src={IMG('summer')} objPos="50% 22%" name="Summer" role="Pilotage IA & Organisation"
-  before="PM classique" after="Orchestration humains + agents" proof="3 produits en parallèle · zéro burnout"
-  lines={['« Summer gérait des projets classiques.','Puis elle a compris :','avec l’IA, c’est pas pareil.','Maintenant elle organise comment','sept personnes font le travail de cent.','Pas du hype. Du réel. »']}/>)},
+{ dur:26, hue:'blue', node:(<PersonScene src={IMG('summer')} objPos="50% 22%" name="Summer" role="AI Operations & Organisation"
+  before="Traditional PM" after="Orchestrating humans + agents" proof="3 products in parallel · zero burnout"
+  lines={['"Summer ran traditional projects.','Then she understood:','with AI, it is not the same.','Now she organises how','seven people do the work of a hundred.','Not hype. Reality."']}/>)},
 
 { dur:30, hue:'gold', node:(<React.Fragment>
-  <ActTag act="Acte 2" title="L’investissement" color={C.gold}/>
-  <Statement x={120} y={210} size={66} weight={700} lines={['Sept personnes + des agents IA.','La force de soixante-dix.']} accentIdx={[1]} accentColor={C.gold}/>
+  <ActTag act="Act 2" title="The investment" color={C.gold}/>
+  <Statement x={120} y={210} size={66} weight={700} lines={['Seven people + AI agents.','The strength of seventy.']} accentIdx={[1]} accentColor={C.gold}/>
   <div style={{position:'absolute',top:430,left:120,right:120,display:'flex',gap:40,justifyContent:'center'}}>
-    <Stat to={15} prefix="×10–" suffix="" size={96} color={C.gold} label="Productivité par personne" align="center"/>
-    <Stat to={12} prefix="" suffix=" mois" size={96} color={C.green} label="Pour devenir experts" align="center" at={0.4}/>
-    <Stat to={0} prefix="" suffix="" size={96} color={C.blue} label="Talent importé" align="center" at={0.6}/>
+    <Stat to={15} prefix="×10–" suffix="" size={96} color={C.gold} label="Productivity per person" align="center"/>
+    <Stat to={12} prefix="" suffix=" months" size={96} color={C.green} label="To become experts" align="center" at={0.4}/>
+    <Stat to={0} prefix="" suffix="" size={96} color={C.blue} label="Imported talent" align="center" at={0.6}/>
   </div>
   <Narration lines={[
-    '« Aucun n’était ingénieur IA. Mais j’ai investi en eux —',
-    'du temps, de l’attention, de la patience, la formation.',
-    'Parce que je crois en eux. Et je crois en Maurice.',
-    'L’IA n’est pas une menace pour Maurice.',
-    'C’est une chance — si on investit en nos gens. »']}
+    '"None of them was an AI engineer. But I invested in them —',
+    'time, attention, patience, training.',
+    'Because I believe in them. And I believe in Mauritius.',
+    'AI is not a threat to Mauritius.',
+    'It is an opportunity — if we invest in our people."']}
     x={960} width={1500} align="center" y={812} size={36} italic={true}
     accent="#F2E6CF" dim="rgba(224,210,180,0.24)" lead={1.6} tail={1.2}/>
 </React.Fragment>)},
@@ -391,10 +391,10 @@ function PCard({t,i}){
 /* timeline viz for act 1 */
 function TimelineViz(){
   const {localTime}=useScene();
-  const ph=[['1993 — 2003','Interne, hôpitaux (France)','Le système public, de l’intérieur'],
-    ['2003 — 2008','Fondateur de cliniques','Gestion opérationnelle & financière'],
-    ['2008 — 2019','Health economist','Classement Le Figaro · 30+ publications'],
-    ['2019 — 2026','Maurice','Fondateur DDS · scores BSD & BMN · TIBOK, Lexora & Axon AI']];
+  const ph=[['1993 — 2003','Resident, hospitals (France)','The public system, from the inside'],
+    ['2003 — 2008','Clinic founder','Operational & financial management'],
+    ['2008 — 2019','Health economist','Le Figaro ranking · 30+ publications'],
+    ['2019 — 2026','Mauritius','DDS founder · BSD & BMN scores · TIBOK, Lexora & Axon AI']];
   const W=380,gap=34,total=ph.length*W+(ph.length-1)*gap,sx=(1920-total)/2,lineY=330;
   const lineP=ev(localTime,0.3,1.4,Easing.easeOutCubic);
   return (
