@@ -117,65 +117,65 @@ const SCENES_B = [
 </React.Fragment>)},
 
 { dur:32, hue:'coral', node:(<React.Fragment>
-  <ActTag act="Acte 4" title="Le problème africain" color={C.coral}/>
+  <ActTag act="Act 4" title="The African problem" color={C.coral}/>
   <Statement x={120} y={170} size={50} weight={700}
-    lines={['On ne peut pas créer 50 000 médecins en 5 ans.','On peut augmenter 600 auxiliaires avec l’IA.']} accentIdx={[1]} accentColor={C.gold}/>
+    lines={['You cannot create 50 000 doctors in 5 years.','You can augment 600 auxiliaries with AI.']} accentIdx={[1]} accentColor={C.gold}/>
   <Ratios/>
   <Narration lines={[
-    '« À Maurice, le ratio médical est l’un des meilleurs d’Afrique.',
-    'Mais l’accès reste inégal — et 600 auxiliaires de santé',
-    'sont sans outils pour décider.',
-    'Ailleurs, c’est un médecin pour 25 000 au Sahel.',
-    'TIBOK augmente l’auxiliaire — il devient praticien. »']}
+    '"In Mauritius, the doctor ratio is one of the best in Africa.',
+    'But access remains uneven — and 600 health auxiliaries',
+    'have no tools to make decisions.',
+    'Elsewhere, it is one doctor for 25 000 in the Sahel.',
+    'TIBOK augments the auxiliary — they become a practitioner."']}
     x={960} width={1500} align="center" y={870} size={34} italic={true}
     accent="#F6DED7" dim="rgba(230,200,192,0.24)" lead={1.6} tail={1.2}/>
 </React.Fragment>)},
 
 { dur:32, hue:'blue', node:(<React.Fragment>
-  <ActTag act="Acte 4" title="Comment ça marche"/>
+  <ActTag act="Act 4" title="How it works"/>
   <div style={{position:'absolute',top:150,left:0,right:0,textAlign:'center'}}>
     <div style={{fontFamily:FD,fontWeight:500,fontSize:18,letterSpacing:'0.01em',color:C.dim,maxWidth:1500,margin:'0 auto'}}>
-      Toutes les consultations — présentiel et distanciel, urgences, centres de santé et dispensaires — labo · radio · pharmacie</div>
+      Every consultation — in-person and remote, emergency, health centres and dispensaries — lab · radiology · pharmacy</div>
   </div>
   <EcosystemLive/>
   <Narration lines={[
-    '« L’auxiliaire rentre les données.',
-    'TIBOK traite avec 60 000 références médicales,',
-    'ses guidelines, ses algorithmes propriétaires.',
-    'Une recommandation fondée sur la science.',
-    'Et chaque cas qu’on traite, le système apprend.',
-    'Année 1, c’est bon. Année 3, c’est meilleur',
-    'que beaucoup de médecins. »']}
+    '"The auxiliary enters the data.',
+    'TIBOK processes it against 60 000 medical references,',
+    'its guidelines, its proprietary algorithms.',
+    'An evidence-based recommendation, grounded in science.',
+    'And with every case it handles, the system learns.',
+    'Year 1, it is good. Year 3, it is better',
+    'than many doctors."']}
     x={960} width={1500} align="center" y={860} size={34} italic={true}
     accent="#EDEFF4" dim="rgba(206,219,240,0.2)" lead={1.6} tail={1.4}/>
 </React.Fragment>)},
 
 { dur:34, hue:'blue', node:(<React.Fragment>
-  <ActTag act="Acte 4" title="Les modules"/>
-  <Statement x={120} y={150} size={46} weight={700} lines={['11 modules.','Un seul système connecté.']} accentIdx={[1]} accentColor={C.blue}/>
+  <ActTag act="Act 4" title="The modules"/>
+  <Statement x={120} y={150} size={46} weight={700} lines={['11 modules.','One single connected system.']} accentIdx={[1]} accentColor={C.blue}/>
   <Modules/>
   <Narration lines={[
-    '« La consultation — à distance, en présentiel, normale,',
-    'chronique, dermato. Les connexions — labo, radio, pharmacie.',
-    'Le suivi des maladies chroniques par WhatsApp :',
-    'tension, diabète, poids. La prévention avec SilentCheck.',
-    'L’urgence, et le tableau de bord RH pour les entreprises. »']}
+    '"Consultation — remote, in-person, standard,',
+    'chronic, dermatology. The connections — lab, radiology, pharmacy.',
+    'Chronic-disease follow-up via WhatsApp:',
+    'blood pressure, diabetes, weight. Prevention with SilentCheck.',
+    'Emergency, and the HR dashboard for companies."']}
     x={960} width={1540} align="center" y={912} size={29} italic={true}
     accent="#EDEFF4" dim="rgba(206,219,240,0.2)" lead={1.6} tail={1.1}/>
 </React.Fragment>)},
 
 { dur:34, hue:'green', node:(<React.Fragment>
-  <ActTag act="Acte 4" title="Swan Assurance — accord signé" color={C.green}/>
-  <Statement x={120} y={150} size={52} weight={700} lines={['Nous venons de signer','avec Swan.']} accentIdx={[1]} accentColor={C.green}/>
+  <ActTag act="Act 4" title="Swan Assurance — agreement signed" color={C.green}/>
+  <Statement x={120} y={150} size={52} weight={700} lines={['We have just signed','with Swan.']} accentIdx={[1]} accentColor={C.green}/>
   <Swan h={70} x={1360} y={150} at={0.5}/>
   <div style={{position:'absolute',top:320,left:0,right:0,display:'flex',justifyContent:'center'}}>
     <Panel at={0.4} style={{maxWidth:1360}}>
       <div style={{fontFamily:FD,fontWeight:600,fontSize:30,color:'#fff',lineHeight:1.4,textAlign:'center'}}>
-        Swan accepte de <span style={{color:C.green,fontWeight:800}}>rembourser</span> les consultations et prescriptions faites sur TIBOK.</div>
+        Swan agrees to <span style={{color:C.green,fontWeight:800}}>reimburse</span> the consultations and prescriptions made on TIBOK.</div>
     </Panel>
   </div>
   <div style={{position:'absolute',top:486,left:0,right:0,textAlign:'center'}}>
-    <div style={{fontFamily:FD,fontWeight:600,fontSize:18,letterSpacing:'0.12em',textTransform:'uppercase',color:C.dim,marginBottom:16}}>Prêts à intégrer le service pour leurs collaborateurs & familles</div>
+    <div style={{fontFamily:FD,fontWeight:600,fontSize:18,letterSpacing:'0.12em',textTransform:'uppercase',color:C.dim,marginBottom:16}}>Ready to roll out the service for their staff & families</div>
     <div style={{display:'flex',justifyContent:'center',gap:14,flexWrap:'wrap',maxWidth:1200,margin:'0 auto'}}>
       <Chip at={0.8} color={C.blue}>ER Group</Chip>
       <Chip at={0.92} color={C.blue}>Taylor Smith</Chip>
@@ -184,107 +184,107 @@ const SCENES_B = [
     </div>
   </div>
   <div style={{position:'absolute',top:636,left:0,right:0,textAlign:'center'}}>
-    <div style={{fontFamily:FD,fontWeight:600,fontSize:18,letterSpacing:'0.12em',textTransform:'uppercase',color:C.dim,marginBottom:16}}>En attente de réponse</div>
+    <div style={{fontFamily:FD,fontWeight:600,fontSize:18,letterSpacing:'0.12em',textTransform:'uppercase',color:C.dim,marginBottom:16}}>Awaiting response</div>
     <div style={{display:'flex',justifyContent:'center',gap:14,flexWrap:'wrap',maxWidth:1000,margin:'0 auto'}}>
       <Chip at={1.3} color={C.gold}>SICOM</Chip>
       <Chip at={1.42} color={C.gold}>NIC</Chip>
       <Chip at={1.54} color={C.gold}>MedSchem</Chip>
-      <Chip at={1.66} color={C.gold}>… et bien d’autres</Chip>
+      <Chip at={1.66} color={C.gold}>… and many more</Chip>
     </div>
   </div>
   <Narration lines={[
-    '« Nous venons de signer avec Swan.',
-    'Et surtout : Swan accepte de rembourser',
-    'les consultations et prescriptions faites sur TIBOK.',
-    'ER Group, Taylor Smith, Alteo, Bank One attendaient ce feu vert.',
-    'Et nous attendons les réponses de la SICOM, du NIC,',
-    'de MedSchem — et de bien d’autres encore. »']}
+    '"We have just signed with Swan.',
+    'And above all: Swan agrees to reimburse',
+    'the consultations and prescriptions made on TIBOK.',
+    'ER Group, Taylor Smith, Alteo and Bank One were waiting for this green light.',
+    'And we await responses from SICOM, NIC,',
+    'MedSchem — and many more still."']}
     x={960} width={1560} align="center" y={912} size={29} italic={true}
     accent="#DDF2E8" dim="rgba(200,230,216,0.2)" lead={1.6} tail={1.1}/>
 </React.Fragment>)},
 
 /* ---------- ACT 5 ---------- */
 { dur:30, hue:'blue', node:(<React.Fragment>
-  <ActTag act="Acte 5" title="Vision régionale africaine"/>
+  <ActTag act="Act 5" title="African regional vision"/>
   <AfricaArc/>
   <div style={{position:'absolute',top:602,left:0,right:0,textAlign:'center'}}>
-    <div style={{fontFamily:FD,fontWeight:700,fontSize:56,letterSpacing:'-0.025em',color:'#fff'}}>Bien plus qu’un marché.</div>
-    <div style={{fontFamily:FD,fontWeight:600,fontSize:30,color:C.blue,marginTop:12}}>Une infrastructure de santé souveraine pour l’Afrique.</div>
+    <div style={{fontFamily:FD,fontWeight:700,fontSize:56,letterSpacing:'-0.025em',color:'#fff'}}>Far more than a market.</div>
+    <div style={{fontFamily:FD,fontWeight:600,fontSize:30,color:C.blue,marginTop:12}}>A sovereign health infrastructure for Africa.</div>
   </div>
   <Narration lines={[
-    '« Maurice est le proof-of-concept.',
-    'Ça marche ici — donc ça marche partout en Afrique.',
-    'Le même problème, partout : pas assez de médecins.',
-    'On n’a pas encore lancé, et je ne vous parlerai pas de chiffres.',
-    'Parce que c’est bien plus que ça : une infrastructure',
-    'de santé souveraine, pour tout un continent. »']}
+    '"Mauritius is the proof of concept.',
+    'It works here — so it works everywhere in Africa.',
+    'The same problem, everywhere: not enough doctors.',
+    'We have not launched yet, and I will not give you figures.',
+    'Because it is far more than that: a sovereign',
+    'health infrastructure, for an entire continent."']}
     x={960} width={1560} align="center" y={912} size={29} italic={true}
     accent="#EDEFF4" dim="rgba(206,219,240,0.2)" lead={1.6} tail={1.1}/>
 </React.Fragment>)},
 
 { dur:24, hue:'gold', node:(<React.Fragment>
-  <ActTag act="Acte 5" title="Soft power & rayonnement" color={C.gold}/>
+  <ActTag act="Act 5" title="Soft power & influence" color={C.gold}/>
   <Statement align="center" y={250} size={64} weight={700}
-    lines={['Maurice, hub health-tech africain.','Pas touristique — technologique.']} accentIdx={[1]} accentColor={C.gold}/>
+    lines={['Mauritius, Africa\'s health-tech hub.','Not tourism — technology.']} accentIdx={[1]} accentColor={C.gold}/>
   <div style={{position:'absolute',top:470,left:0,right:0,display:'flex',justifyContent:'center',gap:24}}>
-    {[['Soft power','Leader de l’innovation africaine'],['Producteur IA','Algorithmes locaux = propriété africaine'],['Emplois & talents','Tech à haute valeur — le talent reste à Maurice']].map((p,i)=>(
+    {[['Soft power','Leader of African innovation'],['AI producer','Local algorithms = African ownership'],['Jobs & talent','High-value tech — the talent stays in Mauritius']].map((p,i)=>(
       <MiniPanel key={i} p={p} i={i} color={C.gold}/>
     ))}
   </div>
   <Narration lines={[
-    '« Ce n’est pas juste un produit de santé.',
-    'C’est une stratégie pour que Maurice soit visible —',
-    'comme leader technologique. La preuve qu’investir',
-    'en ses gens, ça paie. »']}
+    '"This is not just a health product.',
+    'It is a strategy to make Mauritius visible —',
+    'as a technology leader. The proof that investing',
+    'in your people pays off."']}
     x={960} width={1500} align="center" y={840} size={34} italic={true}
     accent="#F2E6CF" dim="rgba(224,210,180,0.22)" lead={1.6} tail={1.2}/>
 </React.Fragment>)},
 
 /* ---------- ACT 6 ---------- */
 { dur:28, hue:'blue', node:(<React.Fragment>
-  <ActTag act="Acte 6" title="La preuve de concept — Flacq"/>
-  <Statement x={120} y={200} size={62} weight={700} lines={['Si ça marche à Flacq,','ça marche au national.']} accentIdx={[1]} accentColor={C.blue}/>
+  <ActTag act="Act 6" title="The proof of concept — Flacq"/>
+  <Statement x={120} y={200} size={62} weight={700} lines={['If it works in Flacq,','it works nationwide.']} accentIdx={[1]} accentColor={C.blue}/>
   <PhotoTile src="assets/people/flacq-centre.jpg" x={1150} y={150} w={620} h={250} at={0.4}
-    color={C.blue} objPos="50% 58%" label="Flacq · centre de santé public" sub="4 AHC + 24 CHC + 1 hôpital régional — zéro capex"/>
+    color={C.blue} objPos="50% 58%" label="Flacq · public health centre" sub="4 AHC + 24 CHC + 1 regional hospital — zero capex"/>
   <div style={{position:'absolute',top:430,left:0,right:0,display:'flex',justifyContent:'center',gap:24}}>
-    {[['01','Représentativité','170 000 habitants · 13,5 % de Maurice · mix rural/urbain'],
-      ['02','Infrastructure existante','4 AHC + 24 CHC + 1 hôpital régional · zéro capex'],
-      ['03','Gestion simple','Ni Port-Louis, ni Rodrigues · pilotable']].map((p,i)=>(
+    {[['01','Representativeness','170 000 inhabitants · 13.5% of Mauritius · rural/urban mix'],
+      ['02','Existing infrastructure','4 AHC + 24 CHC + 1 regional hospital · zero capex'],
+      ['03','Easy to manage','Neither Port-Louis nor Rodrigues · manageable']].map((p,i)=>(
       <NumPanel key={i} p={p} i={i}/>
     ))}
   </div>
   <Narration lines={[
-    '« On fait la preuve de concept à Flacq.',
-    '170 000 habitants, représentatifs.',
-    'L’infrastructure existe déjà. Zéro capex.',
-    'Si ça marche à Flacq, ça marche au national —',
-    'c’est exactement ce qu’on veut prouver. »']}
+    '"We run the proof of concept in Flacq.',
+    '170 000 inhabitants, representative.',
+    'The infrastructure already exists. Zero capex.',
+    'If it works in Flacq, it works nationwide —',
+    'that is exactly what we want to prove."']}
     x={960} width={1500} align="center" y={840} size={34} italic={true}
     accent="#EDEFF4" dim="rgba(206,219,240,0.22)" lead={1.6} tail={1.2}/>
 </React.Fragment>)},
 
 { dur:28, hue:'blue', node:(<React.Fragment>
-  <ActTag act="Acte 6" title="Périmètre & budget — pilote 6 mois"/>
+  <ActTag act="Act 6" title="Scope & budget — 6-month pilot"/>
   <div style={{position:'absolute',top:198,left:0,right:0,display:'flex',justifyContent:'center',gap:80,alignItems:'center'}}>
-    <Stat to={5} prefix="Rs " suffix="M" size={120} color="#fff" label="Budget demandé" align="center"/>
+    <Stat to={5} prefix="Rs " suffix="M" size={120} color="#fff" label="Budget requested" align="center"/>
     <div style={{fontSize:52,color:C.dim}}>→</div>
-    <Stat to={500000} prefix="" suffix="+" size={120} color={C.blue} label="Consultations couvertes" align="center" at={0.5}/>
+    <Stat to={500000} prefix="" suffix="+" size={120} color={C.blue} label="Consultations covered" align="center" at={0.5}/>
   </div>
   <div style={{position:'absolute',top:360,left:0,right:0,textAlign:'center'}}>
     <div style={{fontFamily:FD,fontWeight:400,fontSize:19,lineHeight:1.4,color:C.dim,maxWidth:1480,margin:'0 auto'}}>
-      Toutes les consultations — présentiel et distanciel, urgences, centres de santé et dispensaires — partout où opère la medical intelligence, et l’usage de tous les modules : labo · radio · pharmacie.</div>
+      Every consultation — in-person and remote, emergency, health centres and dispensaries — wherever the medical intelligence operates, and the use of every module: lab · radiology · pharmacy.</div>
   </div>
   <div style={{position:'absolute',top:438,left:0,right:0,display:'flex',justifyContent:'center',gap:16}}>
-    <Chip at={0.5} color={C.gold}>Pilote 6 mois</Chip>
-    <Chip at={0.62} color={C.blue}>Zone de Flacq — 170 000 habitants</Chip>
-    <Chip at={0.74} color={C.teal}>Mix rural & ville — représentatif</Chip>
+    <Chip at={0.5} color={C.gold}>6-month pilot</Chip>
+    <Chip at={0.62} color={C.blue}>Flacq area — 170 000 inhabitants</Chip>
+    <Chip at={0.74} color={C.teal}>Rural & urban mix — representative</Chip>
   </div>
   <PhotoTile src="assets/people/patient-app.jpg" x={1228} y={538} w={562} h={296} at={0.7}
-    color={C.blue} objPos="50% 42%" label="Dossier patient · application" sub="Sur le mobile du patient, aux couleurs de l’État"/>
+    color={C.blue} objPos="50% 42%" label="Patient record · application" sub="On the patient's phone, in the colours of the State"/>
   <div style={{position:'absolute',top:546,left:120,width:1040,display:'flex',flexDirection:'column',gap:16}}>
-    {[['Besoins minimes','Une connexion internet · un ordinateur ou un téléphone connecté',C.teal],
-      ['Dossier patient','Accessible via l’application, sur le mobile du patient',C.blue],
-      ['Aux couleurs de l’État','TIBOK brandé aux couleurs du gouvernement',C.gold]].map((p,i)=>(
+    {[['Minimal requirements','An internet connection · a computer or a connected phone',C.teal],
+      ['Patient record','Accessible via the app, on the patient’s phone',C.blue],
+      ['In the State’s colours','TIBOK branded in the colours of the government',C.gold]].map((p,i)=>(
       <Card3D key={i} at={0.5+i*0.15} i={i} accent={p[2]} accentSide="left" pad="16px 26px" radius={14}>
         <div style={{fontFamily:FD,fontWeight:700,fontSize:24,color:p[2]}}>{p[0]}</div>
         <div style={{fontFamily:FD,fontWeight:400,fontSize:18,color:C.dim,marginTop:6,lineHeight:1.35}}>{p[1]}</div>
@@ -292,100 +292,100 @@ const SCENES_B = [
     ))}
   </div>
   <Narration lines={[
-    '« Le pilote, c’est 6 mois — sur toute la zone de Flacq.',
-    '170 000 habitants : rural et ville, un vrai mix représentatif.',
-    'Cinq millions de roupies — pour plus de 500 000 consultations.',
-    'Une connexion internet, un ordinateur ou un téléphone connecté.',
-    'Le patient accède à son dossier via l’application.',
-    'Et TIBOK est brandé aux couleurs du gouvernement. »']}
+    '"The pilot runs 6 months — across the entire Flacq area.',
+    '170 000 inhabitants: rural and urban, a truly representative mix.',
+    'Five million rupees — for more than 500 000 consultations.',
+    'An internet connection, a computer or a connected phone.',
+    'The patient accesses their record via the app.',
+    'And TIBOK is branded in the colours of the government."']}
     x={960} width={1560} align="center" y={905} size={29} italic={true}
     accent="#EDEFF4" dim="rgba(206,219,240,0.2)" lead={1.6} tail={1.1}/>
 </React.Fragment>)},
 
 { dur:30, hue:'blue', node:(<React.Fragment>
-  <ActTag act="Acte 6" title="Les gains potentiels"/>
-  <Statement x={120} y={150} size={48} weight={700} lines={['Pas encore de recul.','Mais des gains potentiels clairs.']} accentIdx={[1]} accentColor={C.blue}/>
+  <ActTag act="Act 6" title="The potential gains"/>
+  <Statement x={120} y={150} size={48} weight={700} lines={['No hindsight yet.','But clear potential gains.']} accentIdx={[1]} accentColor={C.blue}/>
   <Benefits/>
   <Narration lines={[
-    '« On vient de démarrer — pas encore de chiffres.',
-    'Mais les gains potentiels sont clairs : avec la medical',
-    'intelligence de TIBOK, le médecin est augmenté,',
-    'chaque prescription sourcée et justifiée.',
-    'Fin de la redondance des examens, moins d’hospitalisations',
-    'inutiles, des flux maîtrisés — en partie à distance.',
-    'Le recueil structuré avec les auxiliaires de santé —',
-    'du temps médecin gagné. Plus rapide, plus efficace. »']}
+    '"We have only just started — no figures yet.',
+    'But the potential gains are clear: with TIBOK’s',
+    'medical intelligence, the doctor is augmented,',
+    'every prescription sourced and justified.',
+    'No more duplicate tests, fewer unnecessary',
+    'hospitalisations, controlled flows — partly remote.',
+    'Structured intake with the health auxiliaries —',
+    'doctor time saved. Faster, more efficient."']}
     x={960} width={1560} align="center" y={912} size={28} italic={true}
     accent="#EDEFF4" dim="rgba(206,219,240,0.2)" lead={1.6} tail={1.0}/>
 </React.Fragment>)},
 
 { dur:24, hue:'blue', node:(<React.Fragment>
-  <ActTag act="Acte 6" title="Financement & gouvernance"/>
-  <Statement x={120} y={210} size={54} weight={700} lines={['Un grant, pas un appel d’offres.','Quatre semaines, pas douze mois.']} accentIdx={[1]} accentColor={C.blue}/>
+  <ActTag act="Act 6" title="Financing & governance"/>
+  <Statement x={120} y={210} size={54} weight={700} lines={['A grant, not a tender.','Four weeks, not twelve months.']} accentIdx={[1]} accentColor={C.blue}/>
   <div style={{position:'absolute',top:440,left:0,right:0,display:'flex',justifyContent:'center',gap:18,flexWrap:'wrap',maxWidth:1400,margin:'0 auto'}}>
-    <Chip at={0.3} color={C.teal}>Ministère de la Santé · approuve & finance — Rs 5 M</Chip>
-    <Chip at={0.5} color={C.teal}>Décision & pilotage : Ministère de la Santé</Chip>
-    <Chip at={0.7} color={C.blue}>Technologies · conformité IA & sécurité des données</Chip>
-    <Chip at={0.9} color={C.gold}>Go / no-go à M3 · dashboard public</Chip>
+    <Chip at={0.3} color={C.teal}>Ministry of Health · approves & funds — Rs 5 M</Chip>
+    <Chip at={0.5} color={C.teal}>Decision & oversight: Ministry of Health</Chip>
+    <Chip at={0.7} color={C.blue}>Technology · AI compliance & data security</Chip>
+    <Chip at={0.9} color={C.gold}>Go / no-go at M3 · public dashboard</Chip>
   </div>
   <Narration lines={[
-    '« Un appel d’offres, c’est 12 mois de bureaucratie.',
-    'Un grant, c’est quatre semaines.',
-    'Le Ministère de la Santé approuve, finance et pilote.',
-    'Le Ministère des Technologies garantit la conformité — l’IA, la sécurité des données.',
-    'Dashboard public, transparence totale, et un go/no-go à mois 3. »']}
+    '"A tender means 12 months of bureaucracy.',
+    'A grant takes four weeks.',
+    'The Ministry of Health approves, funds and oversees.',
+    'The Ministry of Technology guarantees compliance — AI, data security.',
+    'Public dashboard, full transparency, and a go/no-go at month 3."']}
     x={960} width={1560} align="center" y={780} size={32} italic={true}
     accent="#EDEFF4" dim="rgba(206,219,240,0.22)" lead={1.4} tail={1.2}/>
 </React.Fragment>)},
 
 { dur:24, hue:'blue', node:(<React.Fragment>
-  <ActTag act="Acte 6" title="Métriques de succès"/>
-  <Statement x={120} y={210} size={54} weight={700} lines={['Si on atteint les objectifs, on scale.','Sinon, on pivote. Pas de drame.']} accentIdx={[1]} accentColor={C.blue}/>
+  <ActTag act="Act 6" title="Success metrics"/>
+  <Statement x={120} y={210} size={54} weight={700} lines={['Hit the targets, we scale.','Miss them, we pivot. No drama.']} accentIdx={[1]} accentColor={C.blue}/>
   <div style={{position:'absolute',top:440,left:0,right:0,display:'flex',justifyContent:'center',gap:22}}>
-    {[['Adoption','>70 % centres actifs · >5 000 cs/mois'],['Clinique','Urgences −10 % · e-prescription >40 %'],['Satisfaction','NPS >65 · uptime >99,5 %'],['Coût','<Rs 10 / consultation']].map((p,i)=>(
+    {[['Adoption','>70% active centres · >5 000 consultations/month'],['Clinical','Emergencies −10% · e-prescription >40%'],['Satisfaction','NPS >65 · uptime >99.5%'],['Cost','<Rs 10 / consultation']].map((p,i)=>(
       <MiniPanel key={i} p={p} i={i} color={C.blue}/>
     ))}
   </div>
   <Narration lines={[
-    '« Les métriques sont claires et mesurables.',
-    'Si on les atteint, on scale au national.',
-    'Sinon, on pivote ou on arrête. Pas de drame.',
-    'Mais Swan le prouve déjà. »']}
+    '"The metrics are clear and measurable.',
+    'If we hit them, we scale nationwide.',
+    'If not, we pivot or we stop. No drama.',
+    'But Swan already proves it."']}
     x={960} width={1500} align="center" y={780} size={34} italic={true}
     accent="#EDEFF4" dim="rgba(206,219,240,0.22)" lead={1.4} tail={1.2}/>
 </React.Fragment>)},
 
 /* ---------- ACT 7 ---------- */
 { dur:24, hue:'blue', node:(<React.Fragment>
-  <ActTag act="Acte 6" title="Sécurité & conformité"/>
-  <Statement x={120} y={188} size={56} weight={700} lines={['Une infrastructure','de confiance.']} accentIdx={[1]} accentColor={C.green}/>
+  <ActTag act="Act 7" title="Security & compliance"/>
+  <Statement x={120} y={188} size={56} weight={700} lines={['An infrastructure','you can trust.']} accentIdx={[1]} accentColor={C.green}/>
   <div style={{position:'absolute',top:430,left:0,right:0,display:'flex',justifyContent:'center',gap:18,flexWrap:'wrap',maxWidth:1440,margin:'0 auto'}}>
-    <Chip at={0.4} color={C.green}>Conforme GDPR</Chip>
-    <Chip at={0.54} color={C.green}>Certifié SOC 2</Chip>
-    <Chip at={0.68} color={C.blue}>Hébergement AWS</Chip>
+    <Chip at={0.4} color={C.green}>GDPR compliant</Chip>
+    <Chip at={0.54} color={C.green}>SOC 2 certified</Chip>
+    <Chip at={0.68} color={C.blue}>AWS hosting</Chip>
     <Chip at={0.82} color={C.blue}>Supabase</Chip>
-    <Chip at={0.96} color={C.teal}>Chiffrement de bout en bout</Chip>
-    <Chip at={1.1} color={C.gold}>Données 100 % propriété de l’État</Chip>
+    <Chip at={0.96} color={C.teal}>End-to-end encryption</Chip>
+    <Chip at={1.1} color={C.gold}>Data 100% owned by the State</Chip>
   </div>
   <Narration lines={[
-    '« La sécurité n’est pas une option.',
-    'À ce jour, notre système est conforme GDPR,',
-    'certifié SOC 2, hébergé sur AWS, avec Supabase.',
-    'Chiffré, traçable. Et les données restent',
-    'la propriété de l’État — souveraines. »']}
+    '"Security is not an option.',
+    'As of today, our system is GDPR compliant,',
+    'SOC 2 certified, hosted on AWS, with Supabase.',
+    'Encrypted, traceable. And the data remains',
+    'the property of the State — sovereign."']}
     x={960} width={1540} align="center" y={820} size={32} italic={true}
     accent="#EDEFF4" dim="rgba(206,219,240,0.2)" lead={1.6} tail={1.2}/>
 </React.Fragment>)},
 
 { dur:32, hue:'blue', node:(<React.Fragment>
-  <ActTag act="Acte 7" title="L’ask cristallin"/>
-  <Statement x={120} y={150} size={52} weight={700} lines={['Deux demandes. Deux partenaires.','Zéro ambiguïté.']} accentIdx={[1]} accentColor={C.blue}/>
+  <ActTag act="Act 7" title="The crystal-clear ask"/>
+  <Statement x={120} y={150} size={52} weight={700} lines={['Two requests. Two partners.','Zero ambiguity.']} accentIdx={[1]} accentColor={C.blue}/>
   <AskCards/>
   <Narration lines={[
-    '« Deux demandes claires, mesurables, avec timeline.',
-    'Le Ministère de la Santé approuve le grant et accueille le pilote.',
-    'Le Ministère des Technologies garantit la conformité — l’IA, la sécurité des données.',
-    'Zéro dépendance externe — tout repose sur une équipe mauricienne. »']}
+    '"Two requests, clear, measurable, with a timeline.',
+    'The Ministry of Health approves the grant and hosts the pilot.',
+    'The Ministry of Technology guarantees compliance — AI, data security.',
+    'Zero external dependency — it all rests on a Mauritian team."']}
     x={960} width={1500} align="center" y={870} size={32} italic={true}
     accent="#EDEFF4" dim="rgba(206,219,240,0.2)" lead={1.6} tail={1.2}/>
 </React.Fragment>)},
@@ -393,84 +393,84 @@ const SCENES_B = [
 /* ---------- ACT 8 ---------- */
 { dur:28, hue:'blue', node:(<React.Fragment>
   <Statement align="center" y={250} size={84} weight={700}
-    lines={['La technologie existe.','L’équipe existe.','La vision existe.']} accentIdx={[2]} accentColor={C.blue}/>
+    lines={['The technology exists.','The team exists.','The vision exists.']} accentIdx={[2]} accentColor={C.blue}/>
   <Narration lines={[
-    '« Ce qui manque : la permission de l’État.',
-    'Et cinq millions de roupies pour 6 mois.',
-    'Allez-vous permettre à une équipe mauricienne',
-    'de montrer au monde comment on fabrique',
-    'une infrastructure de santé souveraine pour l’Afrique ? »']}
+    '"What is missing: the permission of the State.',
+    'And five million rupees for 6 months.',
+    'Will you allow a Mauritian team',
+    'to show the world how to build',
+    'a sovereign health infrastructure for Africa?"']}
     x={960} width={1560} align="center" y={730} size={38} italic={true}
     accent="#CFE0FA" dim="rgba(206,219,240,0.22)" lead={1.6} tail={1.4}/>
 </React.Fragment>)},
 
-/* ---------- ACT 8 — clôture alignée Budget 2026-2027 ---------- */
+/* ---------- ACT 8 — closing aligned with the 2026-2027 Budget ---------- */
 { dur:30, hue:'blue', node:(<React.Fragment>
-  <ActTag act="Acte 8" title="Aligné sur le Budget 2026-2027"/>
+  <ActTag act="Act 8" title="Aligned with the 2026-2027 Budget"/>
   <Statement align="center" y={150} size={46} weight={700}
-    lines={['Le Budget 2026-2027 vient d’être voté.','TIBOK l’exécute déjà.']} accentIdx={[1]} accentColor={C.blue}/>
+    lines={['The 2026-2027 Budget has just been voted.','TIBOK is already executing it.']} accentIdx={[1]} accentColor={C.blue}/>
   <BudgetAlign/>
   <Narration lines={[
-    '« Le Budget 2026-2027 du gouvernement vient d’être voté.',
-    'Prévention, diabète, détection précoce, télémédecine,',
-    'intelligence artificielle clinique, soins primaires, efficience hospitalière.',
-    'Chacune de ces priorités, TIBOK ne se contente pas d’en parler :',
-    'il l’exécute déjà, sur le terrain.',
-    'La prévention du diabète ? SilentCheck dépiste et suit dès le premier mois.',
-    'La détection précoce ? Notre score de risque — le score BSD,',
-    'Bach, Sampol, Dignat-Georges — développé avec les professeurs émérites',
-    'de l’Assistance Publique des Hôpitaux de Marseille et de l’INSERM.',
-    'La télémédecine, le suivi à domicile des plus de 85 ans : tout est en place.',
-    'Il n’y a rien à construire — seulement un dispositif mûr à activer. »']}
+    '"The 2026-2027 Government Budget has just been voted.',
+    'Prevention, diabetes, early detection, telemedicine,',
+    'clinical artificial intelligence, primary care, hospital efficiency.',
+    'Each of these priorities, TIBOK does not merely talk about:',
+    'it already delivers them, on the ground.',
+    'Diabetes prevention? SilentCheck screens and follows up from the very first month.',
+    'Early detection? Our risk score — the BSD score,',
+    'Bach, Sampol, Dignat-Georges — developed with the emeritus professors',
+    'of the Assistance Publique des Hôpitaux de Marseille and INSERM.',
+    'Telemedicine, home follow-up for the over-85s: it is all in place.',
+    'There is nothing to build — only a mature system to activate."']}
     x={960} width={1640} align="center" y={930} size={26} italic={true}
     accent="#EDEFF4" dim="rgba(206,219,240,0.2)" lead={1.6} tail={1.1}/>
 </React.Fragment>)},
 
 { dur:26, hue:'blue', node:(<React.Fragment>
-  <ActTag act="Acte 8" title="Pourquoi signer"/>
-  <Statement x={120} y={150} size={56} weight={700} lines={['Pourquoi signer.','Maintenant.']} accentIdx={[1]} accentColor={C.blue}/>
+  <ActTag act="Act 8" title="Why sign"/>
+  <Statement x={120} y={150} size={56} weight={700} lines={['Why sign.','Now.']} accentIdx={[1]} accentColor={C.blue}/>
   <div style={{position:'absolute',top:368,left:0,right:0,display:'flex',flexWrap:'wrap',justifyContent:'center',gap:22,maxWidth:1320,marginLeft:'auto',marginRight:'auto'}}>
-    {[['Risque plafonné','Rs 5 M — pas un de plus, jamais',C.blue],
-      ['Périmètre borné','6 mois, une seule région : Flacq',C.teal],
-      ['Aucun délai','Produit prêt, équipe mobilisable sous 30 jours',C.blue],
-      ['Alignement budgétaire','Exécute des priorités déjà votées',C.gold],
-      ['Souveraineté','IA médicale mauricienne — vitrine régionale',C.teal],
-      ['Réversible — par la preuve','Continuer, étendre ou arrêter sur des chiffres réels',C.green]].map((p,i)=>(
+    {[['Capped risk','Rs 5 M — not one more, ever',C.blue],
+      ['Bounded scope','6 months, a single region: Flacq',C.teal],
+      ['No delay','Product ready, team mobilisable within 30 days',C.blue],
+      ['Budget alignment','Delivers priorities already voted',C.gold],
+      ['Sovereignty','Mauritian medical AI — a regional showcase',C.teal],
+      ['Reversible — through proof','Continue, scale or stop on real figures',C.green]].map((p,i)=>(
       <MiniPanel key={i} p={p} i={i} color={p[2]}/>
     ))}
   </div>
   <Narration lines={[
-    '« Je sais ce que vous vous demandez à cet instant : quel est le risque ?',
-    'Le risque est minimal, et c’est volontaire.',
-    'C’est plafonné : cinq millions, pas un de plus.',
-    'C’est borné : six mois, une seule région.',
-    'Aucun délai technologique : le produit est prêt,',
-    'l’équipe mobilisable sous trente jours.',
-    'C’est aligné : le pilote exécute des priorités déjà votées.',
-    'C’est souverain : une IA médicale mauricienne,',
-    'adossée à l’excellence académique marseillaise.',
-    'Et c’est réversible : à la fin, vous décidez —',
-    'continuer, étendre ou arrêter — sur des chiffres réels.',
-    'Vous ne pariez pas sur une promesse : vous achetez une preuve. »']}
+    '"I know what you are asking yourselves right now: what is the risk?',
+    'The risk is minimal, and that is by design.',
+    'It is capped: five million, not one more.',
+    'It is bounded: six months, a single region.',
+    'No technological delay: the product is ready,',
+    'the team mobilisable within thirty days.',
+    'It is aligned: the pilot delivers priorities already voted.',
+    'It is sovereign: a Mauritian medical AI,',
+    'backed by the academic excellence of Marseille.',
+    'And it is reversible: at the end, you decide —',
+    'continue, scale or stop — on real figures.',
+    'You are not betting on a promise: you are buying proof."']}
     x={960} width={1560} align="center" y={930} size={26} italic={true}
     accent="#EDEFF4" dim="rgba(206,219,240,0.2)" lead={1.6} tail={1.1}/>
 </React.Fragment>)},
 
 { dur:24, hue:'blue', node:(<React.Fragment>
-  <ActTag act="Acte 8" title="La demande"/>
-  <Statement align="center" y={260} size={72} weight={700} lines={['Donnez-nous six mois','sur Flacq.']} accentIdx={[1]} accentColor={C.blue}/>
+  <ActTag act="Act 8" title="The request"/>
+  <Statement align="center" y={260} size={72} weight={700} lines={['Give us six months','in Flacq.']} accentIdx={[1]} accentColor={C.blue}/>
   <div style={{position:'absolute',top:540,left:0,right:0,display:'flex',justifyContent:'center',gap:16}}>
     <Chip at={0.5} color={C.blue}>Rs 5 M</Chip>
-    <Chip at={0.62} color={C.gold}>6 mois</Chip>
+    <Chip at={0.62} color={C.gold}>6 months</Chip>
     <Chip at={0.74} color={C.teal}>Flacq</Chip>
   </div>
   <Narration lines={[
-    '« Messieurs les Ministres.',
-    'À la Santé, la décision et le terrain.',
-    'Aux Technologies, la conformité — l’IA, la sécurité des données, la souveraineté.',
-    'Le Budget du gouvernement dit : prévention, intelligence artificielle, soins primaires.',
-    'TIBOK, c’est exactement cela — fait à Maurice, prêt aujourd’hui.',
-    'Donnez-nous six mois sur Flacq. Et laissez les résultats parler. »']}
+    '"Honourable Ministers.',
+    'To Health, the decision and the ground.',
+    'To Technology, compliance — AI, data security, sovereignty.',
+    'The Government Budget says: prevention, artificial intelligence, primary care.',
+    'TIBOK is exactly that — made in Mauritius, ready today.',
+    'Give us six months in Flacq. And let the results speak."']}
     x={960} width={1500} align="center" y={770} size={34} italic={true}
     accent="#EDEFF4" dim="rgba(206,219,240,0.2)" lead={1.6} tail={1.3}/>
 </React.Fragment>)},
@@ -483,7 +483,7 @@ const SCENES_B = [
 function DDSOrg(){
   const {localTime}=useScene();
   const root=ev(localTime,0.2,0.6,Easing.easeOutCubic);
-  const products=[['tibok','Health OS · présentiel + distance'],['lexora','ERP IA-native · compta & paie'],['axon','Agents vocaux · service client']];
+  const products=[['tibok','Health OS · in-person + remote'],['lexora','AI-native ERP · accounting & payroll'],['axon','Voice agents · customer service']];
   return (
     <div style={{position:'absolute',inset:0}}>
       <div style={{position:'absolute',left:'50%',top:178,transform:`translate(-50%,0) scale(${0.92+0.08*root})`,opacity:root,
@@ -491,7 +491,7 @@ function DDSOrg(){
         <Logo name="dds" w={300} intro={false} style={{position:'static'}}/>
       </div>
       <div style={{position:'absolute',left:100,top:348,width:1090,opacity:ev(localTime,0.55,0.6)}}>
-        <div style={{fontFamily:FD,fontWeight:700,fontSize:18,letterSpacing:'0.16em',textTransform:'uppercase',color:C.blue,marginBottom:18}}>Produits IA</div>
+        <div style={{fontFamily:FD,fontWeight:700,fontSize:18,letterSpacing:'0.16em',textTransform:'uppercase',color:C.blue,marginBottom:18}}>AI products</div>
         <div style={{display:'flex',gap:22}}>
           {products.map((p,i)=>(
             <Card3D key={i} at={0.7+i*0.16} i={i} minHeight={206} pad="28px 22px" radius={16}
@@ -503,16 +503,16 @@ function DDSOrg(){
         </div>
       </div>
       <div style={{position:'absolute',left:1240,top:348,width:580,opacity:ev(localTime,1.05,0.6)}}>
-        <div style={{fontFamily:FD,fontWeight:700,fontSize:18,letterSpacing:'0.16em',textTransform:'uppercase',color:C.gold,marginBottom:18}}>Activités connexes</div>
+        <div style={{fontFamily:FD,fontWeight:700,fontSize:18,letterSpacing:'0.16em',textTransform:'uppercase',color:C.gold,marginBottom:18}}>Related ventures</div>
         <div style={{display:'flex',flexDirection:'column',gap:18}}>
           <Card3D at={1.1} i={1} minHeight={96} pad="16px 24px" radius={16} style={{display:'flex',alignItems:'center',gap:18}}>
             <Logo name="obesity" w={200} intro={false} style={{position:'static'}}/>
-            <div style={{fontFamily:FD,fontWeight:400,fontSize:16,color:C.dim,lineHeight:1.3}}>Chirurgie bariatrique · NHS S2</div>
+            <div style={{fontFamily:FD,fontWeight:400,fontSize:16,color:C.dim,lineHeight:1.3}}>Bariatric surgery · NHS S2</div>
           </Card3D>
           <Card3D at={1.25} i={3} accent={C.gold} minHeight={96} pad="18px 24px" radius={16}
             style={{background:'rgba(224,169,59,0.08)',border:'1px solid rgba(224,169,59,0.3)'}}>
-            <div style={{fontFamily:FD,fontWeight:800,fontSize:24,color:C.gold}}>CVMI · Cap-Vert</div>
-            <div style={{fontFamily:FD,fontWeight:400,fontSize:16,color:C.dim,marginTop:6,lineHeight:1.3}}>Tourisme médical — prévention des maladies chroniques + tourisme</div>
+            <div style={{fontFamily:FD,fontWeight:800,fontSize:24,color:C.gold}}>CVMI · Cabo Verde</div>
+            <div style={{fontFamily:FD,fontWeight:400,fontSize:16,color:C.dim,marginTop:6,lineHeight:1.3}}>Medical tourism — chronic-disease prevention + tourism</div>
           </Card3D>
         </div>
       </div>
@@ -536,7 +536,7 @@ function Waveform(){
 
 function ModuleNames(){
   const {localTime}=useScene();
-  const m=['AI Doctor','Suivi WhatsApp','Cabinet présentiel','Intégration labo','Pharmacie'];
+  const m=['AI Doctor','WhatsApp follow-up','In-person practice','Lab integration','Pharmacy'];
   return (
     <div style={{position:'absolute',top:560,left:1080,right:120,display:'flex',flexDirection:'column',gap:14}}>
       {m.map((x,i)=>{const p=ev(localTime,0.5+i*0.18,0.5,Easing.easeOutBack);return(
@@ -551,7 +551,7 @@ function ModuleNames(){
 
 function Ratios(){
   const {localTime}=useScene();
-  const r=[['Maurice','≈ 1 : 500',500,C.green],['Sénégal','1 : 7 000',7000,C.blue],['Mali','1 : 15 000',15000,C.gold],['Sahel','1 : 25 000',25000,C.coral]];
+  const r=[['Mauritius','≈ 1 : 500',500,C.green],['Senegal','1 : 7 000',7000,C.blue],['Mali','1 : 15 000',15000,C.gold],['Sahel','1 : 25 000',25000,C.coral]];
   const maxR=25000;
   return (
     <div style={{position:'absolute',top:400,left:300,right:300,display:'flex',flexDirection:'column',gap:22}}>
@@ -589,8 +589,8 @@ function NumPanel({p,i}){
 
 function AskCards(){
   const {localTime}=useScene();
-  const a=[['Ministère de la Santé','Décision · financement · terrain','Approuver le grant de Rs 5 M et accueillir le pilote à Flacq',['Tout se décide ici','Un grant — 4 semaines, pas 12 mois','4 AHC + 24 CHC · ~500 soignants'],C.teal],
-    ['Ministère des Technologies','Conformité IA & données','Garantir la conformité de l’IA et la sécurité des données',['Souveraineté numérique','Données 100 % propriété de l’État','Conforme GDPR · SOC 2'],C.blue]];
+  const a=[['Ministry of Health','Decision · funding · ground','Approve the Rs 5 M grant and host the pilot in Flacq',['Everything is decided here','A grant — 4 weeks, not 12 months','4 AHC + 24 CHC · ~500 caregivers'],C.teal],
+    ['Ministry of Technology','AI & data compliance','Guarantee AI compliance and data security',['Digital sovereignty','Data 100% owned by the State','GDPR compliant · SOC 2'],C.blue]];
   const W=520,gap=30,total=a.length*W+(a.length-1)*gap,sx=(1920-total)/2;
   return (
     <div style={{position:'absolute',inset:0}}>
@@ -622,18 +622,18 @@ function FinalScene(){
           <i style={{flex:1,background:'#EA2839'}}/><i style={{flex:1,background:'#1A206D'}}/><i style={{flex:1,background:'#F4C300'}}/><i style={{flex:1,background:'#00A551'}}/>
         </div>
         <div style={{fontFamily:FD,fontWeight:500,fontSize:34,color:'#D6E0F0',lineHeight:1.25,opacity:ev(localTime,0.7,0.7),maxWidth:'18ch'}}>
-          Construit par Maurice.<br/>Pour Maurice. Pour l’Afrique.</div>
+          Built by Mauritius.<br/>For Mauritius. For Africa.</div>
       </div>
       <div style={{position:'absolute',right:120,top:300,width:680,opacity:ev(localTime,1.0,0.7),transform:`translateY(${(1-ev(localTime,1.0,0.7))*18}px)`}}>
         <div style={{display:'flex',flexWrap:'wrap',gap:12,justifyContent:'flex-start'}}>
-          {['Système prouvé — Swan','Équipe 100 % mauricienne','Infrastructure souveraine — MRIC'].map((c,i)=>(
+          {['Proven system — Swan','100% Mauritian team','Sovereign infrastructure — MRIC'].map((c,i)=>(
             <span key={i} style={{padding:'11px 20px',border:'1px solid rgba(255,255,255,0.16)',background:'rgba(255,255,255,0.05)',borderRadius:999,fontFamily:FD,fontWeight:500,fontSize:20,color:C.txt,display:'inline-flex',alignItems:'center',gap:10}}>
               <span style={{width:20,height:20,borderRadius:10,background:C.green,color:C.navy,display:'grid',placeItems:'center',fontSize:12,fontWeight:800}}>✓</span>{c}</span>
           ))}
         </div>
         <div style={{marginTop:34,paddingTop:26,borderTop:'1px solid rgba(255,255,255,0.14)'}}>
           <div style={{fontFamily:FD,fontWeight:700,fontSize:26,color:'#fff'}}>Dr Stéphane Bach</div>
-          <div style={{fontFamily:FD,fontWeight:400,fontSize:20,color:C.dim,marginTop:4}}>Fondateur & CEO, Digital Data Solutions Ltd</div>
+          <div style={{fontFamily:FD,fontWeight:400,fontSize:20,color:C.dim,marginTop:4}}>Founder & CEO, Digital Data Solutions Ltd</div>
           <div style={{fontFamily:FD,fontWeight:500,fontSize:20,color:C.blue,marginTop:4}}>sbach@tibok.mu</div>
         </div>
         <div style={{marginTop:24,fontFamily:FD,fontWeight:400,fontSize:19,color:'#D6E0F0',lineHeight:1.6}}>
@@ -646,13 +646,13 @@ function FinalScene(){
 function BudgetAlign(){
   const {localTime}=useScene();
   const rows=[
-    ['Prévention & diabète — Rs 40 M','SilentCheck : dépistage + suivi dès le 1ᵉʳ mois',C.gold],
-    ['Détection précoce — cardiométabolique','Score BSD validé · stratification du risque',C.teal],
-    ['Télémédecine & parcours de soins','Distance + présentiel, déjà opérationnel',C.blue],
-    ['Healthcare Innovation & AI Unit','IA clinique souveraine, faite à Maurice',C.blue],
-    ['Efficience hospitalière','Désengorgement des urgences',C.teal],
-    ['Vieillissement & 85+ · à domicile','Suivi à distance des patients chroniques',C.gold],
-    ['Réforme du Clinical Trial Act','Score BSD : recherche clinique exportable',C.green],
+    ['Prevention & diabetes — Rs 40 M','SilentCheck: screening + follow-up from month 1',C.gold],
+    ['Early detection — cardiometabolic','BSD score validated · risk stratification',C.teal],
+    ['Telemedicine & care pathways','Remote + in-person, already operational',C.blue],
+    ['Healthcare Innovation & AI Unit','Sovereign clinical AI, made in Mauritius',C.blue],
+    ['Hospital efficiency','Decongesting the emergency room',C.teal],
+    ['Ageing & 85+ · at home','Remote follow-up of chronic patients',C.gold],
+    ['Clinical Trial Act reform','BSD score: exportable clinical research',C.green],
   ];
   return (
     <div style={{position:'absolute',top:300,left:0,right:0,display:'flex',flexDirection:'column',alignItems:'center',gap:11}}>
@@ -664,7 +664,7 @@ function BudgetAlign(){
         </div>
       );})}
       <div style={{marginTop:14,fontFamily:FD,fontWeight:400,fontSize:15,lineHeight:1.4,color:C.dim,maxWidth:1340,textAlign:'center',opacity:ev(localTime,2.4,0.8)}}>
-        Score BSD — Bach · Sampol · Dignat-Georges. Pr Sampol & Pr Dignat-Georges, professeurs émérites (AP-HM · INSERM UMR 608 — Physiopathologie de l’Endothélium). Publication en cours.</div>
+        BSD score — Bach · Sampol · Dignat-Georges. Pr Sampol & Pr Dignat-Georges, emeritus professors (AP-HM · INSERM UMR 608 — Pathophysiology of the Endothelium). Publication in progress.</div>
     </div>
   );
 }
@@ -672,12 +672,12 @@ function BudgetAlign(){
 function Benefits(){
   const {localTime}=useScene();
   const b=[
-    ['Médecin augmenté','Sourcé pour chaque prescription',C.blue],
-    ['Zéro redondance','Fini les examens en double',C.teal],
-    ['Prescriptions justifiées','Adéquates, traçables',C.teal],
-    ['Flux maîtrisés','Avec une partie à distance',C.blue],
-    ['Moins d’hospitalisations','Les cas évitables, évités',C.gold],
-    ['Temps médecin gagné','Recueil structuré avec les auxiliaires — plus rapide, plus efficace',C.green],
+    ['Augmented doctor','Sourced for every prescription',C.blue],
+    ['Zero redundancy','No more duplicate tests',C.teal],
+    ['Justified prescriptions','Appropriate, traceable',C.teal],
+    ['Controlled flows','With a portion handled remotely',C.blue],
+    ['Fewer hospitalisations','Avoidable cases, avoided',C.gold],
+    ['Doctor time saved','Structured intake with the auxiliaries — faster, more efficient',C.green],
   ];
   const gap=20,W=460;
   return (
@@ -698,7 +698,7 @@ function Benefits(){
 
 function TibokHub(){
   const {localTime}=useScene();
-  const nodes=[['Distanciel',C.blue],['Présentiel',C.blue],['Pharmacie',C.gold],['Labo',C.teal],['Radio',C.blue],['Urgence',C.coral],['Soins primaires',C.teal]];
+  const nodes=[['Remote',C.blue],['In-person',C.blue],['Pharmacy',C.gold],['Lab',C.teal],['Radiology',C.blue],['Emergency',C.coral],['Primary care',C.teal]];
   const cx=960, cy=560, rx=600, ry=178;
   const pts=nodes.map((n,i)=>{const ang=(-90 + i*(360/nodes.length))*Math.PI/180;return {n:n[0],c:n[1],x:cx+Math.cos(ang)*rx,y:cy+Math.sin(ang)*ry};});
   const pulse=0.5+0.5*Math.sin(localTime*1.6);
@@ -712,8 +712,8 @@ function TibokHub(){
         display:'flex',flexDirection:'column',alignItems:'center',justifyContent:'center',gap:9,
         opacity:ev(localTime,0.2,0.6),boxShadow:`0 0 ${70+34*pulse}px ${C.blue}55, inset 0 0 40px ${C.blue}22`}}>
         <Logo name="tibok" w={150} intro={false} style={{position:'static'}}/>
-        <div style={{fontFamily:FD,fontWeight:700,fontSize:15,color:'#fff'}}>Intelligence médicale</div>
-        <div style={{fontFamily:FD,fontWeight:700,fontSize:15,color:C.teal}}>60 000 références</div>
+        <div style={{fontFamily:FD,fontWeight:700,fontSize:15,color:'#fff'}}>Medical intelligence</div>
+        <div style={{fontFamily:FD,fontWeight:700,fontSize:15,color:C.teal}}>60 000 references</div>
       </div>
       {pts.map((pt,i)=>(<NodeChip key={i} label={pt.n} icon="◆" x={pt.x} y={pt.y} color={pt.c} at={0.9+i*0.11}/>))}
     </div>

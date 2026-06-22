@@ -124,7 +124,7 @@
     const FD = window.FD;
     return /*#__PURE__*/React.createElement("div", {
       onClick: () => setMuted(m => !m),
-      title: "Activer / couper la voix off (M)",
+      title: "Toggle voice-over (M)",
       style: {
         position: 'absolute',
         right: 48,
@@ -164,7 +164,7 @@
       d: "M16 9l5 6M21 9l-5 6"
     }) : /*#__PURE__*/React.createElement("path", {
       d: "M16.5 8.5a5 5 0 0 1 0 7M19 6a8 8 0 0 1 0 12"
-    })), muted ? 'Voix coupée' : 'Voix activée');
+    })), muted ? 'Voice off' : 'Voice on');
   }
   ReactDOM.createRoot(document.getElementById('root')).render(/*#__PURE__*/React.createElement(Movie, null));
 })();

@@ -210,7 +210,7 @@ const SCENES = [
     </div>
     <div style={{lineHeight:1.32,maxWidth:470}}>
       <div style={{fontFamily:FD,fontWeight:600,fontSize:12.5,letterSpacing:'0.16em',textTransform:'uppercase',color:'rgba(206,219,240,0.5)'}}>Presented to the Honourable Ministers</div>
-      <div style={{fontFamily:FD,fontWeight:700,fontSize:16,color:'#D6E0F0',marginTop:5}}>L’honorable Anil Kumar</div>
+      <div style={{fontFamily:FD,fontWeight:700,fontSize:16,color:'#D6E0F0',marginTop:5}}>The Honourable Anil Kumar</div>
       <div style={{fontFamily:FD,fontWeight:500,fontSize:13.5,color:'#9DB8E6'}}>Ministry of Health & Wellness</div>
       <div style={{fontFamily:FD,fontWeight:700,fontSize:16,color:'#D6E0F0',marginTop:7}}>Dr Avinash Ramtohul</div>
       <div style={{fontFamily:FD,fontWeight:500,fontSize:13.5,color:'#9DB8E6'}}>Ministry of Technology, Communication & Innovation</div>

@@ -39,18 +39,18 @@
     dur: 24,
     hue: 'blue',
     node: /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement(ActTag, {
-      act: "Acte 3",
-      title: "DDS, le producteur IA"
+      act: "Act 3",
+      title: "DDS, the AI producer"
     }), /*#__PURE__*/React.createElement(Statement, {
       x: 120,
       y: 250,
       size: 70,
       weight: 700,
-      lines: ['DDS n’est pas une agence.', 'C’est un fabricant', 'de logiciels IA.'],
+      lines: ['DDS is not an agency.', 'It is a builder', 'of AI software.'],
       accentIdx: [1, 2],
       accentColor: C.blue
     }), /*#__PURE__*/React.createElement(Narration, {
-      lines: ['« Beaucoup disent : AI agency. Ils prennent ChatGPT,', 'ils mettent vos données dedans. C’est inutile,', 'et ça crée de la dépendance.', 'Nous, on fabrique des logiciels — qui tournent', 'en production, avec des clients réels qui payent. »'],
+      lines: ['"Many call themselves an AI agency. They take ChatGPT,', 'they put your data into it. It is useless,', 'and it creates dependency.', 'We build software — software that runs', 'in production, with real, paying clients."'],
       x: 960,
       width: 1500,
       align: "center",
@@ -66,10 +66,10 @@
     dur: 28,
     hue: 'blue',
     node: /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement(ActTag, {
-      act: "Acte 3",
-      title: "Structure & portefeuille"
+      act: "Act 3",
+      title: "Structure & portfolio"
     }), /*#__PURE__*/React.createElement(DDSOrg, null), /*#__PURE__*/React.createElement(Narration, {
-      lines: ['« DDS est une holding. Trois produits IA en production —', 'TIBOK, Lexora, Axon. Chacun a des clients réels.', 'Et à côté : des activités connexes —', 'Obesity Care Clinic, et CVMI, le tourisme médical au Cap-Vert.', 'Un écosystème — pas une agence. »'],
+      lines: ['"DDS is a holding company. Three AI products in production —', 'TIBOK, Lexora, Axon. Each one has real clients.', 'And alongside them: related ventures —', 'Obesity Care Clinic, and CVMI, medical tourism in Cabo Verde.', 'An ecosystem — not an agency."'],
       x: 960,
       width: 1500,
       align: "center",
@@ -86,8 +86,8 @@
     dur: 30,
     hue: 'teal',
     node: /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement(ActTag, {
-      act: "Acte 4",
-      title: "Produit 1 \u2014 Lexora",
+      act: "Act 4",
+      title: "Product 1 \u2014 Lexora",
       color: C.teal
     }), /*#__PURE__*/React.createElement(Logo, {
       name: "lexora",
@@ -100,7 +100,7 @@
       y: 300,
       size: 54,
       weight: 700,
-      lines: ['On scanne. On photographie.', 'La comptabilité se fait seule.'],
+      lines: ['You scan. You photograph.', 'The accounting does itself.'],
       accentIdx: [1],
       accentColor: C.teal
     }), /*#__PURE__*/React.createElement("div", {
@@ -113,12 +113,12 @@
         justifyContent: 'center',
         gap: 22
       }
-    }, [['Piloté par des agents IA', 'Un justificatif scanné ou photographié — et c’est saisi', C.teal], ['Paie & social simplifiés', 'La paie, le social — sans effort', C.blue], ['Le temps, pas la paperasse', 'Des heures gagnées chaque semaine', C.gold]].map((p, i) => /*#__PURE__*/React.createElement(DimCard, {
+    }, [['Driven by AI agents', 'A receipt scanned or photographed — and it is recorded', C.teal], ['Payroll & HR made simple', 'Payroll, HR — effortless', C.blue], ['Time, not paperwork', 'Hours saved every week', C.gold]].map((p, i) => /*#__PURE__*/React.createElement(DimCard, {
       key: i,
       p: p,
       i: i
     }))), /*#__PURE__*/React.createElement(Narration, {
-      lines: ['« Je l’ai créé pour moi d’abord.', 'RH en interne, comptabilité en retard,', 'pas toujours rigoureuse — je connais le problème.', 'Alors j’ai développé des outils pour mes propres entreprises.', 'Puis je les ai rendus simples — pour en faire profiter', 'le plus grand nombre. C’est ça, Lexora. »'],
+      lines: ['"I built it for myself first.', 'HR in-house, accounting falling behind,', 'not always rigorous — I know the problem.', 'So I developed tools for my own companies.', 'Then I made them simple — so the greatest number', 'could benefit from them. That is Lexora."'],
       x: 960,
       width: 1560,
       align: "center",
@@ -134,8 +134,8 @@
     dur: 32,
     hue: 'teal',
     node: /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement(ActTag, {
-      act: "Acte 4",
-      title: "Produit 2 \u2014 Axon AI",
+      act: "Act 4",
+      title: "Product 2 \u2014 Axon AI",
       color: C.teal
     }), /*#__PURE__*/React.createElement(Logo, {
       name: "axon",
@@ -148,7 +148,7 @@
       y: 250,
       size: 52,
       weight: 700,
-      lines: ['Une équipe d’agents IA.', 'Vocal, secrétariat, back-office.'],
+      lines: ['A team of AI agents.', 'Voice, secretarial, back-office.'],
       accentIdx: [1],
       accentColor: C.teal
     }), /*#__PURE__*/React.createElement(Waveform, null), /*#__PURE__*/React.createElement("div", {
@@ -161,12 +161,12 @@
         justifyContent: 'center',
         gap: 24
       }
-    }, [['Agent vocal', 'Appelle & répond — FR · EN · toutes les langues, testé en médical', C.teal], ['Agent administratif', 'Secrétariat : courriers, emails, agenda', C.blue], ['Tout le back-office', 'Une équipe d’agents IA multi-service', C.gold]].map((p, i) => /*#__PURE__*/React.createElement(DimCard, {
+    }, [['Voice agent', 'Calls & answers — FR · EN · every language, tested in medical settings', C.teal], ['Administrative agent', 'Secretarial: letters, emails, scheduling', C.blue], ['The entire back-office', 'A multi-service team of AI agents', C.gold]].map((p, i) => /*#__PURE__*/React.createElement(DimCard, {
       key: i,
       p: p,
       i: i
     }))), /*#__PURE__*/React.createElement(Narration, {
-      lines: ['« Axon, ce n’est pas qu’un agent vocal.', 'Il appelle et répond, dans toutes les langues.', 'Mais aussi un agent administratif : secrétariat,', 'courriers, emails, agenda — toute la gestion du back-office.', 'Une véritable équipe d’agents IA multi-service —', 'médical, hôtellerie, tourisme, administratif. »'],
+      lines: ['"Axon is not just a voice agent.', 'It calls and answers, in every language.', 'But also an administrative agent: secretarial work,', 'letters, emails, scheduling — the entire back-office.', 'A true multi-service team of AI agents —', 'medical, hospitality, tourism, administrative."'],
       x: 960,
       width: 1540,
       align: "center",
@@ -182,18 +182,18 @@
     dur: 30,
     hue: 'blue',
     node: /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement(ActTag, {
-      act: "Acte 4",
-      title: "Produit phare \u2014 TIBOK"
+      act: "Act 4",
+      title: "Flagship product \u2014 TIBOK"
     }), /*#__PURE__*/React.createElement(Statement, {
       x: 120,
       y: 190,
       size: 50,
       weight: 700,
-      lines: ['L’intelligence médicale', 'qui relie tout.'],
+      lines: ['The medical intelligence', 'that connects everything.'],
       accentIdx: [1],
       accentColor: C.blue
     }), /*#__PURE__*/React.createElement(TibokHub, null), /*#__PURE__*/React.createElement(Narration, {
-      lines: ['« TIBOK n’est pas une app de téléconsultation.', 'C’est une intelligence médicale qui tourne', 'autour de chaque dispositif — distanciel, présentiel,', 'pharmacie, labo, radio, urgence, soins primaires.', '60 000 références. En production chez Swan. »'],
+      lines: ['"TIBOK is not a teleconsultation app.', 'It is a medical intelligence that operates', 'around every point of care — remote, in-person,', 'pharmacy, lab, radiology, emergency, primary care.', '60 000 references. In production at Swan."'],
       x: 960,
       width: 1560,
       align: "center",
@@ -209,14 +209,14 @@
     dur: 26,
     hue: 'blue',
     node: /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement(ActTag, {
-      act: "Acte 4",
-      title: "TIBOK \u2014 trois dimensions"
+      act: "Act 4",
+      title: "TIBOK \u2014 three dimensions"
     }), /*#__PURE__*/React.createElement(Statement, {
       x: 120,
       y: 150,
       size: 48,
       weight: 700,
-      lines: ['Plus qu’une intelligence médicale.'],
+      lines: ['More than a medical intelligence.'],
       accentColor: C.blue
     }), /*#__PURE__*/React.createElement("div", {
       style: {
@@ -228,12 +228,12 @@
         justifyContent: 'center',
         gap: 26
       }
-    }, [['Intelligence médicale', 'Décision augmentée · 60 000 références · distance + présentiel', C.blue], ['Prévention — SilentCheck', 'Dépistage silencieux & détection précoce des risques', C.teal], ['Pilotage — tableau de bord', 'Temps réel pour le pilote · pilotage RH pour les entreprises', C.gold]].map((p, i) => /*#__PURE__*/React.createElement(DimCard, {
+    }, [['Medical intelligence', 'Augmented decisions · 60 000 references · remote + in-person', C.blue], ['Prevention — SilentCheck', 'Silent screening & early detection of risks', C.teal], ['Oversight — dashboard', 'Real time for the pilot · HR oversight for companies', C.gold]].map((p, i) => /*#__PURE__*/React.createElement(DimCard, {
       key: i,
       p: p,
       i: i
     }))), /*#__PURE__*/React.createElement(Narration, {
-      lines: ['« TIBOK, ce n’est pas que de l’intelligence médicale.', 'C’est aussi de la prévention, avec SilentCheck.', 'Et un tableau de bord de pilotage —', 'en temps réel pour le projet pilote,', 'et en pilotage RH pour les entreprises. »'],
+      lines: ['"TIBOK is not only a medical intelligence.', 'It is also prevention, with SilentCheck.', 'And an oversight dashboard —', 'in real time for the pilot project,', 'and for HR oversight in companies."'],
       x: 960,
       width: 1540,
       align: "center",
@@ -249,19 +249,19 @@
     dur: 32,
     hue: 'coral',
     node: /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement(ActTag, {
-      act: "Acte 4",
-      title: "Le probl\xE8me africain",
+      act: "Act 4",
+      title: "The African problem",
       color: C.coral
     }), /*#__PURE__*/React.createElement(Statement, {
       x: 120,
       y: 170,
       size: 50,
       weight: 700,
-      lines: ['On ne peut pas créer 50 000 médecins en 5 ans.', 'On peut augmenter 600 auxiliaires avec l’IA.'],
+      lines: ['You cannot create 50 000 doctors in 5 years.', 'You can augment 600 auxiliaries with AI.'],
       accentIdx: [1],
       accentColor: C.gold
     }), /*#__PURE__*/React.createElement(Ratios, null), /*#__PURE__*/React.createElement(Narration, {
-      lines: ['« À Maurice, le ratio médical est l’un des meilleurs d’Afrique.', 'Mais l’accès reste inégal — et 600 auxiliaires de santé', 'sont sans outils pour décider.', 'Ailleurs, c’est un médecin pour 25 000 au Sahel.', 'TIBOK augmente l’auxiliaire — il devient praticien. »'],
+      lines: ['"In Mauritius, the doctor ratio is one of the best in Africa.', 'But access remains uneven — and 600 health auxiliaries', 'have no tools to make decisions.', 'Elsewhere, it is one doctor for 25 000 in the Sahel.', 'TIBOK augments the auxiliary — they become a practitioner."'],
       x: 960,
       width: 1500,
       align: "center",
@@ -277,8 +277,8 @@
     dur: 32,
     hue: 'blue',
     node: /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement(ActTag, {
-      act: "Acte 4",
-      title: "Comment \xE7a marche"
+      act: "Act 4",
+      title: "How it works"
     }), /*#__PURE__*/React.createElement("div", {
       style: {
         position: 'absolute',
@@ -297,8 +297,8 @@
         maxWidth: 1500,
         margin: '0 auto'
       }
-    }, "Toutes les consultations \u2014 pr\xE9sentiel et distanciel, urgences, centres de sant\xE9 et dispensaires \u2014 labo \xB7 radio \xB7 pharmacie")), /*#__PURE__*/React.createElement(EcosystemLive, null), /*#__PURE__*/React.createElement(Narration, {
-      lines: ['« L’auxiliaire rentre les données.', 'TIBOK traite avec 60 000 références médicales,', 'ses guidelines, ses algorithmes propriétaires.', 'Une recommandation fondée sur la science.', 'Et chaque cas qu’on traite, le système apprend.', 'Année 1, c’est bon. Année 3, c’est meilleur', 'que beaucoup de médecins. »'],
+    }, "Every consultation \u2014 in-person and remote, emergency, health centres and dispensaries \u2014 lab \xB7 radiology \xB7 pharmacy")), /*#__PURE__*/React.createElement(EcosystemLive, null), /*#__PURE__*/React.createElement(Narration, {
+      lines: ['"The auxiliary enters the data.', 'TIBOK processes it against 60 000 medical references,', 'its guidelines, its proprietary algorithms.', 'An evidence-based recommendation, grounded in science.', 'And with every case it handles, the system learns.', 'Year 1, it is good. Year 3, it is better', 'than many doctors."'],
       x: 960,
       width: 1500,
       align: "center",
@@ -314,18 +314,18 @@
     dur: 34,
     hue: 'blue',
     node: /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement(ActTag, {
-      act: "Acte 4",
-      title: "Les modules"
+      act: "Act 4",
+      title: "The modules"
     }), /*#__PURE__*/React.createElement(Statement, {
       x: 120,
       y: 150,
       size: 46,
       weight: 700,
-      lines: ['11 modules.', 'Un seul système connecté.'],
+      lines: ['11 modules.', 'One single connected system.'],
       accentIdx: [1],
       accentColor: C.blue
     }), /*#__PURE__*/React.createElement(Modules, null), /*#__PURE__*/React.createElement(Narration, {
-      lines: ['« La consultation — à distance, en présentiel, normale,', 'chronique, dermato. Les connexions — labo, radio, pharmacie.', 'Le suivi des maladies chroniques par WhatsApp :', 'tension, diabète, poids. La prévention avec SilentCheck.', 'L’urgence, et le tableau de bord RH pour les entreprises. »'],
+      lines: ['"Consultation — remote, in-person, standard,', 'chronic, dermatology. The connections — lab, radiology, pharmacy.', 'Chronic-disease follow-up via WhatsApp:', 'blood pressure, diabetes, weight. Prevention with SilentCheck.', 'Emergency, and the HR dashboard for companies."'],
       x: 960,
       width: 1540,
       align: "center",
@@ -341,15 +341,15 @@
     dur: 34,
     hue: 'green',
     node: /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement(ActTag, {
-      act: "Acte 4",
-      title: "Swan Assurance \u2014 accord sign\xE9",
+      act: "Act 4",
+      title: "Swan Assurance \u2014 agreement signed",
       color: C.green
     }), /*#__PURE__*/React.createElement(Statement, {
       x: 120,
       y: 150,
       size: 52,
       weight: 700,
-      lines: ['Nous venons de signer', 'avec Swan.'],
+      lines: ['We have just signed', 'with Swan.'],
       accentIdx: [1],
       accentColor: C.green
     }), /*#__PURE__*/React.createElement(Swan, {
@@ -380,12 +380,12 @@
         lineHeight: 1.4,
         textAlign: 'center'
       }
-    }, "Swan accepte de ", /*#__PURE__*/React.createElement("span", {
+    }, "Swan agrees to ", /*#__PURE__*/React.createElement("span", {
       style: {
         color: C.green,
         fontWeight: 800
       }
-    }, "rembourser"), " les consultations et prescriptions faites sur TIBOK."))), /*#__PURE__*/React.createElement("div", {
+    }, "reimburse"), " the consultations and prescriptions made on TIBOK."))), /*#__PURE__*/React.createElement("div", {
       style: {
         position: 'absolute',
         top: 486,
@@ -403,7 +403,7 @@
         color: C.dim,
         marginBottom: 16
       }
-    }, "Pr\xEAts \xE0 int\xE9grer le service pour leurs collaborateurs & familles"), /*#__PURE__*/React.createElement("div", {
+    }, "Ready to roll out the service for their staff & families"), /*#__PURE__*/React.createElement("div", {
       style: {
         display: 'flex',
         justifyContent: 'center',
@@ -442,7 +442,7 @@
         color: C.dim,
         marginBottom: 16
       }
-    }, "En attente de r\xE9ponse"), /*#__PURE__*/React.createElement("div", {
+    }, "Awaiting response"), /*#__PURE__*/React.createElement("div", {
       style: {
         display: 'flex',
         justifyContent: 'center',
@@ -463,8 +463,8 @@
     }, "MedSchem"), /*#__PURE__*/React.createElement(Chip, {
       at: 1.66,
       color: C.gold
-    }, "\u2026 et bien d\u2019autres"))), /*#__PURE__*/React.createElement(Narration, {
-      lines: ['« Nous venons de signer avec Swan.', 'Et surtout : Swan accepte de rembourser', 'les consultations et prescriptions faites sur TIBOK.', 'ER Group, Taylor Smith, Alteo, Bank One attendaient ce feu vert.', 'Et nous attendons les réponses de la SICOM, du NIC,', 'de MedSchem — et de bien d’autres encore. »'],
+    }, "\u2026 and many more"))), /*#__PURE__*/React.createElement(Narration, {
+      lines: ['"We have just signed with Swan.', 'And above all: Swan agrees to reimburse', 'the consultations and prescriptions made on TIBOK.', 'ER Group, Taylor Smith, Alteo and Bank One were waiting for this green light.', 'And we await responses from SICOM, NIC,', 'MedSchem — and many more still."'],
       x: 960,
       width: 1560,
       align: "center",
@@ -481,8 +481,8 @@
     dur: 30,
     hue: 'blue',
     node: /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement(ActTag, {
-      act: "Acte 5",
-      title: "Vision r\xE9gionale africaine"
+      act: "Act 5",
+      title: "African regional vision"
     }), /*#__PURE__*/React.createElement(AfricaArc, null), /*#__PURE__*/React.createElement("div", {
       style: {
         position: 'absolute',
@@ -499,7 +499,7 @@
         letterSpacing: '-0.025em',
         color: '#fff'
       }
-    }, "Bien plus qu\u2019un march\xE9."), /*#__PURE__*/React.createElement("div", {
+    }, "Far more than a market."), /*#__PURE__*/React.createElement("div", {
       style: {
         fontFamily: FD,
         fontWeight: 600,
@@ -507,8 +507,8 @@
         color: C.blue,
         marginTop: 12
       }
-    }, "Une infrastructure de sant\xE9 souveraine pour l\u2019Afrique.")), /*#__PURE__*/React.createElement(Narration, {
-      lines: ['« Maurice est le proof-of-concept.', 'Ça marche ici — donc ça marche partout en Afrique.', 'Le même problème, partout : pas assez de médecins.', 'On n’a pas encore lancé, et je ne vous parlerai pas de chiffres.', 'Parce que c’est bien plus que ça : une infrastructure', 'de santé souveraine, pour tout un continent. »'],
+    }, "A sovereign health infrastructure for Africa.")), /*#__PURE__*/React.createElement(Narration, {
+      lines: ['"Mauritius is the proof of concept.', 'It works here — so it works everywhere in Africa.', 'The same problem, everywhere: not enough doctors.', 'We have not launched yet, and I will not give you figures.', 'Because it is far more than that: a sovereign', 'health infrastructure, for an entire continent."'],
       x: 960,
       width: 1560,
       align: "center",
@@ -524,15 +524,15 @@
     dur: 24,
     hue: 'gold',
     node: /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement(ActTag, {
-      act: "Acte 5",
-      title: "Soft power & rayonnement",
+      act: "Act 5",
+      title: "Soft power & influence",
       color: C.gold
     }), /*#__PURE__*/React.createElement(Statement, {
       align: "center",
       y: 250,
       size: 64,
       weight: 700,
-      lines: ['Maurice, hub health-tech africain.', 'Pas touristique — technologique.'],
+      lines: ['Mauritius, Africa\'s health-tech hub.', 'Not tourism — technology.'],
       accentIdx: [1],
       accentColor: C.gold
     }), /*#__PURE__*/React.createElement("div", {
@@ -545,13 +545,13 @@
         justifyContent: 'center',
         gap: 24
       }
-    }, [['Soft power', 'Leader de l’innovation africaine'], ['Producteur IA', 'Algorithmes locaux = propriété africaine'], ['Emplois & talents', 'Tech à haute valeur — le talent reste à Maurice']].map((p, i) => /*#__PURE__*/React.createElement(MiniPanel, {
+    }, [['Soft power', 'Leader of African innovation'], ['AI producer', 'Local algorithms = African ownership'], ['Jobs & talent', 'High-value tech — the talent stays in Mauritius']].map((p, i) => /*#__PURE__*/React.createElement(MiniPanel, {
       key: i,
       p: p,
       i: i,
       color: C.gold
     }))), /*#__PURE__*/React.createElement(Narration, {
-      lines: ['« Ce n’est pas juste un produit de santé.', 'C’est une stratégie pour que Maurice soit visible —', 'comme leader technologique. La preuve qu’investir', 'en ses gens, ça paie. »'],
+      lines: ['"This is not just a health product.', 'It is a strategy to make Mauritius visible —', 'as a technology leader. The proof that investing', 'in your people pays off."'],
       x: 960,
       width: 1500,
       align: "center",
@@ -568,14 +568,14 @@
     dur: 28,
     hue: 'blue',
     node: /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement(ActTag, {
-      act: "Acte 6",
-      title: "La preuve de concept \u2014 Flacq"
+      act: "Act 6",
+      title: "The proof of concept \u2014 Flacq"
     }), /*#__PURE__*/React.createElement(Statement, {
       x: 120,
       y: 200,
       size: 62,
       weight: 700,
-      lines: ['Si ça marche à Flacq,', 'ça marche au national.'],
+      lines: ['If it works in Flacq,', 'it works nationwide.'],
       accentIdx: [1],
       accentColor: C.blue
     }), /*#__PURE__*/React.createElement(PhotoTile, {
@@ -587,8 +587,8 @@
       at: 0.4,
       color: C.blue,
       objPos: "50% 58%",
-      label: "Flacq \xB7 centre de sant\xE9 public",
-      sub: "4 AHC + 24 CHC + 1 h\xF4pital r\xE9gional \u2014 z\xE9ro capex"
+      label: "Flacq \xB7 public health centre",
+      sub: "4 AHC + 24 CHC + 1 regional hospital \u2014 zero capex"
     }), /*#__PURE__*/React.createElement("div", {
       style: {
         position: 'absolute',
@@ -599,12 +599,12 @@
         justifyContent: 'center',
         gap: 24
       }
-    }, [['01', 'Représentativité', '170 000 habitants · 13,5 % de Maurice · mix rural/urbain'], ['02', 'Infrastructure existante', '4 AHC + 24 CHC + 1 hôpital régional · zéro capex'], ['03', 'Gestion simple', 'Ni Port-Louis, ni Rodrigues · pilotable']].map((p, i) => /*#__PURE__*/React.createElement(NumPanel, {
+    }, [['01', 'Representativeness', '170 000 inhabitants · 13.5% of Mauritius · rural/urban mix'], ['02', 'Existing infrastructure', '4 AHC + 24 CHC + 1 regional hospital · zero capex'], ['03', 'Easy to manage', 'Neither Port-Louis nor Rodrigues · manageable']].map((p, i) => /*#__PURE__*/React.createElement(NumPanel, {
       key: i,
       p: p,
       i: i
     }))), /*#__PURE__*/React.createElement(Narration, {
-      lines: ['« On fait la preuve de concept à Flacq.', '170 000 habitants, représentatifs.', 'L’infrastructure existe déjà. Zéro capex.', 'Si ça marche à Flacq, ça marche au national —', 'c’est exactement ce qu’on veut prouver. »'],
+      lines: ['"We run the proof of concept in Flacq.', '170 000 inhabitants, representative.', 'The infrastructure already exists. Zero capex.', 'If it works in Flacq, it works nationwide —', 'that is exactly what we want to prove."'],
       x: 960,
       width: 1500,
       align: "center",
@@ -620,8 +620,8 @@
     dur: 28,
     hue: 'blue',
     node: /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement(ActTag, {
-      act: "Acte 6",
-      title: "P\xE9rim\xE8tre & budget \u2014 pilote 6 mois"
+      act: "Act 6",
+      title: "Scope & budget \u2014 6-month pilot"
     }), /*#__PURE__*/React.createElement("div", {
       style: {
         position: 'absolute',
@@ -639,7 +639,7 @@
       suffix: "M",
       size: 120,
       color: "#fff",
-      label: "Budget demand\xE9",
+      label: "Budget requested",
       align: "center"
     }), /*#__PURE__*/React.createElement("div", {
       style: {
@@ -652,7 +652,7 @@
       suffix: "+",
       size: 120,
       color: C.blue,
-      label: "Consultations couvertes",
+      label: "Consultations covered",
       align: "center",
       at: 0.5
     })), /*#__PURE__*/React.createElement("div", {
@@ -673,7 +673,7 @@
         maxWidth: 1480,
         margin: '0 auto'
       }
-    }, "Toutes les consultations \u2014 pr\xE9sentiel et distanciel, urgences, centres de sant\xE9 et dispensaires \u2014 partout o\xF9 op\xE8re la medical intelligence, et l\u2019usage de tous les modules : labo \xB7 radio \xB7 pharmacie.")), /*#__PURE__*/React.createElement("div", {
+    }, "Every consultation \u2014 in-person and remote, emergency, health centres and dispensaries \u2014 wherever the medical intelligence operates, and the use of every module: lab \xB7 radiology \xB7 pharmacy.")), /*#__PURE__*/React.createElement("div", {
       style: {
         position: 'absolute',
         top: 438,
@@ -686,13 +686,13 @@
     }, /*#__PURE__*/React.createElement(Chip, {
       at: 0.5,
       color: C.gold
-    }, "Pilote 6 mois"), /*#__PURE__*/React.createElement(Chip, {
+    }, "6-month pilot"), /*#__PURE__*/React.createElement(Chip, {
       at: 0.62,
       color: C.blue
-    }, "Zone de Flacq \u2014 170 000 habitants"), /*#__PURE__*/React.createElement(Chip, {
+    }, "Flacq area \u2014 170 000 inhabitants"), /*#__PURE__*/React.createElement(Chip, {
       at: 0.74,
       color: C.teal
-    }, "Mix rural & ville \u2014 repr\xE9sentatif")), /*#__PURE__*/React.createElement(PhotoTile, {
+    }, "Rural & urban mix \u2014 representative")), /*#__PURE__*/React.createElement(PhotoTile, {
       src: "assets/people/patient-app.jpg",
       x: 1228,
       y: 538,
@@ -701,8 +701,8 @@
       at: 0.7,
       color: C.blue,
       objPos: "50% 42%",
-      label: "Dossier patient \xB7 application",
-      sub: "Sur le mobile du patient, aux couleurs de l\u2019\xC9tat"
+      label: "Patient record \xB7 application",
+      sub: "On the patient's phone, in the colours of the State"
     }), /*#__PURE__*/React.createElement("div", {
       style: {
         position: 'absolute',
@@ -713,7 +713,7 @@
         flexDirection: 'column',
         gap: 16
       }
-    }, [['Besoins minimes', 'Une connexion internet · un ordinateur ou un téléphone connecté', C.teal], ['Dossier patient', 'Accessible via l’application, sur le mobile du patient', C.blue], ['Aux couleurs de l’État', 'TIBOK brandé aux couleurs du gouvernement', C.gold]].map((p, i) => /*#__PURE__*/React.createElement(Card3D, {
+    }, [['Minimal requirements', 'An internet connection · a computer or a connected phone', C.teal], ['Patient record', 'Accessible via the app, on the patient’s phone', C.blue], ['In the State’s colours', 'TIBOK branded in the colours of the government', C.gold]].map((p, i) => /*#__PURE__*/React.createElement(Card3D, {
       key: i,
       at: 0.5 + i * 0.15,
       i: i,
@@ -738,7 +738,7 @@
         lineHeight: 1.35
       }
     }, p[1])))), /*#__PURE__*/React.createElement(Narration, {
-      lines: ['« Le pilote, c’est 6 mois — sur toute la zone de Flacq.', '170 000 habitants : rural et ville, un vrai mix représentatif.', 'Cinq millions de roupies — pour plus de 500 000 consultations.', 'Une connexion internet, un ordinateur ou un téléphone connecté.', 'Le patient accède à son dossier via l’application.', 'Et TIBOK est brandé aux couleurs du gouvernement. »'],
+      lines: ['"The pilot runs 6 months — across the entire Flacq area.', '170 000 inhabitants: rural and urban, a truly representative mix.', 'Five million rupees — for more than 500 000 consultations.', 'An internet connection, a computer or a connected phone.', 'The patient accesses their record via the app.', 'And TIBOK is branded in the colours of the government."'],
       x: 960,
       width: 1560,
       align: "center",
@@ -754,18 +754,18 @@
     dur: 30,
     hue: 'blue',
     node: /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement(ActTag, {
-      act: "Acte 6",
-      title: "Les gains potentiels"
+      act: "Act 6",
+      title: "The potential gains"
     }), /*#__PURE__*/React.createElement(Statement, {
       x: 120,
       y: 150,
       size: 48,
       weight: 700,
-      lines: ['Pas encore de recul.', 'Mais des gains potentiels clairs.'],
+      lines: ['No hindsight yet.', 'But clear potential gains.'],
       accentIdx: [1],
       accentColor: C.blue
     }), /*#__PURE__*/React.createElement(Benefits, null), /*#__PURE__*/React.createElement(Narration, {
-      lines: ['« On vient de démarrer — pas encore de chiffres.', 'Mais les gains potentiels sont clairs : avec la medical', 'intelligence de TIBOK, le médecin est augmenté,', 'chaque prescription sourcée et justifiée.', 'Fin de la redondance des examens, moins d’hospitalisations', 'inutiles, des flux maîtrisés — en partie à distance.', 'Le recueil structuré avec les auxiliaires de santé —', 'du temps médecin gagné. Plus rapide, plus efficace. »'],
+      lines: ['"We have only just started — no figures yet.', 'But the potential gains are clear: with TIBOK’s', 'medical intelligence, the doctor is augmented,', 'every prescription sourced and justified.', 'No more duplicate tests, fewer unnecessary', 'hospitalisations, controlled flows — partly remote.', 'Structured intake with the health auxiliaries —', 'doctor time saved. Faster, more efficient."'],
       x: 960,
       width: 1560,
       align: "center",
@@ -781,14 +781,14 @@
     dur: 24,
     hue: 'blue',
     node: /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement(ActTag, {
-      act: "Acte 6",
-      title: "Financement & gouvernance"
+      act: "Act 6",
+      title: "Financing & governance"
     }), /*#__PURE__*/React.createElement(Statement, {
       x: 120,
       y: 210,
       size: 54,
       weight: 700,
-      lines: ['Un grant, pas un appel d’offres.', 'Quatre semaines, pas douze mois.'],
+      lines: ['A grant, not a tender.', 'Four weeks, not twelve months.'],
       accentIdx: [1],
       accentColor: C.blue
     }), /*#__PURE__*/React.createElement("div", {
@@ -807,17 +807,17 @@
     }, /*#__PURE__*/React.createElement(Chip, {
       at: 0.3,
       color: C.teal
-    }, "Minist\xE8re de la Sant\xE9 \xB7 approuve & finance \u2014 Rs 5 M"), /*#__PURE__*/React.createElement(Chip, {
+    }, "Ministry of Health \xB7 approves & funds \u2014 Rs 5 M"), /*#__PURE__*/React.createElement(Chip, {
       at: 0.5,
       color: C.teal
-    }, "D\xE9cision & pilotage : Minist\xE8re de la Sant\xE9"), /*#__PURE__*/React.createElement(Chip, {
+    }, "Decision & oversight: Ministry of Health"), /*#__PURE__*/React.createElement(Chip, {
       at: 0.7,
       color: C.blue
-    }, "Technologies \xB7 conformit\xE9 IA & s\xE9curit\xE9 des donn\xE9es"), /*#__PURE__*/React.createElement(Chip, {
+    }, "Technology \xB7 AI compliance & data security"), /*#__PURE__*/React.createElement(Chip, {
       at: 0.9,
       color: C.gold
-    }, "Go / no-go \xE0 M3 \xB7 dashboard public")), /*#__PURE__*/React.createElement(Narration, {
-      lines: ['« Un appel d’offres, c’est 12 mois de bureaucratie.', 'Un grant, c’est quatre semaines.', 'Le Ministère de la Santé approuve, finance et pilote.', 'Le Ministère des Technologies garantit la conformité — l’IA, la sécurité des données.', 'Dashboard public, transparence totale, et un go/no-go à mois 3. »'],
+    }, "Go / no-go at M3 \xB7 public dashboard")), /*#__PURE__*/React.createElement(Narration, {
+      lines: ['"A tender means 12 months of bureaucracy.', 'A grant takes four weeks.', 'The Ministry of Health approves, funds and oversees.', 'The Ministry of Technology guarantees compliance — AI, data security.', 'Public dashboard, full transparency, and a go/no-go at month 3."'],
       x: 960,
       width: 1560,
       align: "center",
@@ -833,14 +833,14 @@
     dur: 24,
     hue: 'blue',
     node: /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement(ActTag, {
-      act: "Acte 6",
-      title: "M\xE9triques de succ\xE8s"
+      act: "Act 6",
+      title: "Success metrics"
     }), /*#__PURE__*/React.createElement(Statement, {
       x: 120,
       y: 210,
       size: 54,
       weight: 700,
-      lines: ['Si on atteint les objectifs, on scale.', 'Sinon, on pivote. Pas de drame.'],
+      lines: ['Hit the targets, we scale.', 'Miss them, we pivot. No drama.'],
       accentIdx: [1],
       accentColor: C.blue
     }), /*#__PURE__*/React.createElement("div", {
@@ -853,13 +853,13 @@
         justifyContent: 'center',
         gap: 22
       }
-    }, [['Adoption', '>70 % centres actifs · >5 000 cs/mois'], ['Clinique', 'Urgences −10 % · e-prescription >40 %'], ['Satisfaction', 'NPS >65 · uptime >99,5 %'], ['Coût', '<Rs 10 / consultation']].map((p, i) => /*#__PURE__*/React.createElement(MiniPanel, {
+    }, [['Adoption', '>70% active centres · >5 000 consultations/month'], ['Clinical', 'Emergencies −10% · e-prescription >40%'], ['Satisfaction', 'NPS >65 · uptime >99.5%'], ['Cost', '<Rs 10 / consultation']].map((p, i) => /*#__PURE__*/React.createElement(MiniPanel, {
       key: i,
       p: p,
       i: i,
       color: C.blue
     }))), /*#__PURE__*/React.createElement(Narration, {
-      lines: ['« Les métriques sont claires et mesurables.', 'Si on les atteint, on scale au national.', 'Sinon, on pivote ou on arrête. Pas de drame.', 'Mais Swan le prouve déjà. »'],
+      lines: ['"The metrics are clear and measurable.', 'If we hit them, we scale nationwide.', 'If not, we pivot or we stop. No drama.', 'But Swan already proves it."'],
       x: 960,
       width: 1500,
       align: "center",
@@ -876,14 +876,14 @@
     dur: 24,
     hue: 'blue',
     node: /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement(ActTag, {
-      act: "Acte 6",
-      title: "S\xE9curit\xE9 & conformit\xE9"
+      act: "Act 7",
+      title: "Security & compliance"
     }), /*#__PURE__*/React.createElement(Statement, {
       x: 120,
       y: 188,
       size: 56,
       weight: 700,
-      lines: ['Une infrastructure', 'de confiance.'],
+      lines: ['An infrastructure', 'you can trust.'],
       accentIdx: [1],
       accentColor: C.green
     }), /*#__PURE__*/React.createElement("div", {
@@ -902,23 +902,23 @@
     }, /*#__PURE__*/React.createElement(Chip, {
       at: 0.4,
       color: C.green
-    }, "Conforme GDPR"), /*#__PURE__*/React.createElement(Chip, {
+    }, "GDPR compliant"), /*#__PURE__*/React.createElement(Chip, {
       at: 0.54,
       color: C.green
-    }, "Certifi\xE9 SOC 2"), /*#__PURE__*/React.createElement(Chip, {
+    }, "SOC 2 certified"), /*#__PURE__*/React.createElement(Chip, {
       at: 0.68,
       color: C.blue
-    }, "H\xE9bergement AWS"), /*#__PURE__*/React.createElement(Chip, {
+    }, "AWS hosting"), /*#__PURE__*/React.createElement(Chip, {
       at: 0.82,
       color: C.blue
     }, "Supabase"), /*#__PURE__*/React.createElement(Chip, {
       at: 0.96,
       color: C.teal
-    }, "Chiffrement de bout en bout"), /*#__PURE__*/React.createElement(Chip, {
+    }, "End-to-end encryption"), /*#__PURE__*/React.createElement(Chip, {
       at: 1.1,
       color: C.gold
-    }, "Donn\xE9es 100 % propri\xE9t\xE9 de l\u2019\xC9tat")), /*#__PURE__*/React.createElement(Narration, {
-      lines: ['« La sécurité n’est pas une option.', 'À ce jour, notre système est conforme GDPR,', 'certifié SOC 2, hébergé sur AWS, avec Supabase.', 'Chiffré, traçable. Et les données restent', 'la propriété de l’État — souveraines. »'],
+    }, "Data 100% owned by the State")), /*#__PURE__*/React.createElement(Narration, {
+      lines: ['"Security is not an option.', 'As of today, our system is GDPR compliant,', 'SOC 2 certified, hosted on AWS, with Supabase.', 'Encrypted, traceable. And the data remains', 'the property of the State — sovereign."'],
       x: 960,
       width: 1540,
       align: "center",
@@ -934,18 +934,18 @@
     dur: 32,
     hue: 'blue',
     node: /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement(ActTag, {
-      act: "Acte 7",
-      title: "L\u2019ask cristallin"
+      act: "Act 7",
+      title: "The crystal-clear ask"
     }), /*#__PURE__*/React.createElement(Statement, {
       x: 120,
       y: 150,
       size: 52,
       weight: 700,
-      lines: ['Deux demandes. Deux partenaires.', 'Zéro ambiguïté.'],
+      lines: ['Two requests. Two partners.', 'Zero ambiguity.'],
       accentIdx: [1],
       accentColor: C.blue
     }), /*#__PURE__*/React.createElement(AskCards, null), /*#__PURE__*/React.createElement(Narration, {
-      lines: ['« Deux demandes claires, mesurables, avec timeline.', 'Le Ministère de la Santé approuve le grant et accueille le pilote.', 'Le Ministère des Technologies garantit la conformité — l’IA, la sécurité des données.', 'Zéro dépendance externe — tout repose sur une équipe mauricienne. »'],
+      lines: ['"Two requests, clear, measurable, with a timeline.', 'The Ministry of Health approves the grant and hosts the pilot.', 'The Ministry of Technology guarantees compliance — AI, data security.', 'Zero external dependency — it all rests on a Mauritian team."'],
       x: 960,
       width: 1500,
       align: "center",
@@ -966,11 +966,11 @@
       y: 250,
       size: 84,
       weight: 700,
-      lines: ['La technologie existe.', 'L’équipe existe.', 'La vision existe.'],
+      lines: ['The technology exists.', 'The team exists.', 'The vision exists.'],
       accentIdx: [2],
       accentColor: C.blue
     }), /*#__PURE__*/React.createElement(Narration, {
-      lines: ['« Ce qui manque : la permission de l’État.', 'Et cinq millions de roupies pour 6 mois.', 'Allez-vous permettre à une équipe mauricienne', 'de montrer au monde comment on fabrique', 'une infrastructure de santé souveraine pour l’Afrique ? »'],
+      lines: ['"What is missing: the permission of the State.', 'And five million rupees for 6 months.', 'Will you allow a Mauritian team', 'to show the world how to build', 'a sovereign health infrastructure for Africa?"'],
       x: 960,
       width: 1560,
       align: "center",
@@ -982,23 +982,23 @@
       lead: 1.6,
       tail: 1.4
     }))
-  }, /* ---------- ACT 8 — clôture alignée Budget 2026-2027 ---------- */
+  }, /* ---------- ACT 8 — closing aligned with the 2026-2027 Budget ---------- */
   {
     dur: 30,
     hue: 'blue',
     node: /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement(ActTag, {
-      act: "Acte 8",
-      title: "Align\xE9 sur le Budget 2026-2027"
+      act: "Act 8",
+      title: "Aligned with the 2026-2027 Budget"
     }), /*#__PURE__*/React.createElement(Statement, {
       align: "center",
       y: 150,
       size: 46,
       weight: 700,
-      lines: ['Le Budget 2026-2027 vient d’être voté.', 'TIBOK l’exécute déjà.'],
+      lines: ['The 2026-2027 Budget has just been voted.', 'TIBOK is already executing it.'],
       accentIdx: [1],
       accentColor: C.blue
     }), /*#__PURE__*/React.createElement(BudgetAlign, null), /*#__PURE__*/React.createElement(Narration, {
-      lines: ['« Le Budget 2026-2027 du gouvernement vient d’être voté.', 'Prévention, diabète, détection précoce, télémédecine,', 'intelligence artificielle clinique, soins primaires, efficience hospitalière.', 'Chacune de ces priorités, TIBOK ne se contente pas d’en parler :', 'il l’exécute déjà, sur le terrain.', 'La prévention du diabète ? SilentCheck dépiste et suit dès le premier mois.', 'La détection précoce ? Notre score de risque — le score BSD,', 'Bach, Sampol, Dignat-Georges — développé avec les professeurs émérites', 'de l’Assistance Publique des Hôpitaux de Marseille et de l’INSERM.', 'La télémédecine, le suivi à domicile des plus de 85 ans : tout est en place.', 'Il n’y a rien à construire — seulement un dispositif mûr à activer. »'],
+      lines: ['"The 2026-2027 Government Budget has just been voted.', 'Prevention, diabetes, early detection, telemedicine,', 'clinical artificial intelligence, primary care, hospital efficiency.', 'Each of these priorities, TIBOK does not merely talk about:', 'it already delivers them, on the ground.', 'Diabetes prevention? SilentCheck screens and follows up from the very first month.', 'Early detection? Our risk score — the BSD score,', 'Bach, Sampol, Dignat-Georges — developed with the emeritus professors', 'of the Assistance Publique des Hôpitaux de Marseille and INSERM.', 'Telemedicine, home follow-up for the over-85s: it is all in place.', 'There is nothing to build — only a mature system to activate."'],
       x: 960,
       width: 1640,
       align: "center",
@@ -1014,14 +1014,14 @@
     dur: 26,
     hue: 'blue',
     node: /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement(ActTag, {
-      act: "Acte 8",
-      title: "Pourquoi signer"
+      act: "Act 8",
+      title: "Why sign"
     }), /*#__PURE__*/React.createElement(Statement, {
       x: 120,
       y: 150,
       size: 56,
       weight: 700,
-      lines: ['Pourquoi signer.', 'Maintenant.'],
+      lines: ['Why sign.', 'Now.'],
       accentIdx: [1],
       accentColor: C.blue
     }), /*#__PURE__*/React.createElement("div", {
@@ -1038,13 +1038,13 @@
         marginLeft: 'auto',
         marginRight: 'auto'
       }
-    }, [['Risque plafonné', 'Rs 5 M — pas un de plus, jamais', C.blue], ['Périmètre borné', '6 mois, une seule région : Flacq', C.teal], ['Aucun délai', 'Produit prêt, équipe mobilisable sous 30 jours', C.blue], ['Alignement budgétaire', 'Exécute des priorités déjà votées', C.gold], ['Souveraineté', 'IA médicale mauricienne — vitrine régionale', C.teal], ['Réversible — par la preuve', 'Continuer, étendre ou arrêter sur des chiffres réels', C.green]].map((p, i) => /*#__PURE__*/React.createElement(MiniPanel, {
+    }, [['Capped risk', 'Rs 5 M — not one more, ever', C.blue], ['Bounded scope', '6 months, a single region: Flacq', C.teal], ['No delay', 'Product ready, team mobilisable within 30 days', C.blue], ['Budget alignment', 'Delivers priorities already voted', C.gold], ['Sovereignty', 'Mauritian medical AI — a regional showcase', C.teal], ['Reversible — through proof', 'Continue, scale or stop on real figures', C.green]].map((p, i) => /*#__PURE__*/React.createElement(MiniPanel, {
       key: i,
       p: p,
       i: i,
       color: p[2]
     }))), /*#__PURE__*/React.createElement(Narration, {
-      lines: ['« Je sais ce que vous vous demandez à cet instant : quel est le risque ?', 'Le risque est minimal, et c’est volontaire.', 'C’est plafonné : cinq millions, pas un de plus.', 'C’est borné : six mois, une seule région.', 'Aucun délai technologique : le produit est prêt,', 'l’équipe mobilisable sous trente jours.', 'C’est aligné : le pilote exécute des priorités déjà votées.', 'C’est souverain : une IA médicale mauricienne,', 'adossée à l’excellence académique marseillaise.', 'Et c’est réversible : à la fin, vous décidez —', 'continuer, étendre ou arrêter — sur des chiffres réels.', 'Vous ne pariez pas sur une promesse : vous achetez une preuve. »'],
+      lines: ['"I know what you are asking yourselves right now: what is the risk?', 'The risk is minimal, and that is by design.', 'It is capped: five million, not one more.', 'It is bounded: six months, a single region.', 'No technological delay: the product is ready,', 'the team mobilisable within thirty days.', 'It is aligned: the pilot delivers priorities already voted.', 'It is sovereign: a Mauritian medical AI,', 'backed by the academic excellence of Marseille.', 'And it is reversible: at the end, you decide —', 'continue, scale or stop — on real figures.', 'You are not betting on a promise: you are buying proof."'],
       x: 960,
       width: 1560,
       align: "center",
@@ -1060,14 +1060,14 @@
     dur: 24,
     hue: 'blue',
     node: /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement(ActTag, {
-      act: "Acte 8",
-      title: "La demande"
+      act: "Act 8",
+      title: "The request"
     }), /*#__PURE__*/React.createElement(Statement, {
       align: "center",
       y: 260,
       size: 72,
       weight: 700,
-      lines: ['Donnez-nous six mois', 'sur Flacq.'],
+      lines: ['Give us six months', 'in Flacq.'],
       accentIdx: [1],
       accentColor: C.blue
     }), /*#__PURE__*/React.createElement("div", {
@@ -1086,11 +1086,11 @@
     }, "Rs 5 M"), /*#__PURE__*/React.createElement(Chip, {
       at: 0.62,
       color: C.gold
-    }, "6 mois"), /*#__PURE__*/React.createElement(Chip, {
+    }, "6 months"), /*#__PURE__*/React.createElement(Chip, {
       at: 0.74,
       color: C.teal
     }, "Flacq")), /*#__PURE__*/React.createElement(Narration, {
-      lines: ['« Messieurs les Ministres.', 'À la Santé, la décision et le terrain.', 'Aux Technologies, la conformité — l’IA, la sécurité des données, la souveraineté.', 'Le Budget du gouvernement dit : prévention, intelligence artificielle, soins primaires.', 'TIBOK, c’est exactement cela — fait à Maurice, prêt aujourd’hui.', 'Donnez-nous six mois sur Flacq. Et laissez les résultats parler. »'],
+      lines: ['"Honourable Ministers.', 'To Health, the decision and the ground.', 'To Technology, compliance — AI, data security, sovereignty.', 'The Government Budget says: prevention, artificial intelligence, primary care.', 'TIBOK is exactly that — made in Mauritius, ready today.', 'Give us six months in Flacq. And let the results speak."'],
       x: 960,
       width: 1500,
       align: "center",
@@ -1114,7 +1114,7 @@
       localTime
     } = useScene();
     const root = ev(localTime, 0.2, 0.6, Easing.easeOutCubic);
-    const products = [['tibok', 'Health OS · présentiel + distance'], ['lexora', 'ERP IA-native · compta & paie'], ['axon', 'Agents vocaux · service client']];
+    const products = [['tibok', 'Health OS · in-person + remote'], ['lexora', 'AI-native ERP · accounting & payroll'], ['axon', 'Voice agents · customer service']];
     return /*#__PURE__*/React.createElement("div", {
       style: {
         position: 'absolute',
@@ -1159,7 +1159,7 @@
         color: C.blue,
         marginBottom: 18
       }
-    }, "Produits IA"), /*#__PURE__*/React.createElement("div", {
+    }, "AI products"), /*#__PURE__*/React.createElement("div", {
       style: {
         display: 'flex',
         gap: 22
@@ -1219,7 +1219,7 @@
         color: C.gold,
         marginBottom: 18
       }
-    }, "Activit\xE9s connexes"), /*#__PURE__*/React.createElement("div", {
+    }, "Related ventures"), /*#__PURE__*/React.createElement("div", {
       style: {
         display: 'flex',
         flexDirection: 'column',
@@ -1251,7 +1251,7 @@
         color: C.dim,
         lineHeight: 1.3
       }
-    }, "Chirurgie bariatrique \xB7 NHS S2")), /*#__PURE__*/React.createElement(Card3D, {
+    }, "Bariatric surgery \xB7 NHS S2")), /*#__PURE__*/React.createElement(Card3D, {
       at: 1.25,
       i: 3,
       accent: C.gold,
@@ -1269,7 +1269,7 @@
         fontSize: 24,
         color: C.gold
       }
-    }, "CVMI \xB7 Cap-Vert"), /*#__PURE__*/React.createElement("div", {
+    }, "CVMI \xB7 Cabo Verde"), /*#__PURE__*/React.createElement("div", {
       style: {
         fontFamily: FD,
         fontWeight: 400,
@@ -1278,7 +1278,7 @@
         marginTop: 6,
         lineHeight: 1.3
       }
-    }, "Tourisme m\xE9dical \u2014 pr\xE9vention des maladies chroniques + tourisme")))));
+    }, "Medical tourism \u2014 chronic-disease prevention + tourism")))));
   }
   function Waveform() {
     const {
@@ -1317,7 +1317,7 @@
     const {
       localTime
     } = useScene();
-    const m = ['AI Doctor', 'Suivi WhatsApp', 'Cabinet présentiel', 'Intégration labo', 'Pharmacie'];
+    const m = ['AI Doctor', 'WhatsApp follow-up', 'In-person practice', 'Lab integration', 'Pharmacy'];
     return /*#__PURE__*/React.createElement("div", {
       style: {
         position: 'absolute',
@@ -1367,7 +1367,7 @@
     const {
       localTime
     } = useScene();
-    const r = [['Maurice', '≈ 1 : 500', 500, C.green], ['Sénégal', '1 : 7 000', 7000, C.blue], ['Mali', '1 : 15 000', 15000, C.gold], ['Sahel', '1 : 25 000', 25000, C.coral]];
+    const r = [['Mauritius', '≈ 1 : 500', 500, C.green], ['Senegal', '1 : 7 000', 7000, C.blue], ['Mali', '1 : 15 000', 15000, C.gold], ['Sahel', '1 : 25 000', 25000, C.coral]];
     const maxR = 25000;
     return /*#__PURE__*/React.createElement("div", {
       style: {
@@ -1496,7 +1496,7 @@
     const {
       localTime
     } = useScene();
-    const a = [['Ministère de la Santé', 'Décision · financement · terrain', 'Approuver le grant de Rs 5 M et accueillir le pilote à Flacq', ['Tout se décide ici', 'Un grant — 4 semaines, pas 12 mois', '4 AHC + 24 CHC · ~500 soignants'], C.teal], ['Ministère des Technologies', 'Conformité IA & données', 'Garantir la conformité de l’IA et la sécurité des données', ['Souveraineté numérique', 'Données 100 % propriété de l’État', 'Conforme GDPR · SOC 2'], C.blue]];
+    const a = [['Ministry of Health', 'Decision · funding · ground', 'Approve the Rs 5 M grant and host the pilot in Flacq', ['Everything is decided here', 'A grant — 4 weeks, not 12 months', '4 AHC + 24 CHC · ~500 caregivers'], C.teal], ['Ministry of Technology', 'AI & data compliance', 'Guarantee AI compliance and data security', ['Digital sovereignty', 'Data 100% owned by the State', 'GDPR compliant · SOC 2'], C.blue]];
     const W = 520,
       gap = 30,
       total = a.length * W + (a.length - 1) * gap,
@@ -1638,7 +1638,7 @@
         opacity: ev(localTime, 0.7, 0.7),
         maxWidth: '18ch'
       }
-    }, "Construit par Maurice.", /*#__PURE__*/React.createElement("br", null), "Pour Maurice. Pour l\u2019Afrique.")), /*#__PURE__*/React.createElement("div", {
+    }, "Built by Mauritius.", /*#__PURE__*/React.createElement("br", null), "For Mauritius. For Africa.")), /*#__PURE__*/React.createElement("div", {
       style: {
         position: 'absolute',
         right: 120,
@@ -1654,7 +1654,7 @@
         gap: 12,
         justifyContent: 'flex-start'
       }
-    }, ['Système prouvé — Swan', 'Équipe 100 % mauricienne', 'Infrastructure souveraine — MRIC'].map((c, i) => /*#__PURE__*/React.createElement("span", {
+    }, ['Proven system — Swan', '100% Mauritian team', 'Sovereign infrastructure — MRIC'].map((c, i) => /*#__PURE__*/React.createElement("span", {
       key: i,
       style: {
         padding: '11px 20px',
@@ -1702,7 +1702,7 @@
         color: C.dim,
         marginTop: 4
       }
-    }, "Fondateur & CEO, Digital Data Solutions Ltd"), /*#__PURE__*/React.createElement("div", {
+    }, "Founder & CEO, Digital Data Solutions Ltd"), /*#__PURE__*/React.createElement("div", {
       style: {
         fontFamily: FD,
         fontWeight: 500,
@@ -1725,7 +1725,7 @@
     const {
       localTime
     } = useScene();
-    const rows = [['Prévention & diabète — Rs 40 M', 'SilentCheck : dépistage + suivi dès le 1ᵉʳ mois', C.gold], ['Détection précoce — cardiométabolique', 'Score BSD validé · stratification du risque', C.teal], ['Télémédecine & parcours de soins', 'Distance + présentiel, déjà opérationnel', C.blue], ['Healthcare Innovation & AI Unit', 'IA clinique souveraine, faite à Maurice', C.blue], ['Efficience hospitalière', 'Désengorgement des urgences', C.teal], ['Vieillissement & 85+ · à domicile', 'Suivi à distance des patients chroniques', C.gold], ['Réforme du Clinical Trial Act', 'Score BSD : recherche clinique exportable', C.green]];
+    const rows = [['Prevention & diabetes — Rs 40 M', 'SilentCheck: screening + follow-up from month 1', C.gold], ['Early detection — cardiometabolic', 'BSD score validated · risk stratification', C.teal], ['Telemedicine & care pathways', 'Remote + in-person, already operational', C.blue], ['Healthcare Innovation & AI Unit', 'Sovereign clinical AI, made in Mauritius', C.blue], ['Hospital efficiency', 'Decongesting the emergency room', C.teal], ['Ageing & 85+ · at home', 'Remote follow-up of chronic patients', C.gold], ['Clinical Trial Act reform', 'BSD score: exportable clinical research', C.green]];
     return /*#__PURE__*/React.createElement("div", {
       style: {
         position: 'absolute',
@@ -1796,13 +1796,13 @@
         textAlign: 'center',
         opacity: ev(localTime, 2.4, 0.8)
       }
-    }, "Score BSD \u2014 Bach \xB7 Sampol \xB7 Dignat-Georges. Pr Sampol & Pr Dignat-Georges, professeurs \xE9m\xE9rites (AP-HM \xB7 INSERM UMR 608 \u2014 Physiopathologie de l\u2019Endoth\xE9lium). Publication en cours."));
+    }, "BSD score \u2014 Bach \xB7 Sampol \xB7 Dignat-Georges. Pr Sampol & Pr Dignat-Georges, emeritus professors (AP-HM \xB7 INSERM UMR 608 \u2014 Pathophysiology of the Endothelium). Publication in progress."));
   }
   function Benefits() {
     const {
       localTime
     } = useScene();
-    const b = [['Médecin augmenté', 'Sourcé pour chaque prescription', C.blue], ['Zéro redondance', 'Fini les examens en double', C.teal], ['Prescriptions justifiées', 'Adéquates, traçables', C.teal], ['Flux maîtrisés', 'Avec une partie à distance', C.blue], ['Moins d’hospitalisations', 'Les cas évitables, évités', C.gold], ['Temps médecin gagné', 'Recueil structuré avec les auxiliaires — plus rapide, plus efficace', C.green]];
+    const b = [['Augmented doctor', 'Sourced for every prescription', C.blue], ['Zero redundancy', 'No more duplicate tests', C.teal], ['Justified prescriptions', 'Appropriate, traceable', C.teal], ['Controlled flows', 'With a portion handled remotely', C.blue], ['Fewer hospitalisations', 'Avoidable cases, avoided', C.gold], ['Doctor time saved', 'Structured intake with the auxiliaries — faster, more efficient', C.green]];
     const gap = 20,
       W = 460;
     return /*#__PURE__*/React.createElement("div", {
@@ -1870,7 +1870,7 @@
     const {
       localTime
     } = useScene();
-    const nodes = [['Distanciel', C.blue], ['Présentiel', C.blue], ['Pharmacie', C.gold], ['Labo', C.teal], ['Radio', C.blue], ['Urgence', C.coral], ['Soins primaires', C.teal]];
+    const nodes = [['Remote', C.blue], ['In-person', C.blue], ['Pharmacy', C.gold], ['Lab', C.teal], ['Radiology', C.blue], ['Emergency', C.coral], ['Primary care', C.teal]];
     const cx = 960,
       cy = 560,
       rx = 600,
@@ -1931,14 +1931,14 @@
         fontSize: 15,
         color: '#fff'
       }
-    }, "Intelligence m\xE9dicale"), /*#__PURE__*/React.createElement("div", {
+    }, "Medical intelligence"), /*#__PURE__*/React.createElement("div", {
       style: {
         fontFamily: FD,
         fontWeight: 700,
         fontSize: 15,
         color: C.teal
       }
-    }, "60 000 r\xE9f\xE9rences")), pts.map((pt, i) => /*#__PURE__*/React.createElement(NodeChip, {
+    }, "60 000 references")), pts.map((pt, i) => /*#__PURE__*/React.createElement(NodeChip, {
       key: i,
       label: pt.n,
       icon: "\u25C6",
