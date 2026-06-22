@@ -713,7 +713,7 @@
         flexDirection: 'column',
         gap: 16
       }
-    }, [['Besoins minimes', 'Une connexion internet · un ordinateur connecté', C.teal], ['Dossier patient', 'Accessible via l’application, sur le mobile du patient', C.blue], ['Aux couleurs de l’État', 'TIBOK brandé aux couleurs du gouvernement', C.gold]].map((p, i) => /*#__PURE__*/React.createElement(Card3D, {
+    }, [['Besoins minimes', 'Une connexion internet · un ordinateur ou un téléphone connecté', C.teal], ['Dossier patient', 'Accessible via l’application, sur le mobile du patient', C.blue], ['Aux couleurs de l’État', 'TIBOK brandé aux couleurs du gouvernement', C.gold]].map((p, i) => /*#__PURE__*/React.createElement(Card3D, {
       key: i,
       at: 0.5 + i * 0.15,
       i: i,
@@ -738,7 +738,7 @@
         lineHeight: 1.35
       }
     }, p[1])))), /*#__PURE__*/React.createElement(Narration, {
-      lines: ['« Le pilote, c’est 6 mois — sur toute la zone de Flacq.', '170 000 habitants : rural et ville, un vrai mix représentatif.', 'Cinq millions de roupies — pour plus de 500 000 consultations.', 'Une connexion internet, un ordinateur connecté.', 'Le patient accède à son dossier via l’application.', 'Et TIBOK est brandé aux couleurs du gouvernement. »'],
+      lines: ['« Le pilote, c’est 6 mois — sur toute la zone de Flacq.', '170 000 habitants : rural et ville, un vrai mix représentatif.', 'Cinq millions de roupies — pour plus de 500 000 consultations.', 'Une connexion internet, un ordinateur ou un téléphone connecté.', 'Le patient accède à son dossier via l’application.', 'Et TIBOK est brandé aux couleurs du gouvernement. »'],
       x: 960,
       width: 1560,
       align: "center",

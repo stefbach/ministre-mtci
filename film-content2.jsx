@@ -282,7 +282,7 @@ const SCENES_B = [
   <PhotoTile src="assets/people/patient-app.jpg" x={1228} y={538} w={562} h={296} at={0.7}
     color={C.blue} objPos="50% 42%" label="Dossier patient · application" sub="Sur le mobile du patient, aux couleurs de l’État"/>
   <div style={{position:'absolute',top:546,left:120,width:1040,display:'flex',flexDirection:'column',gap:16}}>
-    {[['Besoins minimes','Une connexion internet · un ordinateur connecté',C.teal],
+    {[['Besoins minimes','Une connexion internet · un ordinateur ou un téléphone connecté',C.teal],
       ['Dossier patient','Accessible via l’application, sur le mobile du patient',C.blue],
       ['Aux couleurs de l’État','TIBOK brandé aux couleurs du gouvernement',C.gold]].map((p,i)=>(
       <Card3D key={i} at={0.5+i*0.15} i={i} accent={p[2]} accentSide="left" pad="16px 26px" radius={14}>
@@ -295,7 +295,7 @@ const SCENES_B = [
     '« Le pilote, c’est 6 mois — sur toute la zone de Flacq.',
     '170 000 habitants : rural et ville, un vrai mix représentatif.',
     'Cinq millions de roupies — pour plus de 500 000 consultations.',
-    'Une connexion internet, un ordinateur connecté.',
+    'Une connexion internet, un ordinateur ou un téléphone connecté.',
     'Le patient accède à son dossier via l’application.',
     'Et TIBOK est brandé aux couleurs du gouvernement. »']}
     x={960} width={1560} align="center" y={905} size={29} italic={true}
