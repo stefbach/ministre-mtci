@@ -806,23 +806,23 @@
       }
     }, /*#__PURE__*/React.createElement(Chip, {
       at: 0.3,
-      color: C.blue
-    }, "MRIC \xB7 Rs 3M"), /*#__PURE__*/React.createElement(Chip, {
-      at: 0.5,
-      color: C.blue
-    }, "MITCI \xB7 Rs 2M"), /*#__PURE__*/React.createElement(Chip, {
-      at: 0.7,
       color: C.teal
-    }, "Sant\xE9 \xB7 h\xE9berge & mesure"), /*#__PURE__*/React.createElement(Chip, {
+    }, "Minist\xE8re de la Sant\xE9 \xB7 approuve & finance \u2014 Rs 5 M"), /*#__PURE__*/React.createElement(Chip, {
+      at: 0.5,
+      color: C.teal
+    }, "D\xE9cision & pilotage : Minist\xE8re de la Sant\xE9"), /*#__PURE__*/React.createElement(Chip, {
+      at: 0.7,
+      color: C.blue
+    }, "Technologies \xB7 conformit\xE9 IA & s\xE9curit\xE9 des donn\xE9es"), /*#__PURE__*/React.createElement(Chip, {
       at: 0.9,
       color: C.gold
-    }, "MRIC \xB7 audit & go/no-go M3")), /*#__PURE__*/React.createElement(Narration, {
-      lines: ['« Un appel d’offres, c’est 12 mois de bureaucratie.', 'Un grant, c’est quatre semaines.', 'Chacun a un rôle. Dashboard public. Transparence totale.', 'Et un go/no-go à mois 3. »'],
+    }, "Go / no-go \xE0 M3 \xB7 dashboard public")), /*#__PURE__*/React.createElement(Narration, {
+      lines: ['« Un appel d’offres, c’est 12 mois de bureaucratie.', 'Un grant, c’est quatre semaines.', 'Le Ministère de la Santé approuve, finance et pilote.', 'Le Ministère des Technologies garantit la conformité — l’IA, la sécurité des données.', 'Dashboard public, transparence totale, et un go/no-go à mois 3. »'],
       x: 960,
-      width: 1500,
+      width: 1560,
       align: "center",
       y: 780,
-      size: 34,
+      size: 32,
       italic: true,
       accent: "#EDEFF4",
       dim: "rgba(206,219,240,0.22)",
@@ -945,7 +945,7 @@
       accentIdx: [1],
       accentColor: C.blue
     }), /*#__PURE__*/React.createElement(AskCards, null), /*#__PURE__*/React.createElement(Narration, {
-      lines: ['« Deux demandes claires, mesurables, avec timeline.', 'MITCI approuve le grant. Le Ministère de la Santé héberge et mesure.', 'Zéro dépendance externe —', 'tout repose sur une équipe mauricienne. »'],
+      lines: ['« Deux demandes claires, mesurables, avec timeline.', 'Le Ministère de la Santé approuve le grant et accueille le pilote.', 'Le Ministère des Technologies garantit la conformité — l’IA, la sécurité des données.', 'Zéro dépendance externe — tout repose sur une équipe mauricienne. »'],
       x: 960,
       width: 1500,
       align: "center",
@@ -1496,7 +1496,7 @@
     const {
       localTime
     } = useScene();
-    const a = [['MITCI', 'Sponsor & financement', 'Approuver le grant de Rs 5M pour le pilote Flacq', ['Risque nul, réversible', 'Un grant — 4 semaines, pas 12 mois', 'Leader health-tech africain'], C.blue], ['Ministère de la Santé', 'Hébergeur & terrain', 'Accepter TIBOK dans le pilote Flacq', ['4 AHC + 24 CHC · ~500 soignants', 'KPI baseline puis post-pilote', 'Données 100 % propriété de l’État'], C.teal]];
+    const a = [['Ministère de la Santé', 'Décision · financement · terrain', 'Approuver le grant de Rs 5 M et accueillir le pilote à Flacq', ['Tout se décide ici', 'Un grant — 4 semaines, pas 12 mois', '4 AHC + 24 CHC · ~500 soignants'], C.teal], ['Ministère des Technologies', 'Conformité IA & données', 'Garantir la conformité de l’IA et la sécurité des données', ['Souveraineté numérique', 'Données 100 % propriété de l’État', 'Conforme GDPR · SOC 2'], C.blue]];
     const W = 520,
       gap = 30,
       total = a.length * W + (a.length - 1) * gap,
