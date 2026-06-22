@@ -1044,7 +1044,7 @@
       i: i,
       color: p[2]
     }))), /*#__PURE__*/React.createElement(Narration, {
-      lines: ['« Je sais ce qu’un ministre se demande : quel est le risque ?', 'Le risque est minimal, et c’est volontaire.', 'C’est plafonné : cinq millions, pas un de plus.', 'C’est borné : six mois, une seule région.', 'Aucun délai technologique : le produit est prêt,', 'l’équipe mobilisable sous trente jours.', 'C’est aligné : le pilote exécute des priorités déjà votées.', 'C’est souverain : une IA médicale mauricienne,', 'adossée à l’excellence académique marseillaise.', 'Et c’est réversible : à la fin, vous décidez —', 'continuer, étendre ou arrêter — sur des chiffres réels.', 'Vous ne pariez pas sur une promesse : vous achetez une preuve. »'],
+      lines: ['« Je sais ce que vous vous demandez à cet instant : quel est le risque ?', 'Le risque est minimal, et c’est volontaire.', 'C’est plafonné : cinq millions, pas un de plus.', 'C’est borné : six mois, une seule région.', 'Aucun délai technologique : le produit est prêt,', 'l’équipe mobilisable sous trente jours.', 'C’est aligné : le pilote exécute des priorités déjà votées.', 'C’est souverain : une IA médicale mauricienne,', 'adossée à l’excellence académique marseillaise.', 'Et c’est réversible : à la fin, vous décidez —', 'continuer, étendre ou arrêter — sur des chiffres réels.', 'Vous ne pariez pas sur une promesse : vous achetez une preuve. »'],
       x: 960,
       width: 1560,
       align: "center",
@@ -1090,7 +1090,7 @@
       at: 0.74,
       color: C.teal
     }, "Flacq")), /*#__PURE__*/React.createElement(Narration, {
-      lines: ['« Monsieur le Ministre, le Budget du gouvernement dit :', 'prévention, intelligence artificielle, soins primaires.', 'TIBOK, c’est exactement cela — fait à Maurice, prêt aujourd’hui.', 'Donnez-nous six mois sur Flacq.', 'Et laissez les résultats parler. »'],
+      lines: ['« Messieurs les Ministres.', 'À la Santé, la décision et le terrain.', 'Aux Technologies, la conformité — l’IA, la sécurité des données, la souveraineté.', 'Le Budget du gouvernement dit : prévention, intelligence artificielle, soins primaires.', 'TIBOK, c’est exactement cela — fait à Maurice, prêt aujourd’hui.', 'Donnez-nous six mois sur Flacq. Et laissez les résultats parler. »'],
       x: 960,
       width: 1500,
       align: "center",

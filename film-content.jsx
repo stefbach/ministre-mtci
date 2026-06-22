@@ -208,10 +208,12 @@ const SCENES = [
     <div style={{background:'#fff',borderRadius:10,padding:6,display:'flex'}}>
       <img src="assets/logos/mauritius.png" alt="" style={{height:62,display:'block'}}/>
     </div>
-    <div style={{lineHeight:1.3}}>
-      <div style={{fontFamily:FD,fontWeight:600,fontSize:12.5,letterSpacing:'0.16em',textTransform:'uppercase',color:'rgba(206,219,240,0.5)'}}>Présenté au</div>
-      <div style={{fontFamily:FD,fontWeight:600,fontSize:17,color:'#D6E0F0',maxWidth:380,marginTop:2}}>Ministry of Information Technology, Communication and Innovation</div>
-      <div style={{fontFamily:FD,fontWeight:600,fontSize:14.5,color:'#9DB8E6',marginTop:6}}>À l’attention du Dr. Avinash Ramtohul</div>
+    <div style={{lineHeight:1.32,maxWidth:470}}>
+      <div style={{fontFamily:FD,fontWeight:600,fontSize:12.5,letterSpacing:'0.16em',textTransform:'uppercase',color:'rgba(206,219,240,0.5)'}}>Présenté à Messieurs les Ministres</div>
+      <div style={{fontFamily:FD,fontWeight:700,fontSize:16,color:'#D6E0F0',marginTop:5}}>L’honorable Anil Kumar</div>
+      <div style={{fontFamily:FD,fontWeight:500,fontSize:13.5,color:'#9DB8E6'}}>Ministère de la Santé et du Bien-être</div>
+      <div style={{fontFamily:FD,fontWeight:700,fontSize:16,color:'#D6E0F0',marginTop:7}}>Dr Avinash Ramtohul</div>
+      <div style={{fontFamily:FD,fontWeight:500,fontSize:13.5,color:'#9DB8E6'}}>Technologies de l’information, Communication & Innovation</div>
     </div>
   </div>
   <img src="assets/logos/tibok.png" alt="TIBOK" style={{position:'absolute',left:120,top:330,height:144}}/>
@@ -234,7 +236,7 @@ const SCENES = [
   <ActTag act="Acte 1" title="Le fondateur"/>
   <Photo src={IMG('bach')} x={120} y={210} w={560} h={690} objPos="50% 20%"/>
   <Narration lines={[
-    '« Monsieur le Ministre,',
+    '« Messieurs les Ministres,',
     'je m’appelle Stéphane Bach. Je suis médecin.',
     'Depuis 2019, je ne suis pas à Maurice',
     'pour faire une startup.',

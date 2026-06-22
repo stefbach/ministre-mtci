@@ -674,7 +674,8 @@
       }
     })), /*#__PURE__*/React.createElement("div", {
       style: {
-        lineHeight: 1.3
+        lineHeight: 1.32,
+        maxWidth: 470
       }
     }, /*#__PURE__*/React.createElement("div", {
       style: {
@@ -685,24 +686,37 @@
         textTransform: 'uppercase',
         color: 'rgba(206,219,240,0.5)'
       }
-    }, "Pr\xE9sent\xE9 au"), /*#__PURE__*/React.createElement("div", {
+    }, "Pr\xE9sent\xE9 \xE0 Messieurs les Ministres"), /*#__PURE__*/React.createElement("div", {
       style: {
         fontFamily: FD,
-        fontWeight: 600,
-        fontSize: 17,
+        fontWeight: 700,
+        fontSize: 16,
         color: '#D6E0F0',
-        maxWidth: 380,
-        marginTop: 2
+        marginTop: 5
       }
-    }, "Ministry of Information Technology, Communication and Innovation"), /*#__PURE__*/React.createElement("div", {
+    }, "L\u2019honorable Anil Kumar"), /*#__PURE__*/React.createElement("div", {
       style: {
         fontFamily: FD,
-        fontWeight: 600,
-        fontSize: 14.5,
-        color: '#9DB8E6',
-        marginTop: 6
+        fontWeight: 500,
+        fontSize: 13.5,
+        color: '#9DB8E6'
       }
-    }, "\xC0 l\u2019attention du Dr. Avinash Ramtohul"))), /*#__PURE__*/React.createElement("img", {
+    }, "Minist\xE8re de la Sant\xE9 et du Bien-\xEAtre"), /*#__PURE__*/React.createElement("div", {
+      style: {
+        fontFamily: FD,
+        fontWeight: 700,
+        fontSize: 16,
+        color: '#D6E0F0',
+        marginTop: 7
+      }
+    }, "Dr Avinash Ramtohul"), /*#__PURE__*/React.createElement("div", {
+      style: {
+        fontFamily: FD,
+        fontWeight: 500,
+        fontSize: 13.5,
+        color: '#9DB8E6'
+      }
+    }, "Technologies de l\u2019information, Communication & Innovation"))), /*#__PURE__*/React.createElement("img", {
       src: "assets/logos/tibok.png",
       alt: "TIBOK",
       style: {
@@ -811,7 +825,7 @@
       h: 690,
       objPos: "50% 20%"
     }), /*#__PURE__*/React.createElement(Narration, {
-      lines: ['« Monsieur le Ministre,', 'je m’appelle Stéphane Bach. Je suis médecin.', 'Depuis 2019, je ne suis pas à Maurice', 'pour faire une startup.', 'Je suis venu construire une infrastructure', 'de santé souveraine — pour 30 pays africains.', 'Je me suis plongé dans l’IA dès le départ —', 'il y a quatre, cinq ans. J’ai grandi seul en compétence,', 'j’ai évolué avec l’IA : ses différents modèles,', 'ses différentes fonctionnalités.', 'Avant de vous montrer les produits,', 'il faut que vous sachiez qui je suis. »'],
+      lines: ['« Messieurs les Ministres,', 'je m’appelle Stéphane Bach. Je suis médecin.', 'Depuis 2019, je ne suis pas à Maurice', 'pour faire une startup.', 'Je suis venu construire une infrastructure', 'de santé souveraine — pour 30 pays africains.', 'Je me suis plongé dans l’IA dès le départ —', 'il y a quatre, cinq ans. J’ai grandi seul en compétence,', 'j’ai évolué avec l’IA : ses différents modèles,', 'ses différentes fonctionnalités.', 'Avant de vous montrer les produits,', 'il faut que vous sachiez qui je suis. »'],
       x: 770,
       width: 1030,
       align: "left",
